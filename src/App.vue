@@ -1,30 +1,62 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <HeaderNav />
+    <main class="main-content">
+      <router-view/>
+    </main>
+  </div>
 </template>
+
+<script>
+import HeaderNav from './components/HeaderNav.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HeaderNav
+  }
+}
+</script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body {
+  line-height: 1.6;
+  color: #333;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+/* Global button styles */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Global link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main content spacing for fixed header */
+.main-content {
+  padding-top: 80px;
+  min-height: calc(100vh - 80px);
 }
 </style>
