@@ -1,27 +1,79 @@
 <template>
-  <header class="header">
-    <nav class="nav-container">
-      <div class="nav-brand">
-        <router-link to="/" class="brand-link">
-          <div class="brand-logo">
-            <span class="logo-icon">🚗</span>
-            <span class="logo-text">Kigali SelfDrive</span>
-          </div>
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <router-link to="/">
+          <h2>Kigali Self Drive</h2>
         </router-link>
       </div>
 
-      <div class="nav-menu" :class="{ 'nav-menu-open': isMenuOpen }">
-        <router-link to="/" class="nav-link" @click="closeMenu">Home</router-link>
-        <router-link to="/cars" class="nav-link" @click="closeMenu">Cars</router-link>
-        <router-link to="/about" class="nav-link" @click="closeMenu">About</router-link>
-        <router-link to="/contact" class="nav-link" @click="closeMenu">Contact</router-link>
-        <router-link to="/book" class="nav-link book-now" @click="closeMenu">Book Now</router-link>
-      </div>
+      <nav class="nav-menu" :class="{ 'active': isMenuOpen }">
+        <router-link to="/" @click="closeMenu">Home</router-link>
 
-      <div class="nav-toggle" @click="toggleMenu">
-        <span class="hamburger" :class="{ 'hamburger-open': isMenuOpen }"></span>
+        <!-- Fleet Dropdown -->
+        <div class="nav-dropdown" @mouseenter="showFleetDropdown = true" @mouseleave="showFleetDropdown = false">
+          <a href="#" class="dropdown-toggle">Our Fleet <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu" :class="{ 'show': showFleetDropdown }">
+            <router-link to="/fleet" @click="closeMenu">All Vehicles</router-link>
+            <router-link to="/fleet?category=economy" @click="closeMenu">Economy Cars</router-link>
+            <router-link to="/fleet?category=suv" @click="closeMenu">SUV Vehicles</router-link>
+            <router-link to="/fleet?category=4x4" @click="closeMenu">4x4 & Safari</router-link>
+            <router-link to="/fleet?category=luxury" @click="closeMenu">Luxury Cars</router-link>
+          </div>
+        </div>
+
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown" @mouseenter="showServicesDropdown = true" @mouseleave="showServicesDropdown = false">
+          <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu" :class="{ 'show': showServicesDropdown }">
+            <router-link to="/services" @click="closeMenu">All Services</router-link>
+            <router-link to="/services#self-drive" @click="closeMenu">Self Drive</router-link>
+            <router-link to="/services#driver-service" @click="closeMenu">Car with Driver</router-link>
+            <router-link to="/services#long-term" @click="closeMenu">Long Term Rental</router-link>
+            <router-link to="/services#airport-transfer" @click="closeMenu">Airport Transfer</router-link>
+            <router-link to="/services#safari-car" @click="closeMenu">Safari Car Rental</router-link>
+          </div>
+        </div>
+
+        <!-- Destinations Dropdown -->
+        <div class="nav-dropdown" @mouseenter="showDestinationsDropdown = true" @mouseleave="showDestinationsDropdown = false">
+          <a href="#" class="dropdown-toggle">Destinations <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu" :class="{ 'show': showDestinationsDropdown }">
+            <router-link to="/destinations" @click="closeMenu">All Destinations</router-link>
+            <router-link to="/destinations#volcanoes" @click="closeMenu">Volcanoes National Park</router-link>
+            <router-link to="/destinations#akagera" @click="closeMenu">Akagera National Park</router-link>
+            <router-link to="/destinations#nyungwe" @click="closeMenu">Nyungwe Forest</router-link>
+            <router-link to="/destinations#lake-kivu" @click="closeMenu">Lake Kivu</router-link>
+            <router-link to="/destinations#kigali" @click="closeMenu">Kigali City</router-link>
+          </div>
+        </div>
+
+        <!-- Rwanda Dropdown -->
+        <div class="nav-dropdown" @mouseenter="showRwandaDropdown = true" @mouseleave="showRwandaDropdown = false">
+          <a href="#" class="dropdown-toggle">Visit Rwanda <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu" :class="{ 'show': showRwandaDropdown }">
+            <router-link to="/about-rwanda" @click="closeMenu">About Rwanda</router-link>
+            <router-link to="/about-rwanda#national-parks" @click="closeMenu">National Parks</router-link>
+            <router-link to="/about-rwanda#culture" @click="closeMenu">Culture & Heritage</router-link>
+            <router-link to="/about-rwanda#cities" @click="closeMenu">Cities & Towns</router-link>
+            <router-link to="/about-rwanda#climate" @click="closeMenu">Climate & Best Time</router-link>
+            <router-link to="/about-rwanda#transport" @click="closeMenu">Getting Around</router-link>
+          </div>
+        </div>
+
+        <router-link to="/about" @click="closeMenu">About Us</router-link>
+        <router-link to="/blog" @click="closeMenu">Blog</router-link>
+        <router-link to="/faq" @click="closeMenu">FAQ</router-link>
+        <router-link to="/contact" @click="closeMenu">Contact</router-link>
+        <router-link to="/book" class="cta-button" @click="closeMenu">Book Now</router-link>
+      </nav>
+
+      <div class="hamburger" @click="toggleMenu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
+    </div>
   </header>
 </template>
 
@@ -30,7 +82,11 @@ export default {
   name: 'HeaderNav',
   data () {
     return {
-      isMenuOpen: false
+      isMenuOpen: false,
+      showFleetDropdown: false,
+      showServicesDropdown: false,
+      showDestinationsDropdown: false,
+      showRwandaDropdown: false
     }
   },
   methods: {
@@ -53,7 +109,7 @@ export default {
 </script>
 
 <style scoped>
-.header {
+.header-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -75,28 +131,13 @@ export default {
   height: 80px;
 }
 
-.nav-brand {
+.logo {
   flex-shrink: 0;
 }
 
-.brand-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo-icon {
-  font-size: 2rem;
-  color: #002F6C;
-}
-
-.logo-text {
-  font-size: 1.5rem;
+.logo h2 {
+  margin: 0;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #002F6C;
   letter-spacing: -0.5px;
@@ -146,7 +187,7 @@ export default {
   width: 100%;
 }
 
-.book-now {
+.cta-button {
   background: linear-gradient(135deg, #002F6C, #1E3A5F);
   color: white !important;
   padding: 0.75rem 1.5rem !important;
@@ -155,24 +196,24 @@ export default {
   transition: all 0.3s ease;
 }
 
-.book-now:hover {
+.cta-button:hover {
   background: linear-gradient(135deg, #1E3A5F, #002F6C);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 47, 108, 0.3);
 }
 
-.book-now::after {
+.cta-button::after {
   display: none;
 }
 
-.nav-toggle {
-  display: none;
+.hamburger {
+  display: none; /* Hidden by default on larger screens */
   flex-direction: column;
   cursor: pointer;
   padding: 0.5rem;
 }
 
-.hamburger {
+.hamburger span {
   width: 25px;
   height: 3px;
   background: #002F6C;
@@ -181,36 +222,29 @@ export default {
   position: relative;
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 3px;
-  background: #002F6C;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.hamburger::before {
-  top: -8px;
-}
-
-.hamburger::after {
-  bottom: -8px;
-}
-
-.hamburger-open {
-  background: transparent;
-}
-
-.hamburger-open::before {
+.hamburger span:nth-child(1) {
   top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 16px;
+}
+
+.hamburger-open span:nth-child(1) {
+  top: 8px;
   transform: rotate(45deg);
 }
 
-.hamburger-open::after {
-  bottom: 0;
+.hamburger-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-open span:nth-child(3) {
+  top: 8px;
   transform: rotate(-45deg);
 }
 
@@ -249,18 +283,18 @@ export default {
     text-align: center;
   }
 
-  .book-now {
+  .cta-button {
     width: 100%;
     text-align: center;
     margin-top: 1rem;
   }
 
-  .nav-toggle {
+  .hamburger {
     display: flex;
   }
 
-  .logo-text {
-    font-size: 1.25rem;
+  .logo h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -269,12 +303,109 @@ export default {
     padding: 0 0.75rem;
   }
 
-  .logo-icon {
-    font-size: 1.5rem;
+  .logo h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: #002F6C;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.dropdown-toggle:hover {
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+}
+
+.dropdown-toggle i {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 220px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: 1px solid rgba(0, 47, 108, 0.1);
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #002F6C;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  transform: translateX(5px);
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 768px) {
+  .nav-dropdown {
+    width: 100%;
   }
 
-  .logo-text {
-    font-size: 1.1rem;
+  .dropdown-toggle {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: rgba(0, 47, 108, 0.05);
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .dropdown-menu a {
+    text-align: center;
+    padding: 0.5rem 1rem;
   }
 }
 </style>

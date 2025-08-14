@@ -123,27 +123,36 @@
     <!-- Popular Cars Section -->
     <section class="popular-cars">
       <div class="container">
-        <h2 class="section-title">Popular Cars We Have for Rent</h2>
-        <p class="section-subtitle">Choose from our premium fleet of vehicles perfect for exploring Rwanda's diverse terrain</p>
+        <h2 class="section-title">Premium Car Rental Fleet in Rwanda</h2>
+        <p class="section-subtitle">Discover our carefully curated selection of vehicles perfect for exploring Rwanda's diverse landscapes - from city streets to mountain trails</p>
         <div class="cars-grid">
           <div v-for="car in popularCars" :key="car.id" class="car-card">
             <div class="car-image">
               <img :src="car.image" :alt="car.name">
               <div class="car-badge">{{ car.category }}</div>
+              <div class="car-price">From ${{ car.price }}/day</div>
             </div>
             <div class="car-info">
               <h3 class="car-name">{{ car.name }}</h3>
+              <p class="car-description">{{ car.description }}</p>
               <div class="car-specs">
-                <span class="spec">{{ car.transmission }}</span>
-                <span class="spec">{{ car.fuel }}</span>
-                <span class="spec">{{ car.seats }} seats</span>
+                <span class="spec"><i class="fas fa-cog"></i> {{ car.transmission }}</span>
+                <span class="spec"><i class="fas fa-gas-pump"></i> {{ car.fuel }}</span>
+                <span class="spec"><i class="fas fa-users"></i> {{ car.seats }} seats</span>
+                <span class="spec"><i class="fas fa-suitcase"></i> {{ car.luggage }} bags</span>
               </div>
               <div class="car-features">
                 <span v-for="feature in car.features" :key="feature" class="feature">{{ feature }}</span>
               </div>
-              <button class="car-btn" @click="bookCar(car)">Book Now</button>
+              <div class="car-actions">
+                <button class="car-btn primary" @click="bookCar(car)">Book Now</button>
+                <button class="car-btn secondary" @click="viewCarDetails(car)">View Details</button>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="cars-cta">
+          <router-link to="/fleet" class="view-all-btn">View Complete Fleet</router-link>
         </div>
       </div>
     </section>
@@ -152,25 +161,40 @@
     <section class="rwanda-tourism">
       <div class="container">
         <div class="tourism-header">
-          <h2 class="section-title">Discover Rwanda</h2>
-          <p class="section-subtitle">Explore the Land of a Thousand Hills with our premium car rental service</p>
+          <h2 class="section-title">Discover Rwanda - Land of a Thousand Hills</h2>
+          <p class="section-subtitle">Experience the magic of Rwanda with our premium car rental service. From mountain gorillas to pristine lakes, every journey is an adventure waiting to unfold.</p>
         </div>
         <div class="destinations-grid">
           <div v-for="destination in rwandaDestinations" :key="destination.id" class="destination-card" @click="showDestinationDetails(destination)">
             <div class="destination-image">
               <img :src="destination.image" :alt="destination.name">
               <div class="destination-overlay">
-                <span class="view-details">View Details</span>
+                <span class="view-details">Explore Destination</span>
               </div>
+              <div class="destination-badge">{{ destination.category }}</div>
             </div>
             <div class="destination-info">
               <h3>{{ destination.name }}</h3>
-              <p>{{ destination.shortDescription }}</p>
+              <p class="destination-description">{{ destination.shortDescription }}</p>
+              <div class="destination-meta">
+                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> {{ destination.distance }}</span>
+                <span class="meta-item"><i class="fas fa-clock"></i> {{ destination.duration }}</span>
+                <span class="meta-item"><i class="fas fa-star"></i> {{ destination.rating }}</span>
+              </div>
               <div class="destination-tags">
                 <span v-for="tag in destination.tags" :key="tag" class="tag">{{ tag }}</span>
               </div>
+              <div class="destination-highlights">
+                <h4>Highlights:</h4>
+                <ul>
+                  <li v-for="highlight in destination.highlights" :key="highlight">{{ highlight }}</li>
+                </ul>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="tourism-cta">
+          <router-link to="/destinations" class="explore-all-btn">Explore All Destinations</router-link>
         </div>
       </div>
     </section>
@@ -275,7 +299,10 @@ export default {
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          features: ['AC', 'GPS', 'Bluetooth', '4x4']
+          luggage: 4,
+          price: 85,
+          description: 'Perfect for family adventures in Rwanda. This versatile SUV combines comfort, safety, and fuel efficiency, making it ideal for exploring Rwanda\'s diverse landscapes from city streets to mountain trails.',
+          features: ['Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'All-Wheel Drive', 'Safety Features', 'Spacious Interior']
         },
         {
           id: 2,
@@ -285,7 +312,10 @@ export default {
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 7,
-          features: ['AC', 'GPS', 'Bluetooth', 'Backup Camera']
+          luggage: 5,
+          price: 90,
+          description: 'Spacious 7-seater SUV perfect for group travel in Rwanda. Features modern technology and comfort amenities, ideal for family trips to national parks and cultural sites.',
+          features: ['7-Seater Capacity', 'Air Conditioning', 'GPS Navigation', 'Bluetooth Audio', 'Backup Camera', 'Premium Interior']
         },
         {
           id: 3,
@@ -295,7 +325,10 @@ export default {
           transmission: 'Automatic',
           fuel: 'Diesel',
           seats: 7,
-          features: ['AC', 'GPS', 'Bluetooth', '4x4', 'Luxury']
+          luggage: 6,
+          price: 150,
+          description: 'The legendary Land Cruiser - perfect for luxury safaris and off-road adventures in Rwanda. Unmatched reliability and comfort for the ultimate Rwandan experience.',
+          features: ['Luxury Interior', '4x4 Capability', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Off-Road Ready']
         },
         {
           id: 4,
@@ -305,7 +338,10 @@ export default {
           transmission: 'Automatic',
           fuel: 'Diesel',
           seats: 7,
-          features: ['AC', 'GPS', '4x4', 'Off-road']
+          luggage: 5,
+          price: 95,
+          description: 'Robust SUV designed for Rwanda\'s challenging terrain. Perfect for safari adventures and exploring remote areas with confidence and comfort.',
+          features: ['7-Seater SUV', 'Air Conditioning', 'GPS Navigation', '4x4 Capability', 'Off-Road Performance', 'Durable Build']
         },
         {
           id: 5,
@@ -315,7 +351,10 @@ export default {
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          features: ['AC', 'GPS', 'Bluetooth', 'Luxury', 'V8 Engine']
+          luggage: 4,
+          price: 200,
+          description: 'Premium luxury vehicle for special occasions and VIP travel in Rwanda. Experience ultimate comfort and performance with our flagship V8 model.',
+          features: ['V8 Engine', 'Luxury Interior', 'Premium Sound System', 'GPS Navigation', 'Leather Seats', 'VIP Experience']
         },
         {
           id: 6,
@@ -325,77 +364,98 @@ export default {
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          features: ['AC', 'GPS', 'Bluetooth', 'Comfort']
+          luggage: 4,
+          price: 80,
+          description: 'Comfortable and reliable SUV perfect for exploring Rwanda\'s cities and countryside. Excellent fuel efficiency and smooth handling for stress-free travel.',
+          features: ['Comfortable Ride', 'Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'Safety Features', 'Fuel Efficient']
         }
       ],
       rwandaDestinations: [
         {
           id: 1,
           name: 'Volcanoes National Park',
-          shortDescription: 'Home to the majestic mountain gorillas and golden monkeys',
+          category: 'National Park',
+          shortDescription: 'Home to the majestic mountain gorillas and golden monkeys in their natural habitat',
           image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop',
           heroImage: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=600&fit=crop',
-          tags: ['Wildlife', 'Gorillas', 'Hiking'],
+          tags: ['Wildlife', 'Gorillas', 'Hiking', 'Adventure'],
           fullDescription: 'Experience the magic of Volcanoes National Park, where you can trek to see the endangered mountain gorillas in their natural habitat. This UNESCO World Heritage site offers unforgettable wildlife encounters and stunning volcanic landscapes. The park is part of the Virunga Massif and is home to about one-third of the world\'s remaining mountain gorillas.',
           highlights: ['Gorilla Trekking', 'Golden Monkey Trekking', 'Volcano Hiking', 'Cultural Village Visits', 'Bird Watching', 'Nature Walks'],
           bestTime: 'June to September, December to February',
-          distance: '2-3 hours from Kigali'
+          distance: '2-3 hours from Kigali',
+          duration: 'Full day to 3 days',
+          rating: '5.0'
         },
         {
           id: 2,
           name: 'Nyungwe Forest National Park',
+          category: 'National Park',
           shortDescription: 'Ancient rainforest with diverse wildlife and canopy walks',
           image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop',
           heroImage: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=600&fit=crop',
-          tags: ['Forest', 'Chimpanzees', 'Canopy Walk'],
+          tags: ['Forest', 'Chimpanzees', 'Canopy Walk', 'Nature'],
           fullDescription: 'Explore one of Africa\'s oldest rainforests, home to chimpanzees, colobus monkeys, and over 300 bird species. The canopy walkway offers breathtaking views of the forest canopy. This ancient forest has been around for over 60 million years and is a biodiversity hotspot.',
           highlights: ['Chimpanzee Trekking', 'Canopy Walkway', 'Bird Watching', 'Waterfall Hikes', 'Forest Walks', 'Primate Tracking'],
           bestTime: 'Year-round, best during dry seasons',
-          distance: '5-6 hours from Kigali'
+          distance: '5-6 hours from Kigali',
+          duration: '2-3 days',
+          rating: '4.9'
         },
         {
           id: 3,
           name: 'Akagera National Park',
+          category: 'National Park',
           shortDescription: 'Savannah park with the Big Five and boat safaris',
           image: 'https://images.unsplash.com/photo-1549366021-9f761d450615?w=400&h=300&fit=crop',
-          tags: ['Safari', 'Big Five', 'Lake'],
+          tags: ['Safari', 'Big Five', 'Lake', 'Wildlife'],
           fullDescription: 'Rwanda\'s only savannah park, Akagera offers traditional African safari experiences with lions, elephants, giraffes, and boat safaris on Lake Ihema.',
           highlights: ['Game Drives', 'Boat Safaris', 'Bird Watching', 'Luxury Lodges'],
           bestTime: 'June to September',
-          distance: '2-3 hours from Kigali'
+          distance: '2-3 hours from Kigali',
+          duration: '2-3 days',
+          rating: '4.8'
         },
         {
           id: 4,
           name: 'Lake Kivu',
+          category: 'Lake Destination',
           shortDescription: 'Beautiful lake with beaches, water sports, and relaxation',
           image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
-          tags: ['Lake', 'Beach', 'Water Sports'],
+          tags: ['Lake', 'Beach', 'Water Sports', 'Relaxation'],
           fullDescription: 'Rwanda\'s largest lake offers pristine beaches, water sports, and stunning sunsets. Perfect for relaxation after gorilla trekking adventures.',
           highlights: ['Beach Activities', 'Water Sports', 'Sunset Cruises', 'Lakeside Dining'],
           bestTime: 'Year-round',
-          distance: '3-4 hours from Kigali'
+          distance: '3-4 hours from Kigali',
+          duration: '1-3 days',
+          rating: '4.7'
         },
         {
           id: 5,
           name: 'Kigali City',
+          category: 'City',
           shortDescription: 'Modern capital with rich culture, history, and vibrant markets',
           image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop',
-          tags: ['City', 'Culture', 'History'],
+          tags: ['City', 'Culture', 'History', 'Urban'],
           fullDescription: 'Explore Rwanda\'s vibrant capital with its clean streets, rich history, genocide memorial, and bustling markets. Experience the perfect blend of tradition and modernity.',
           highlights: ['Genocide Memorial', 'Local Markets', 'Coffee Tours', 'City Tours'],
           bestTime: 'Year-round',
-          distance: 'City center'
+          distance: 'City center',
+          duration: '1-2 days',
+          rating: '4.6'
         },
         {
           id: 6,
           name: 'Musanze Caves',
+          category: 'Adventure',
           shortDescription: 'Ancient lava caves with fascinating geological formations',
           image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
-          tags: ['Caves', 'Geology', 'Adventure'],
+          tags: ['Caves', 'Geology', 'Adventure', 'Exploration'],
           fullDescription: 'Explore the fascinating Musanze Caves, formed by ancient lava flows. These caves offer a unique underground adventure with stunning geological formations.',
           highlights: ['Cave Exploration', 'Geological Tours', 'Adventure Activities', 'Local Guides'],
           bestTime: 'Year-round',
-          distance: '2 hours from Kigali'
+          distance: '2 hours from Kigali',
+          duration: 'Half day',
+          rating: '4.5'
         }
       ],
       testimonials: [
@@ -431,8 +491,13 @@ export default {
     },
     bookCar (car) {
       console.log('Booking car:', car.name)
-      // Navigate to booking page or open booking modal
-      alert(`Booking ${car.name} - ${car.category}`)
+      // Navigate to booking page with car pre-selected
+      this.$router.push({ path: '/book', query: { vehicle: car.id } })
+    },
+    viewCarDetails (car) {
+      console.log('Viewing car details:', car.name)
+      // Navigate to fleet page with car details
+      this.$router.push({ path: '/fleet', query: { vehicle: car.id } })
     },
     showDestinationDetails (destination) {
       this.selectedDestination = destination
@@ -870,10 +935,73 @@ export default {
   color: #002F6C;
 }
 
-.destination-info p {
+.destination-description {
   color: #6b7280;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.destination-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.meta-item i {
+  color: #FF6B35;
+  font-size: 0.8rem;
+}
+
+.destination-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 47, 108, 0.9);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.destination-highlights {
+  margin-top: 1rem;
+}
+
+.destination-highlights h4 {
+  font-size: 1rem;
+  color: #002F6C;
+  margin-bottom: 0.5rem;
+}
+
+.destination-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.destination-highlights li {
+  padding: 3px 0;
+  color: #666;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 15px;
+}
+
+.destination-highlights li::before {
+  content: '•';
+  color: #FF6B35;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
 
 .destination-tags {
@@ -889,6 +1017,28 @@ export default {
   border-radius: 20px;
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+.tourism-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.explore-all-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(135deg, #FF6B35, #FF8C42);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-all-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
 }
 
 /* Popular Cars Section */
@@ -951,10 +1101,30 @@ export default {
   color: #002F6C;
 }
 
+.car-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.car-price {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 107, 53, 0.9);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
 .car-specs {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .spec {
@@ -963,6 +1133,14 @@ export default {
   border-radius: 20px;
   font-size: 0.875rem;
   color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.spec i {
+  color: #FF6B35;
+  font-size: 0.8rem;
 }
 
 .car-features {
@@ -981,20 +1159,61 @@ export default {
   font-weight: 500;
 }
 
+.car-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
 .car-btn {
-  width: 100%;
-  background: #FF8C42;
-  color: white;
+  flex: 1;
+  padding: 10px 15px;
   border: none;
-  padding: 0.75rem;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.car-btn.primary {
+  background: linear-gradient(135deg, #FF6B35, #FF8C42);
+  color: white;
+}
+
+.car-btn.secondary {
+  background: transparent;
+  border: 2px solid #002F6C;
+  color: #002F6C;
 }
 
 .car-btn:hover {
-  background: #e67e22;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cars-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.view-all-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: linear-gradient(135deg, #002F6C, #1E3A5F);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-all-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 47, 108, 0.3);
 }
 
 /* Testimonials Section */
