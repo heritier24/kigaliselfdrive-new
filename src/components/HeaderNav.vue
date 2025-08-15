@@ -122,9 +122,9 @@ export default {
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -133,6 +133,7 @@ export default {
 
 .logo {
   flex-shrink: 0;
+  margin-right: 2rem;
 }
 
 .logo h2 {
@@ -146,17 +147,20 @@ export default {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  flex: 1;
+  justify-content: center;
 }
 
 .nav-link {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
   position: relative;
-  padding: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -190,10 +194,13 @@ export default {
 .cta-button {
   background: linear-gradient(135deg, #002F6C, #1E3A5F);
   color: white !important;
-  padding: 0.75rem 1.5rem !important;
+  padding: 0.75rem 2rem !important;
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  margin-left: 2rem;
 }
 
 .cta-button:hover {
@@ -283,10 +290,19 @@ export default {
     text-align: center;
   }
 
+  .dropdown-toggle {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
   .cta-button {
     width: 100%;
     text-align: center;
     margin-top: 1rem;
+    margin-left: 0;
   }
 
   .hamburger {
@@ -295,6 +311,17 @@ export default {
 
   .logo h2 {
     font-size: 1.5rem;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 2rem;
+  }
+  
+  .nav-menu {
+    gap: 2rem;
   }
 }
 
@@ -321,10 +348,12 @@ export default {
   cursor: pointer;
   color: #002F6C;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 5px;
   transition: all 0.3s ease;
   font-weight: 500;
+  font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 .dropdown-toggle:hover {
