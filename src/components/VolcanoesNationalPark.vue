@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=600&fit=crop" alt="Volcanoes National Park">
+        <img src="/images/tourism/gorillas/gorilla-silverback.jpg" alt="Mountain Gorilla in Volcanoes National Park">
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -55,7 +55,7 @@
         <div class="activities-grid">
           <div class="activity-card">
             <div class="activity-image">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" alt="Gorilla Trekking">
+              <img src="/images/tourism/gorillas/gorilla-family-1.jpg" alt="Gorilla Trekking">
             </div>
             <div class="activity-content">
               <h3>Gorilla Trekking</h3>
@@ -71,7 +71,7 @@
 
           <div class="activity-card">
             <div class="activity-image">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" alt="Golden Monkey Trekking">
+              <img src="/images/tourism/gorillas/gorilla-mother-baby.jpg" alt="Golden Monkey Trekking">
             </div>
             <div class="activity-content">
               <h3>Golden Monkey Trekking</h3>
@@ -87,7 +87,7 @@
 
           <div class="activity-card">
             <div class="activity-image">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" alt="Volcano Hiking">
+              <img src="/images/tourism/gorillas/gorilla-closeup.jpg" alt="Volcano Hiking">
             </div>
             <div class="activity-content">
               <h3>Volcano Hiking</h3>

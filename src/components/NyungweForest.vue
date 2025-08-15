@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=600&fit=crop" alt="Nyungwe Forest National Park">
+        <img src="/images/tourism/chimpanzee/chimpanzee-1.jpg" alt="Chimpanzee in Nyungwe Forest National Park">
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -55,7 +55,7 @@
         <div class="activities-grid">
           <div class="activity-card">
             <div class="activity-image">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Chimpanzee Trekking">
+              <img src="/images/tourism/chimpanzee/chimpanzee-2.jpg" alt="Chimpanzee Trekking">
             </div>
             <div class="activity-content">
               <h3>Chimpanzee Trekking</h3>
@@ -71,7 +71,7 @@
 
           <div class="activity-card">
             <div class="activity-image">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Canopy Walkway">
+              <img src="/images/tourism/activities/rope-bridge.jpg" alt="Canopy Walkway">
             </div>
             <div class="activity-content">
               <h3>Canopy Walkway</h3>
@@ -87,7 +87,7 @@
 
           <div class="activity-card">
             <div class="activity-image">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Bird Watching">
+              <img src="/images/tourism/birds/lilac-breasted-roller.jpg" alt="Bird Watching">
             </div>
             <div class="activity-content">
               <h3>Bird Watching</h3>
