@@ -1,5 +1,34 @@
 <template>
   <header class="header-nav">
+    <!-- Promotional Banner -->
+    <div class="promo-banner" v-if="showPromoBanner">
+      <div class="promo-slider">
+        <div class="promo-slide" :class="{ 'active': currentPromoIndex === 0, 'prev': currentPromoIndex === 4 }">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>📍 Located in Kigali, Rwanda - Serving All of East Africa</span>
+        </div>
+        <div class="promo-slide" :class="{ 'active': currentPromoIndex === 1, 'prev': currentPromoIndex === 0 }">
+          <i class="fas fa-phone"></i>
+          <span>📞 Call Us: +250 788 123 456 | WhatsApp: +250 789 123 456</span>
+        </div>
+        <div class="promo-slide" :class="{ 'active': currentPromoIndex === 2, 'prev': currentPromoIndex === 1 }">
+          <i class="fas fa-envelope"></i>
+          <span>✉️ Email: info@kigaliselfdrive.com | Book Online 24/7</span>
+        </div>
+        <div class="promo-slide" :class="{ 'active': currentPromoIndex === 3, 'prev': currentPromoIndex === 2 }">
+          <i class="fas fa-star"></i>
+          <span>⭐ #1 Car Rental in Rwanda - 500+ Happy Customers</span>
+        </div>
+        <div class="promo-slide" :class="{ 'active': currentPromoIndex === 4, 'prev': currentPromoIndex === 3 }">
+          <i class="fas fa-shield-alt"></i>
+          <span>🛡️ Full Insurance Included | No Hidden Fees</span>
+        </div>
+      </div>
+      <button class="promo-close" @click="closePromoBanner">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    
     <div class="nav-container">
       <div class="logo">
         <router-link to="/">
@@ -9,10 +38,11 @@
 
       <nav class="nav-menu" :class="{ 'active': isMenuOpen }">
         <router-link to="/" @click="closeMenu">Home</router-link>
+        <router-link to="/about" @click="closeMenu">About</router-link>
 
         <!-- Fleet Dropdown -->
         <div class="nav-dropdown" @mouseenter="showFleetDropdown = true" @mouseleave="showFleetDropdown = false">
-          <a href="#" class="dropdown-toggle">Our Fleet <i class="fas fa-chevron-down"></i></a>
+          <a href="#" class="dropdown-toggle">Our Vehicles <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu" :class="{ 'show': showFleetDropdown }">
             <router-link to="/fleet" @click="closeMenu">All Vehicles</router-link>
             <router-link to="/fleet?category=economy" @click="closeMenu">Economy Cars</router-link>
@@ -61,7 +91,6 @@
           </div>
         </div>
 
-        <router-link to="/about" @click="closeMenu">About Us</router-link>
         <router-link to="/blog" @click="closeMenu">Blog</router-link>
         <router-link to="/faq" @click="closeMenu">FAQ</router-link>
         <router-link to="/contact" @click="closeMenu">Contact</router-link>
@@ -86,7 +115,10 @@ export default {
       showFleetDropdown: false,
       showServicesDropdown: false,
       showDestinationsDropdown: false,
-      showRwandaDropdown: false
+      showRwandaDropdown: false,
+      showPromoBanner: true,
+      currentPromoIndex: 0,
+      promoInterval: null
     }
   },
   methods: {
@@ -95,6 +127,17 @@ export default {
     },
     closeMenu () {
       this.isMenuOpen = false
+    },
+    closePromoBanner () {
+      this.showPromoBanner = false
+      if (this.promoInterval) {
+        clearInterval(this.promoInterval)
+      }
+    },
+    startPromoSlider () {
+      this.promoInterval = setInterval(() => {
+        this.currentPromoIndex = (this.currentPromoIndex + 1) % 5
+      }, 5000)
     }
   },
   mounted () {
@@ -104,6 +147,15 @@ export default {
         this.isMenuOpen = false
       }
     })
+    
+    // Start promotional banner slider
+    this.startPromoSlider()
+  },
+  
+  beforeUnmount () {
+    if (this.promoInterval) {
+      clearInterval(this.promoInterval)
+    }
   }
 }
 </script>
@@ -121,6 +173,83 @@ export default {
   transition: all 0.3s ease;
 }
 
+/* Promotional Banner */
+.promo-banner {
+  background: linear-gradient(135deg, #002F6C, #1E3A5F);
+  color: white;
+  padding: 0.5rem 0;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.promo-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.8s ease;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.promo-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.promo-slide.prev {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.promo-slide i {
+  color: #FF6B35;
+  font-size: 1rem;
+}
+
+.promo-close {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.promo-close:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .nav-container {
   max-width: 100%;
   margin: 0 auto;
@@ -129,6 +258,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  margin-top: 0;
 }
 
 .logo {
@@ -261,9 +391,26 @@ export default {
     padding: 0 1rem;
   }
 
+  .promo-banner {
+    height: 50px;
+    padding: 0.75rem 0;
+  }
+
+  .promo-slide {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 1rem;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .promo-close {
+    right: 0.5rem;
+  }
+
   .nav-menu {
     position: fixed;
-    top: 80px;
+    top: 120px;
     left: 0;
     right: 0;
     background: white;

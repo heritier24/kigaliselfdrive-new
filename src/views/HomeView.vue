@@ -22,7 +22,7 @@
           </div>
           <h3 class="hero-title">
             Discover Rwanda's
-            <span class="hero-accent">Hidden Gems</span>
+            <!-- <span class="hero-accent">Hidden Gems</span> -->
             <br>With Premium Vehicles
           </h3>
           <p class="hero-subtitle">
@@ -43,7 +43,7 @@
             </div>
           </div>
           <div class="hero-cta-buttons">
-            <router-link to="/fleet" class="hero-btn primary">Explore Fleet</router-link>
+            <button @click="scrollToCarsSection" class="hero-btn primary">Explore Fleet</button>
             <router-link to="/destinations" class="hero-btn secondary">Discover Rwanda</router-link>
           </div>
         </div>
@@ -510,8 +510,25 @@ export default {
   methods: {
     handleBooking () {
       console.log('Booking submitted:', this.booking)
-      // Here you would typically send the data to your backend
-      alert('Booking request submitted! We will contact you soon.')
+      // Scroll to popular cars section
+      this.scrollToCarsSection()
+    },
+    
+    scrollToCarsSection () {
+      const carsSection = document.querySelector('.popular-cars')
+      if (carsSection) {
+        carsSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        })
+        
+        // Add a subtle highlight effect
+        carsSection.classList.add('highlight')
+        
+        setTimeout(() => {
+          carsSection.classList.remove('highlight')
+        }, 1000)
+      }
     },
     bookCar (car) {
       console.log('Booking car:', car.name)
@@ -556,6 +573,7 @@ export default {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -1208,6 +1226,12 @@ export default {
 .popular-cars {
   padding: 80px 0;
   background: white;
+  transition: all 0.3s ease;
+}
+
+.popular-cars.highlight {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
 }
 
 .cars-grid {
