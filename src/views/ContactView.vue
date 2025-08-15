@@ -1,25 +1,5 @@
 <template>
   <div class="contact-page">
-    <!-- Header -->
-    <header class="header">
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="nav-logo">
-            <router-link to="/" class="logo">
-              <span class="logo-text">Kigali</span>
-              <span class="logo-accent">SelfDrive</span>
-            </router-link>
-          </div>
-          <div class="nav-menu">
-            <router-link to="/" class="nav-link">Home</router-link>
-            <router-link to="/cars" class="nav-link">Cars</router-link>
-            <router-link to="/about" class="nav-link">About</router-link>
-            <router-link to="/contact" class="nav-link active">Contact</router-link>
-            <router-link to="/book" class="nav-btn">Book Now</router-link>
-          </div>
-        </div>
-      </nav>
-    </header>
 
     <!-- Hero Section -->
     <section class="hero">
