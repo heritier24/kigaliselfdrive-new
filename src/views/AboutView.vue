@@ -3,7 +3,7 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=600&fit=crop')">
+      <div class="hero-background" style="background-image: url('/images/tourism/gorillas/gorilla-silverback.jpg')">
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="story-image">
-            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&h=400&fit=crop" alt="Kigali City">
+            <img src="/images/tourism/activities/trekking-group.jpg" alt="Kigali City">
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
         <div class="tourism-grid">
           <div class="tourism-card">
             <div class="tourism-image">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Mountain Gorillas">
+              <img src="/images/tourism/gorillas/gorilla-family-1.jpg" alt="Mountain Gorillas">
             </div>
             <div class="tourism-content">
               <h3>Mountain Gorillas</h3>
@@ -65,7 +65,7 @@
 
           <div class="tourism-card">
             <div class="tourism-image">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" alt="Akagera National Park">
+              <img src="/images/tourism/lions/lion-male-female.jpg" alt="Akagera National Park">
             </div>
             <div class="tourism-content">
               <h3>Big Five Safari</h3>
@@ -79,7 +79,7 @@
 
           <div class="tourism-card">
             <div class="tourism-image">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Nyungwe Forest">
+              <img src="/images/tourism/chimpanzee/chimpanzee-1.jpg" alt="Nyungwe Forest">
             </div>
             <div class="tourism-content">
               <h3>Ancient Rainforest</h3>

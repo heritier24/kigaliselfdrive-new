@@ -108,7 +108,7 @@ export default {
           name: 'Volcanoes National Park',
           category: 'National Park',
           shortDescription: 'Home to the majestic mountain gorillas and golden monkeys.',
-          image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&crop=center',
+          image: '/images/tourism/gorillas/gorilla-silverback.jpg',
           distance: '2 hours from Kigali',
           duration: 'Full day'
         },
@@ -117,7 +117,7 @@ export default {
           name: 'Akagera National Park',
           category: 'National Park',
           shortDescription: 'Rwanda\'s only savannah park with the Big Five.',
-          image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&crop=center',
+          image: '/images/tourism/lions/lion-male-female.jpg',
           distance: '2.5 hours from Kigali',
           duration: '2-3 days'
         },
@@ -126,7 +126,7 @@ export default {
           name: 'Lake Kivu',
           category: 'Lake',
           shortDescription: 'Beautiful lake perfect for relaxation and water activities.',
-          image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop&crop=center',
+          image: '/images/tourism/activities/hot-air-balloon.jpg',
           distance: '3 hours from Kigali',
           duration: '2-3 days'
         },
@@ -135,7 +135,7 @@ export default {
           name: 'Nyungwe Forest',
           category: 'Forest',
           shortDescription: 'Ancient rainforest with chimpanzees and diverse wildlife.',
-          image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&crop=center',
+          image: '/images/tourism/chimpanzee/chimpanzee-1.jpg',
           distance: '5 hours from Kigali',
           duration: '2-3 days'
         }
@@ -145,7 +145,7 @@ export default {
           id: 1,
           name: 'Volcanoes National Park',
           description: 'Famous for mountain gorilla trekking and golden monkey tracking.',
-          image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&crop=center',
+          image: '/images/tourism/gorillas/gorilla-family-1.jpg',
           location: 'Northern Rwanda',
           bestTime: 'June-September',
           drivingTime: '2 hours from Kigali',
@@ -156,7 +156,7 @@ export default {
           id: 2,
           name: 'Akagera National Park',
           description: 'Rwanda\'s only savannah park with the Big Five animals.',
-          image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&crop=center',
+          image: '/images/tourism/elephants/elephant-herd.jpg',
           location: 'Eastern Rwanda',
           bestTime: 'June-September',
           drivingTime: '2.5 hours from Kigali',
@@ -167,7 +167,7 @@ export default {
           id: 3,
           name: 'Nyungwe Forest',
           description: 'Ancient rainforest with chimpanzees and diverse wildlife.',
-          image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&crop=center',
+          image: '/images/tourism/activities/rope-bridge.jpg',
           location: 'Southwestern Rwanda',
           bestTime: 'June-September',
           drivingTime: '5 hours from Kigali',

@@ -216,7 +216,7 @@
         <div class="destinations-grid">
           <div class="destination-card">
             <div class="destination-image">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Volcanoes National Park">
+              <img src="/images/tourism/gorillas/gorilla-silverback.jpg" alt="Volcanoes National Park">
             </div>
             <div class="destination-content">
               <h3>Volcanoes National Park</h3>
@@ -231,7 +231,7 @@
 
           <div class="destination-card">
             <div class="destination-image">
-              <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop" alt="Akagera National Park">
+              <img src="/images/tourism/elephants/elephant-herd.jpg" alt="Akagera National Park">
             </div>
             <div class="destination-content">
               <h3>Akagera National Park</h3>
@@ -246,7 +246,7 @@
 
           <div class="destination-card">
             <div class="destination-image">
-              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Nyungwe Forest">
+              <img src="/images/tourism/activities/rope-bridge.jpg" alt="Nyungwe Forest">
             </div>
             <div class="destination-content">
               <h3>Nyungwe Forest</h3>
