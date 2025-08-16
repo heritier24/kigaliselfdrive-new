@@ -9,10 +9,10 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-background">
-        <div class="car-slide active" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1920&h=1080&fit=crop')"></div>
-        <div class="car-slide" style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1920&h=1080&fit=crop')"></div>
-        <div class="car-slide" style="background-image: url('https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=1920&h=1080&fit=crop')"></div>
-        <div class="car-slide" style="background-image: url('https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1920&h=1080&fit=crop')"></div>
+        <div class="car-slide active" style="background-image: url('/images/cars/luxury/land-cruiser.jpg')"></div>
+        <div class="car-slide" style="background-image: url('/images/cars/luxury/range-rover-sport.jpg')"></div>
+        <div class="car-slide" style="background-image: url('/images/cars/luxury/mercedes-gle.jpg')"></div>
+        <div class="car-slide" style="background-image: url('/images/cars/luxury/bmw-x5.jpg')"></div>
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -319,7 +319,7 @@ export default {
           id: 1,
           name: 'Toyota RAV4',
           category: 'SUV',
-          image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/suv/toyota-rav4.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
@@ -330,22 +330,22 @@ export default {
         },
         {
           id: 2,
-          name: 'Kia Sorento',
+          name: 'Kia Sportage',
           category: 'SUV',
-          image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/suv/kia-sportage.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
-          seats: 7,
-          luggage: 5,
-          price: 90,
-          description: 'Spacious 7-seater SUV perfect for group travel in Rwanda. Features modern technology and comfort amenities, ideal for family trips to national parks and cultural sites.',
-          features: ['7-Seater Capacity', 'Air Conditioning', 'GPS Navigation', 'Bluetooth Audio', 'Backup Camera', 'Premium Interior']
+          seats: 5,
+          luggage: 4,
+          price: 75,
+          description: 'Modern and stylish SUV perfect for exploring Rwanda. Features advanced technology and comfort amenities, ideal for both city driving and countryside adventures.',
+          features: ['Modern Design', 'Air Conditioning', 'GPS Navigation', 'Bluetooth Audio', 'Backup Camera', 'Premium Interior']
         },
         {
           id: 3,
           name: 'Toyota Land Cruiser',
           category: 'Luxury SUV',
-          image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/luxury/land-cruiser.jpg',
           transmission: 'Automatic',
           fuel: 'Diesel',
           seats: 7,
@@ -356,35 +356,35 @@ export default {
         },
         {
           id: 4,
-          name: 'Toyota Fortuner',
-          category: 'SUV',
-          image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400&h=300&fit=crop&crop=center',
+          name: 'Toyota Prado',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/prado.jpg',
           transmission: 'Automatic',
           fuel: 'Diesel',
           seats: 7,
           luggage: 5,
-          price: 95,
-          description: 'Robust SUV designed for Rwanda\'s challenging terrain. Perfect for safari adventures and exploring remote areas with confidence and comfort.',
-          features: ['7-Seater SUV', 'Air Conditioning', 'GPS Navigation', '4x4 Capability', 'Off-Road Performance', 'Durable Build']
+          price: 120,
+          description: 'Premium Prado SUV designed for Rwanda\'s challenging terrain. Perfect for luxury safari adventures and exploring remote areas with confidence and comfort.',
+          features: ['7-Seater SUV', 'Luxury Interior', 'GPS Navigation', '4x4 Capability', 'Off-Road Performance', 'Premium Build']
         },
         {
           id: 5,
-          name: 'Toyota V8',
+          name: 'Mercedes S-Class',
           category: 'Luxury',
-          image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/luxury/mercedes-s-class.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
           luggage: 4,
           price: 200,
-          description: 'Premium luxury vehicle for special occasions and VIP travel in Rwanda. Experience ultimate comfort and performance with our flagship V8 model.',
+          description: 'Premium luxury vehicle for special occasions and VIP travel in Rwanda. Experience ultimate comfort and performance with our flagship Mercedes S-Class.',
           features: ['V8 Engine', 'Luxury Interior', 'Premium Sound System', 'GPS Navigation', 'Leather Seats', 'VIP Experience']
         },
         {
           id: 6,
           name: 'Nissan X-Trail',
           category: 'SUV',
-          image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/suv/nissan-x-trail.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
@@ -392,6 +392,32 @@ export default {
           price: 80,
           description: 'Comfortable and reliable SUV perfect for exploring Rwanda\'s cities and countryside. Excellent fuel efficiency and smooth handling for stress-free travel.',
           features: ['Comfortable Ride', 'Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'Safety Features', 'Fuel Efficient']
+        },
+        {
+          id: 7,
+          name: 'Toyota Vitz',
+          category: 'Economy',
+          image: '/images/cars/economy/toyota-vitz.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 3,
+          price: 45,
+          description: 'Compact and fuel-efficient hatchback perfect for city driving in Rwanda. Easy to park and navigate through busy streets.',
+          features: ['Fuel Efficient', 'Easy Parking', 'GPS Navigation', 'Air Conditioning', 'Compact Size', 'Affordable']
+        },
+        {
+          id: 8,
+          name: 'Suzuki Swift',
+          category: 'Economy',
+          image: '/images/cars/economy/suzuki-swift.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 2,
+          price: 40,
+          description: 'Fun and agile small car perfect for navigating Rwanda\'s streets. Great for solo travelers or small groups.',
+          features: ['Agile Handling', 'Fuel Efficient', 'Easy Parking', 'Air Conditioning', 'Fun to Drive', 'Budget Friendly']
         }
       ],
       rwandaDestinations: [

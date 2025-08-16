@@ -2,7 +2,7 @@
   <div class="cars-page">
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1920&h=600&fit=crop')">
+      <div class="hero-background" style="background-image: url('/images/cars/luxury/range-rover-sport.jpg')">
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
