@@ -1,5 +1,11 @@
 <template>
-  <br><br><br><div class="home">
+  <div class="home">
+    <SEOHead
+      title="Kigali SelfDrive - Premium Car Rental in Rwanda | Best Prices & Full Insurance"
+      description="Rent premium cars in Kigali, Rwanda. Explore Rwanda with our luxury fleet including Land Cruisers, SUVs, and economy cars. Best prices, full insurance, 24/7 support. Book online today!"
+      keywords="car rental kigali, rent car rwanda, kigali self drive, car hire rwanda, luxury car rental kigali, 4x4 rental rwanda, suv rental kigali, airport car rental kigali, gorilla trekking transport, rwanda safari vehicles"
+      url="https://kigaliselfdrive.com"
+    />
     <DestinationDetails
       v-if="selectedDestination"
       :destination="selectedDestination"
@@ -304,11 +310,13 @@
 
 <script>
 import DestinationDetails from '../components/DestinationDetails.vue'
+import SEOHead from '../components/SEOHead.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    DestinationDetails
+    DestinationDetails,
+    SEOHead
   },
   data () {
     return {

@@ -1,5 +1,11 @@
 <template>
   <div class="fleet-page">
+    <SEOHead
+      title="Car Rental Fleet in Rwanda - Luxury, SUV & Economy Vehicles | Kigali SelfDrive"
+      description="Browse our complete car rental fleet in Rwanda. Choose from luxury Land Cruisers, SUVs, economy cars, and 4x4 vehicles. Best prices, full insurance, instant booking."
+      keywords="car fleet rwanda, luxury car rental kigali, suv rental rwanda, 4x4 rental kigali, toyota land cruiser rental, mercedes rental kigali, range rover rental rwanda"
+      url="https://kigaliselfdrive.com/fleet"
+    />
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-content">
@@ -187,8 +193,13 @@
 </template>
 
 <script>
+import SEOHead from '../components/SEOHead.vue'
+
 export default {
   name: 'FleetView',
+  components: {
+    SEOHead
+  },
   data () {
     return {
       selectedCategory: '',

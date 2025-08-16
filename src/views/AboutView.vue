@@ -1,5 +1,11 @@
 <template>
   <div class="about-page">
+    <SEOHead
+      title="About Kigali SelfDrive - Premium Car Rental Service in Rwanda"
+      description="Learn about Kigali SelfDrive, Rwanda's premier car rental service. We provide luxury vehicles, exceptional customer service, and help you explore Rwanda's beauty safely and comfortably."
+      keywords="about kigali selfdrive, car rental company rwanda, rwanda car hire service, kigali self drive about us, rwanda tourism transport"
+      url="https://kigaliselfdrive.com/about"
+    />
 
     <!-- Hero Section -->
     <section class="hero">
@@ -253,8 +259,13 @@
 </template>
 
 <script>
+import SEOHead from '../components/SEOHead.vue'
+
 export default {
-  name: 'AboutView'
+  name: 'AboutView',
+  components: {
+    SEOHead
+  }
 }
 </script>
 

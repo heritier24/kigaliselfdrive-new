@@ -1,5 +1,11 @@
 <template>
   <div class="contact-page">
+    <SEOHead
+      title="Contact Kigali SelfDrive - Car Rental Support & Booking | Rwanda"
+      description="Contact Kigali SelfDrive for car rental inquiries, bookings, and support. Call +250 788 123 456 or email info@kigaliselfdrive.com. We're here to help with your Rwanda adventure."
+      keywords="contact kigali selfdrive, car rental contact rwanda, kigali self drive phone, rwanda car hire contact, book car rental rwanda"
+      url="https://kigaliselfdrive.com/contact"
+    />
 
     <!-- Hero Section -->
     <section class="hero">
@@ -266,8 +272,13 @@
 </template>
 
 <script>
+import SEOHead from '../components/SEOHead.vue'
+
 export default {
   name: 'ContactView',
+  components: {
+    SEOHead
+  },
   data () {
     return {
       form: {

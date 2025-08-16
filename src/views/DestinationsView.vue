@@ -1,5 +1,11 @@
 <template>
   <div class="destinations-page">
+    <SEOHead
+      title="Rwanda Tourism Destinations - Gorilla Trekking, Safari & Adventure | Kigali SelfDrive"
+      description="Discover Rwanda's top tourist destinations. Visit Volcanoes National Park for gorilla trekking, Akagera for safari, Nyungwe Forest for chimpanzees. Book your car rental for the perfect adventure."
+      keywords="rwanda tourism, gorilla trekking rwanda, volcanoes national park, akagera national park, nyungwe forest, rwanda safari, chimpanzee trekking, lake kivu rwanda"
+      url="https://kigaliselfdrive.com/destinations"
+    />
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-content">
@@ -98,8 +104,13 @@
 </template>
 
 <script>
+import SEOHead from '../components/SEOHead.vue'
+
 export default {
   name: 'DestinationsView',
+  components: {
+    SEOHead
+  },
   data () {
     return {
       destinations: [

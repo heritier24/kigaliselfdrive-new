@@ -1,5 +1,11 @@
 <template>
   <div class="book-page">
+    <SEOHead
+      title="Book Car Rental in Rwanda - Online Booking | Kigali SelfDrive"
+      description="Book your car rental in Rwanda online. Choose from our premium fleet, select dates, and get instant confirmation. Best prices, full insurance, 24/7 support. Start your Rwanda adventure today!"
+      keywords="book car rental rwanda, online car booking kigali, rent car rwanda online, car hire booking kigali, rwanda car rental reservation"
+      url="https://kigaliselfdrive.com/book"
+    />
 
     <!-- Hero Section -->
     <section class="hero">
@@ -319,8 +325,13 @@
 </template>
 
 <script>
+import SEOHead from '../components/SEOHead.vue'
+
 export default {
   name: 'BookView',
+  components: {
+    SEOHead
+  },
   data () {
     return {
       booking: {
