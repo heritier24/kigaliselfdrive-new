@@ -154,7 +154,6 @@
             <div class="car-image">
               <img :src="car.image" :alt="car.name">
               <div class="car-badge">{{ car.category }}</div>
-              <div class="car-price">From ${{ car.price }}/day</div>
             </div>
             <div class="car-info">
               <h3 class="car-name">{{ car.name }}</h3>
@@ -168,9 +167,15 @@
               <div class="car-features">
                 <span v-for="feature in car.features" :key="feature" class="feature">{{ feature }}</span>
               </div>
-              <div class="car-actions">
-                <button class="car-btn primary" @click="bookCar(car)">Book Now</button>
-                <button class="car-btn secondary" @click="viewCarDetails(car)">View Details</button>
+              <div class="car-pricing">
+                <div class="price-info">
+                  <span class="price">${{ car.price }}/day</span>
+                  <span class="price-note">+ taxes & fees</span>
+                </div>
+                <div class="car-actions">
+                  <button class="car-btn primary" @click="bookCar(car)">Book Now</button>
+                  <button class="car-btn secondary" @click="viewCarDetails(car)">View Details</button>
+                </div>
               </div>
             </div>
           </div>
@@ -1272,21 +1277,20 @@ export default {
 
 .car-card {
   background: white;
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-  border: 1px solid #F8F9FA;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .car-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .car-image {
   position: relative;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -1294,6 +1298,11 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover .car-image img {
+  transform: scale(1.1);
 }
 
 .car-badge {
@@ -1309,87 +1318,94 @@ export default {
 }
 
 .car-info {
-  padding: 1.5rem;
+  padding: 30px;
 }
 
 .car-name {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   color: #002F6C;
 }
 
 .car-description {
   color: #666;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
   font-size: 0.95rem;
 }
 
-.car-price {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: rgba(255, 107, 53, 0.9);
-  color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
+
 
 .car-specs {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .spec {
-  background: #F8F9FA;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  color: #6b7280;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .spec i {
   color: #FF6B35;
-  font-size: 0.8rem;
+  width: 16px;
 }
 
 .car-features {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 8px;
+  margin-bottom: 25px;
 }
 
 .feature {
-  background: #e3f2fd;
+  background: #f8f9fa;
   color: #002F6C;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
   font-weight: 500;
+}
+
+.car-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #002F6C;
+}
+
+.price-note {
+  font-size: 0.8rem;
+  color: #666;
 }
 
 .car-actions {
   display: flex;
   gap: 10px;
-  margin-top: 1rem;
 }
 
 .car-btn {
-  flex: 1;
-  padding: 10px 15px;
+  padding: 12px 25px;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
   text-decoration: none;
   text-align: center;
   font-size: 0.9rem;
@@ -1408,7 +1424,6 @@ export default {
 
 .car-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cars-cta {
