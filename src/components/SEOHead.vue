@@ -43,26 +43,26 @@ export default {
     updateMetaTags () {
       // Update title
       document.title = this.title
-      
+
       // Update meta description
       this.updateMetaTag('description', this.description)
       this.updateMetaTag('og:description', this.description)
       this.updateMetaTag('twitter:description', this.description)
-      
+
       // Update meta keywords
       this.updateMetaTag('keywords', this.keywords)
-      
+
       // Update Open Graph tags
       this.updateMetaTag('og:title', this.title)
       this.updateMetaTag('og:url', this.url)
       this.updateMetaTag('og:image', this.image)
       this.updateMetaTag('og:type', this.type)
-      
+
       // Update Twitter Card tags
       this.updateMetaTag('twitter:title', this.title)
       this.updateMetaTag('twitter:url', this.url)
       this.updateMetaTag('twitter:image', this.image)
-      
+
       // Update canonical URL
       this.updateCanonicalUrl(this.url)
     },
@@ -93,4 +93,4 @@ export default {
     }
   }
 }
-</script> 
+</script>

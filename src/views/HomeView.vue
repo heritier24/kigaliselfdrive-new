@@ -556,18 +556,18 @@ export default {
       // Scroll to popular cars section
       this.scrollToCarsSection()
     },
-    
+
     scrollToCarsSection () {
       const carsSection = document.querySelector('.popular-cars')
       if (carsSection) {
-        carsSection.scrollIntoView({ 
+        carsSection.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         })
-        
+
         // Add a subtle highlight effect
         carsSection.classList.add('highlight')
-        
+
         setTimeout(() => {
           carsSection.classList.remove('highlight')
         }, 1000)
@@ -1341,8 +1341,6 @@ export default {
   margin-bottom: 20px;
   font-size: 0.95rem;
 }
-
-
 
 .car-specs {
   display: grid;

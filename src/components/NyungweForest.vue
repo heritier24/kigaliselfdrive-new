@@ -128,10 +128,10 @@
           <div class="wildlife-text">
             <h3>Chimpanzees</h3>
             <p>Nyungwe Forest is home to approximately 500 chimpanzees, making it one of the best places in Africa to observe these intelligent primates in their natural habitat. The chimpanzees live in large communities and can be observed during daily activities.</p>
-            
+
             <h3>Other Primates</h3>
             <p>The forest supports 12 other primate species including the endangered L'Hoest's monkey, Angolan colobus, and blue monkey. Each species has adapted to different forest layers and feeding habits.</p>
-            
+
             <h3>Birdlife</h3>
             <p>With over 300 bird species, Nyungwe is a birdwatcher's paradise. The forest is home to many Albertine Rift endemics including the Rwenzori turaco, red-collared babbler, and yellow-eyed black flycatcher.</p>
           </div>
@@ -151,17 +151,17 @@
             <h3><i class="fas fa-calendar-alt"></i> Best Time to Visit</h3>
             <p>The best time to visit is during the dry seasons (June-September and December-February) when trails are less muddy and wildlife is easier to spot. However, the forest is beautiful year-round.</p>
           </div>
-          
+
           <div class="info-card">
             <h3><i class="fas fa-ticket-alt"></i> Permits & Booking</h3>
             <p>Chimpanzee trekking permits cost $100, canopy walkway $60, and bird watching $50. All permits must be booked in advance through the Rwanda Development Board or authorized tour operators.</p>
           </div>
-          
+
           <div class="info-card">
             <h3><i class="fas fa-map-marked-alt"></i> Getting There</h3>
             <p>The park is located 5-6 hours drive from Kigali. You can reach it by car rental, private transfer, or organized tour. The main entrance is in Kitabi, with additional access points throughout the park.</p>
           </div>
-          
+
           <div class="info-card">
             <h3><i class="fas fa-bed"></i> Accommodation</h3>
             <p>There are several accommodation options near the park including One&Only Nyungwe House, Nyungwe Top View Hotel, and various guesthouses. Book well in advance during peak season.</p>
@@ -613,28 +613,28 @@ export default {
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .overview-content {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .activities-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .wildlife-content {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .conservation-stats {
     grid-template-columns: 1fr;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
 }
-</style> 
+</style>

@@ -28,7 +28,7 @@
         <i class="fas fa-times"></i>
       </button>
     </div>
-    
+
     <div class="nav-container">
       <div class="logo">
         <router-link to="/">
@@ -147,11 +147,11 @@ export default {
         this.isMenuOpen = false
       }
     })
-    
+
     // Start promotional banner slider
     this.startPromoSlider()
   },
-  
+
   beforeUnmount () {
     if (this.promoInterval) {
       clearInterval(this.promoInterval)
@@ -466,7 +466,7 @@ export default {
   .nav-container {
     padding: 0 2rem;
   }
-  
+
   .nav-menu {
     gap: 2rem;
   }

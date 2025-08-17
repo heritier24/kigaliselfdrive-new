@@ -640,31 +640,31 @@ export default {
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .overview-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .conservation-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .activities-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .wildlife-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  
+
   .info-grid {
     grid-template-columns: 1fr;
   }
 }
-</style> 
+</style>

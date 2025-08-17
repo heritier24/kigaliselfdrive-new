@@ -368,28 +368,49 @@ export default {
       const additionalServices = this.booking.additionalServices.length * 10
       return (days * basePrice + additionalServices).toFixed(0)
     },
-    submitBooking () {
-      console.log('Booking submitted:', this.booking)
-      // Here you would typically send the booking data to your backend
-      alert('Thank you for your booking! We will confirm your reservation within 24 hours.')
+    async submitBooking () {
+      try {
+        this.$parent.showLoading('Submitting your booking...')
+        
+        // Simulate API call
+        await new Promise(resolve => setTimeout(resolve, 2000))
+        
+        console.log('Booking submitted:', this.booking)
+        
+        this.$parent.showToast(
+          'success',
+          'Booking Submitted!',
+          'Thank you for your booking! We will confirm your reservation within 24 hours.',
+          8000
+        )
 
-      // Reset form
-      this.booking = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        nationality: '',
-        pickupDate: '',
-        pickupTime: '',
-        dropoffDate: '',
-        dropoffTime: '',
-        pickupLocation: '',
-        dropoffLocation: '',
-        vehicleType: '',
-        transmission: '',
-        additionalServices: [],
-        specialRequests: ''
+        // Reset form
+        this.booking = {
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          nationality: '',
+          pickupDate: '',
+          pickupTime: '',
+          dropoffDate: '',
+          dropoffTime: '',
+          pickupLocation: '',
+          dropoffLocation: '',
+          vehicleType: '',
+          transmission: '',
+          additionalServices: [],
+          specialRequests: ''
+        }
+      } catch (error) {
+        this.$parent.showToast(
+          'error',
+          'Booking Failed',
+          'There was an error submitting your booking. Please try again or contact us directly.',
+          8000
+        )
+      } finally {
+        this.$parent.hideLoading()
       }
     }
   }
