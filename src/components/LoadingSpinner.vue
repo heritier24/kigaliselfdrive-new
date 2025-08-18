@@ -73,15 +73,15 @@ export default {
     padding: 20px;
     margin: 20px;
   }
-  
+
   .spinner {
     width: 30px;
     height: 30px;
     border-width: 3px;
   }
-  
+
   .loading-text {
     font-size: 14px;
   }
 }
-</style> 
+</style>

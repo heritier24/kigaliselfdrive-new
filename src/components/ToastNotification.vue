@@ -192,17 +192,17 @@ export default {
     left: 10px;
     max-width: none;
   }
-  
+
   .toast {
     padding: 12px;
   }
-  
+
   .toast-title {
     font-size: 14px;
   }
-  
+
   .toast-message {
     font-size: 13px;
   }
 }
-</style> 
+</style>

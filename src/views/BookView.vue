@@ -371,12 +371,12 @@ export default {
     async submitBooking () {
       try {
         this.$parent.showLoading('Submitting your booking...')
-        
+
         // Simulate API call
         await new Promise(resolve => setTimeout(resolve, 2000))
-        
+
         console.log('Booking submitted:', this.booking)
-        
+
         this.$parent.showToast(
           'success',
           'Booking Submitted!',

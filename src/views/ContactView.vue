@@ -295,12 +295,12 @@ export default {
     async submitForm () {
       try {
         this.$parent.showLoading('Sending your message...')
-        
+
         // Simulate API call
         await new Promise(resolve => setTimeout(resolve, 1500))
-        
+
         console.log('Form submitted:', this.form)
-        
+
         this.$parent.showToast(
           'success',
           'Message Sent!',

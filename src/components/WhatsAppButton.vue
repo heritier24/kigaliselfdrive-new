@@ -100,11 +100,11 @@ export default {
     width: 55px;
     height: 55px;
   }
-  
+
   .whatsapp-icon {
     font-size: 24px;
   }
-  
+
   .whatsapp-tooltip {
     display: none;
   }
@@ -126,4 +126,4 @@ export default {
 .whatsapp-button {
   animation: pulse 2s infinite;
 }
-</style> 
+</style>

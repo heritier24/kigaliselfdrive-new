@@ -40,12 +40,12 @@
 </template>
 
 <script>
-import SEOHead from '../components/SEOHead.vue'
+// import SEOHead from '../components/SEOHead.vue'
 
 export default {
   name: 'NotFound',
   components: {
-    SEOHead
+    // SEOHead
   }
 }
 </script>
@@ -182,49 +182,40 @@ export default {
   transition: all 0.3s ease;
   font-size: 14px;
 }
-
 .page-links a:hover {
   background: #002F6C;
   color: white;
   transform: translateY(-1px);
 }
-
 /* Mobile responsive */
 @media (max-width: 768px) {
   .error-content {
     padding: 40px 20px;
   }
-  
   .error-title {
     font-size: 80px;
   }
-  
   .error-subtitle {
     font-size: 24px;
   }
-  
   .error-message {
     font-size: 16px;
   }
-  
   .error-actions {
     flex-direction: column;
     align-items: center;
   }
-  
   .btn-primary, .btn-secondary, .btn-outline {
     width: 100%;
     max-width: 250px;
     justify-content: center;
   }
-  
   .page-links {
     gap: 10px;
   }
-  
   .page-links a {
     font-size: 12px;
     padding: 6px 12px;
   }
 }
-</style> 
+</style>
