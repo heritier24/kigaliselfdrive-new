@@ -14,12 +14,13 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background">
-        <div class="car-slide active" style="background-image: url('/images/cars/luxury/land-cruiser.jpg')"></div>
-        <div class="car-slide" style="background-image: url('/images/cars/luxury/range-rover-sport.jpg')"></div>
-        <div class="car-slide" style="background-image: url('/images/cars/luxury/mercedes-gle.jpg')"></div>
-        <div class="car-slide" style="background-image: url('/images/cars/luxury/bmw-x5.jpg')"></div>
-      </div>
+                    <div class="hero-background">
+                <div class="car-slide active" style="background-image: url('/images/cars/suv/nissan-x-trail.jpg')"></div>
+                <div class="car-slide" style="background-image: url('/images/cars/luxury/land-cruiser.jpg')"></div>
+                <div class="car-slide" style="background-image: url('/images/cars/luxury/mercedes-gle.jpg')"></div>
+                <div class="car-slide" style="background-image: url('/images/cars/suv/toyota-rav4.jpg')"></div>
+                <div class="car-slide" style="background-image: url('/images/cars/luxury/lexus-rx.jpg')"></div>
+              </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="hero-left">
@@ -330,6 +331,45 @@ export default {
       popularCars: [
         {
           id: 1,
+          name: 'Range Rover Sport',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/range-rover-sport.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 5,
+          price: 220,
+          description: 'Ultimate luxury SUV for the discerning traveler. Perfect for exploring Rwanda in style with unmatched comfort and performance.',
+          features: ['Luxury Interior', 'Terrain Response', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'All-Terrain Capability']
+        },
+        {
+          id: 2,
+          name: 'Toyota Land Cruiser',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/land-cruiser.jpg',
+          transmission: 'Automatic',
+          fuel: 'Diesel',
+          seats: 7,
+          luggage: 6,
+          price: 180,
+          description: 'The legendary Land Cruiser - perfect for luxury safaris and off-road adventures in Rwanda. Unmatched reliability and comfort for the ultimate Rwandan experience.',
+          features: ['Luxury Interior', '4x4 Capability', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Off-Road Ready']
+        },
+        {
+          id: 3,
+          name: 'Mercedes GLE',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/mercedes-gle.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 5,
+          price: 190,
+          description: 'Premium Mercedes GLE SUV offering luxury and performance. Perfect for exploring Rwanda with style and comfort.',
+          features: ['Luxury Interior', 'MBUX System', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Advanced Safety']
+        },
+        {
+          id: 4,
           name: 'Toyota RAV4',
           category: 'SUV',
           image: '/images/cars/suv/toyota-rav4.jpg',
@@ -338,60 +378,21 @@ export default {
           seats: 5,
           luggage: 4,
           price: 85,
-          description: 'Perfect for family adventures in Rwanda. This versatile SUV combines comfort, safety, and fuel efficiency, making it ideal for exploring Rwanda\'s diverse landscapes from city streets to mountain trails.',
+          description: 'Perfect for family adventures in Rwanda. This versatile SUV combines comfort, safety, and fuel efficiency, making it ideal for exploring Rwanda\'s diverse landscapes.',
           features: ['Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'All-Wheel Drive', 'Safety Features', 'Spacious Interior']
         },
         {
-          id: 2,
-          name: 'Kia Sportage',
-          category: 'SUV',
-          image: '/images/cars/suv/kia-sportage.jpg',
-          transmission: 'Automatic',
-          fuel: 'Petrol',
-          seats: 5,
-          luggage: 4,
-          price: 75,
-          description: 'Modern and stylish SUV perfect for exploring Rwanda. Features advanced technology and comfort amenities, ideal for both city driving and countryside adventures.',
-          features: ['Modern Design', 'Air Conditioning', 'GPS Navigation', 'Bluetooth Audio', 'Backup Camera', 'Premium Interior']
-        },
-        {
-          id: 3,
-          name: 'Toyota Land Cruiser',
-          category: 'Luxury SUV',
-          image: '/images/cars/luxury/land-cruiser.jpg',
-          transmission: 'Automatic',
-          fuel: 'Diesel',
-          seats: 7,
-          luggage: 6,
-          price: 150,
-          description: 'The legendary Land Cruiser - perfect for luxury safaris and off-road adventures in Rwanda. Unmatched reliability and comfort for the ultimate Rwandan experience.',
-          features: ['Luxury Interior', '4x4 Capability', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Off-Road Ready']
-        },
-        {
-          id: 4,
-          name: 'Toyota Prado',
-          category: 'Luxury SUV',
-          image: '/images/cars/luxury/prado.jpg',
-          transmission: 'Automatic',
-          fuel: 'Diesel',
-          seats: 7,
-          luggage: 5,
-          price: 120,
-          description: 'Premium Prado SUV designed for Rwanda\'s challenging terrain. Perfect for luxury safari adventures and exploring remote areas with confidence and comfort.',
-          features: ['7-Seater SUV', 'Luxury Interior', 'GPS Navigation', '4x4 Capability', 'Off-Road Performance', 'Premium Build']
-        },
-        {
           id: 5,
-          name: 'Mercedes S-Class',
-          category: 'Luxury',
-          image: '/images/cars/luxury/mercedes-s-class.jpg',
+          name: 'Lexus RX',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/lexus-rx.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
           luggage: 4,
-          price: 200,
-          description: 'Premium luxury vehicle for special occasions and VIP travel in Rwanda. Experience ultimate comfort and performance with our flagship Mercedes S-Class.',
-          features: ['V8 Engine', 'Luxury Interior', 'Premium Sound System', 'GPS Navigation', 'Leather Seats', 'VIP Experience']
+          price: 160,
+          description: 'Premium Lexus RX offering luxury and reliability. Perfect for exploring Rwanda with comfort and style.',
+          features: ['Luxury Interior', 'Lexus Safety System', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Hybrid Option']
         },
         {
           id: 6,
@@ -594,7 +595,7 @@ export default {
         slides[currentSlide].classList.remove('active')
         currentSlide = (currentSlide + 1) % slides.length
         slides[currentSlide].classList.add('active')
-      }, 4000)
+      }, 5000) // Increased to 5 seconds for better viewing
     }
   },
   mounted () {
