@@ -5,6 +5,7 @@
       <router-view/>
     </main>
     <WhatsAppButton />
+    <TawkToChat />
     <LoadingSpinner :show="loading" :message="loadingMessage" />
     <ToastNotification
       :show="toast.show"
@@ -12,13 +13,14 @@
       :title="toast.title"
       :message="toast.message"
       @close="hideToast"
-    />
-  </div>
+          />
+    </div>
 </template>
 
 <script>
 import HeaderNav from './components/HeaderNav.vue'
 import WhatsAppButton from './components/WhatsAppButton.vue'
+import TawkToChat from './components/TawkToChat.vue'
 import LoadingSpinner from './components/LoadingSpinner.vue'
 import ToastNotification from './components/ToastNotification.vue'
 
@@ -27,6 +29,7 @@ export default {
   components: {
     HeaderNav,
     WhatsAppButton,
+    TawkToChat,
     LoadingSpinner,
     ToastNotification
   },
