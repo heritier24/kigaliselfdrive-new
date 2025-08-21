@@ -1,5 +1,11 @@
 <template>
   <div class="cars-page">
+    <SEOHead
+      title="Car Rental Fleet in Rwanda - Luxury, SUV & Economy Vehicles | Kigali SelfDrive"
+      description="Browse our complete car rental fleet in Rwanda. Choose from luxury Land Cruisers, SUVs, economy cars, and 4x4 vehicles. Best prices, full insurance, instant booking."
+      keywords="car fleet rwanda, luxury car rental kigali, suv rental rwanda, 4x4 rental kigali, toyota land cruiser rental, mercedes rental kigali, range rover rental rwanda, car hire kigali, rent car rwanda, self drive rwanda"
+      url="https://kigaliselfdrive.com/cars"
+    />
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-background" style="background-image: url('/images/cars/luxury/range-rover-sport.jpg')">
@@ -20,7 +26,7 @@
               <option value="">All Types</option>
               <option value="SUV">SUV</option>
               <option value="Luxury SUV">Luxury SUV</option>
-              <option value="Luxury">Luxury</option>
+              <option value="Economy">Economy</option>
             </select>
           </div>
           <div class="filter-group">
@@ -35,7 +41,6 @@
             <label>Seats</label>
             <select v-model="filters.seats" class="filter-select">
               <option value="">All</option>
-              <option value="2">2 Seats</option>
               <option value="5">5 Seats</option>
               <option value="7">7 Seats</option>
             </select>
@@ -53,21 +58,21 @@
             <div class="car-image">
               <img :src="car.image" :alt="car.name">
               <div class="car-badge">{{ car.category }}</div>
-              <div class="car-price">${{ car.price }}/day</div>
             </div>
             <div class="car-info">
               <h3 class="car-name">{{ car.name }}</h3>
+              <p class="car-description">{{ car.description }}</p>
               <div class="car-specs">
-                <span class="spec">{{ car.transmission }}</span>
-                <span class="spec">{{ car.fuel }}</span>
-                <span class="spec">{{ car.seats }} seats</span>
+                <span class="spec"><i class="fas fa-cog"></i> {{ car.transmission }}</span>
+                <span class="spec"><i class="fas fa-gas-pump"></i> {{ car.fuel }}</span>
+                <span class="spec"><i class="fas fa-users"></i> {{ car.seats }} seats</span>
+                <span class="spec"><i class="fas fa-suitcase"></i> {{ car.luggage }} bags</span>
               </div>
               <div class="car-features">
                 <span v-for="feature in car.features" :key="feature" class="feature">{{ feature }}</span>
               </div>
               <div class="car-actions">
-                <button class="car-btn" @click="bookCar(car)">Book Now</button>
-                <button class="details-btn" @click="showCarDetails(car)">View Details</button>
+                <router-link :to="`/book?vehicle=${car.id}`" class="car-btn">Book Now</router-link>
               </div>
             </div>
           </div>
@@ -82,7 +87,12 @@
         <p class="section-subtitle">Discover the beauty of Rwanda - from the vibrant city of Kigali to the stunning national parks</p>
 
         <div class="destinations-grid">
-          <div v-for="destination in destinations" :key="destination.id" class="destination-card">
+          <router-link
+            v-for="destination in destinations"
+            :key="destination.id"
+            :to="destination.link"
+            class="destination-card"
+          >
             <div class="destination-image">
               <img :src="destination.image" :alt="destination.name">
               <div class="destination-overlay">
@@ -94,7 +104,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </section>
@@ -182,8 +192,13 @@
 </template>
 
 <script>
+import SEOHead from '../components/SEOHead.vue'
+
 export default {
   name: 'CarsView',
+  components: {
+    SEOHead
+  },
   data () {
     return {
       filters: {
@@ -196,67 +211,121 @@ export default {
           id: 1,
           name: 'Toyota RAV4',
           category: 'SUV',
-          price: 80,
-          image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/suv/toyota-rav4.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          features: ['AC', 'GPS', 'Bluetooth', '4x4']
+          luggage: 4,
+          description: 'Perfect for family adventures in Rwanda. This versatile SUV combines comfort, safety, and fuel efficiency, making it ideal for exploring Rwanda\'s diverse landscapes.',
+          features: ['Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'All-Wheel Drive', 'Safety Features', 'Spacious Interior']
         },
         {
           id: 2,
-          name: 'Kia Sorento',
-          category: 'SUV',
-          price: 85,
-          image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&crop=center',
+          name: 'Toyota Land Cruiser',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/land-cruiser.jpg',
           transmission: 'Automatic',
-          fuel: 'Petrol',
+          fuel: 'Diesel',
           seats: 7,
-          features: ['AC', 'GPS', 'Bluetooth', 'Backup Camera']
+          luggage: 6,
+          description: 'The legendary Land Cruiser - perfect for luxury safaris and off-road adventures in Rwanda. Unmatched reliability and comfort for the ultimate Rwandan experience.',
+          features: ['Luxury Interior', '4x4 Capability', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Off-Road Ready']
         },
         {
           id: 3,
-          name: 'Toyota Land Cruiser',
+          name: 'Mercedes GLE',
           category: 'Luxury SUV',
-          price: 150,
-          image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=400&h=300&fit=crop&crop=center',
-          transmission: 'Automatic',
-          fuel: 'Diesel',
-          seats: 7,
-          features: ['AC', 'GPS', 'Bluetooth', '4x4', 'Luxury']
-        },
-        {
-          id: 4,
-          name: 'Toyota Fortuner',
-          category: 'SUV',
-          price: 95,
-          image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400&h=300&fit=crop&crop=center',
-          transmission: 'Automatic',
-          fuel: 'Diesel',
-          seats: 7,
-          features: ['AC', 'GPS', '4x4', 'Off-road']
-        },
-        {
-          id: 5,
-          name: 'Toyota V8',
-          category: 'Luxury',
-          price: 120,
-          image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/luxury/mercedes-gle.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          features: ['AC', 'GPS', 'Bluetooth', 'Luxury', 'V8 Engine']
+          luggage: 5,
+          description: 'Premium Mercedes GLE SUV offering luxury and performance. Perfect for exploring Rwanda with style and comfort.',
+          features: ['Luxury Interior', 'MBUX System', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Advanced Safety']
+        },
+        {
+          id: 4,
+          name: 'Range Rover Sport',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/range-rover-sport.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 5,
+          description: 'Ultimate luxury SUV for the discerning traveler. Perfect for exploring Rwanda in style with unmatched comfort and performance.',
+          features: ['Luxury Interior', 'Terrain Response', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'All-Terrain Capability']
+        },
+        {
+          id: 5,
+          name: 'Lexus RX',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/lexus-rx.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 4,
+          description: 'Premium Lexus RX offering luxury and reliability. Perfect for exploring Rwanda with comfort and style.',
+          features: ['Luxury Interior', 'Lexus Safety System', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'Hybrid Option']
         },
         {
           id: 6,
           name: 'Nissan X-Trail',
           category: 'SUV',
-          price: 75,
-          image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&crop=center',
+          image: '/images/cars/suv/nissan-x-trail.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          features: ['AC', 'GPS', 'Bluetooth', 'Comfort']
+          luggage: 4,
+          description: 'Comfortable and reliable SUV perfect for exploring Rwanda\'s cities and countryside. Excellent fuel efficiency and smooth handling for stress-free travel.',
+          features: ['Comfortable Ride', 'Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'Safety Features', 'Fuel Efficient']
+        },
+        {
+          id: 7,
+          name: 'Honda CR-V',
+          category: 'SUV',
+          image: '/images/cars/suv/honda-crv.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 4,
+          description: 'Reliable and spacious SUV perfect for family trips and exploring Rwanda. Excellent safety features and comfortable ride quality.',
+          features: ['Honda SENSING', 'Spacious Interior', 'GPS Navigation', 'Bluetooth Connectivity', 'Safety Features', 'All-Weather Capable']
+        },
+        {
+          id: 8,
+          name: 'Mazda CX-5',
+          category: 'SUV',
+          image: '/images/cars/suv/mazda-cx5.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 4,
+          description: 'Stylish and efficient SUV with premium interior and excellent driving dynamics. Perfect for exploring Rwanda with style.',
+          features: ['Premium Interior', 'SKYACTIV Technology', 'GPS Navigation', 'Bose Sound System', 'Safety Features', 'Fuel Efficient']
+        },
+        {
+          id: 9,
+          name: 'Toyota Vitz',
+          category: 'Economy',
+          image: '/images/cars/economy/toyota-vitz.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 3,
+          description: 'Compact and fuel-efficient hatchback perfect for city driving in Rwanda. Easy to park and navigate through busy streets.',
+          features: ['Fuel Efficient', 'Easy Parking', 'GPS Navigation', 'Air Conditioning', 'Compact Size', 'Affordable']
+        },
+        {
+          id: 10,
+          name: 'Suzuki Swift',
+          category: 'Economy',
+          image: '/images/cars/economy/suzuki-swift.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 2,
+          description: 'Fun and agile small car perfect for navigating Rwanda\'s streets. Great for solo travelers or small groups.',
+          features: ['Agile Handling', 'Fuel Efficient', 'Easy Parking', 'Air Conditioning', 'Fun to Drive', 'Budget Friendly']
         }
       ],
       destinations: [
@@ -264,33 +333,37 @@ export default {
           id: 1,
           name: 'Volcanoes National Park',
           description: 'Home to the majestic mountain gorillas and golden monkeys',
-          image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
+          image: '/images/tourism/gorillas/gorilla-family-1.jpg',
           distance: '2.5 hours',
-          duration: '2.5 hours'
+          duration: '2.5 hours',
+          link: '/destinations/volcanoes-national-park'
         },
         {
           id: 2,
           name: 'Akagera National Park',
           description: 'Rwanda\'s only savannah park with the Big Five',
-          image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop',
+          image: '/images/tourism/lions/lion-male-female.jpg',
           distance: '2 hours',
-          duration: '2 hours'
+          duration: '2 hours',
+          link: '/destinations/akagera-national-park'
         },
         {
           id: 3,
           name: 'Nyungwe Forest',
           description: 'Ancient rainforest with chimpanzees and canopy walk',
-          image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop',
+          image: '/images/tourism/chimpanzee/chimpanzee-1.jpg',
           distance: '5 hours',
-          duration: '5 hours'
+          duration: '5 hours',
+          link: '/destinations/nyungwe-forest'
         },
         {
           id: 4,
           name: 'Lake Kivu',
           description: 'Beautiful lake with sandy beaches and water activities',
-          image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
+          image: '/images/tourism/activities/hot-air-balloon.jpg',
           distance: '3 hours',
-          duration: '3 hours'
+          duration: '3 hours',
+          link: '/destinations/lake-kivu'
         }
       ]
     }
@@ -312,15 +385,6 @@ export default {
         transmission: '',
         seats: ''
       }
-    },
-    bookCar (car) {
-      console.log('Booking car:', car.name)
-      this.$router.push({ name: 'Book', params: { carId: car.id } })
-    },
-    showCarDetails (car) {
-      console.log('Showing details for:', car.name)
-      // You can implement a modal or navigate to a details page
-      alert(`Car Details: ${car.name} - ${car.category} - $${car.price}/day`)
     }
   }
 }
@@ -546,18 +610,6 @@ export default {
   font-size: 0.875rem;
 }
 
-.car-price {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #002F6C;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-
 .car-info {
   padding: 1.5rem;
 }
@@ -568,10 +620,17 @@ export default {
   color: #002F6C;
 }
 
+.car-description {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 .car-specs {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .spec {
@@ -580,6 +639,9 @@ export default {
   border-radius: 20px;
   font-size: 0.875rem;
   color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .car-features {
@@ -613,27 +675,13 @@ export default {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
 }
 
 .car-btn:hover {
   background: #e67e22;
-}
-
-.details-btn {
-  flex: 1;
-  background: transparent;
-  color: #002F6C;
-  border: 2px solid #002F6C;
-  padding: 0.75rem;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.details-btn:hover {
-  background: #002F6C;
-  color: white;
 }
 
 /* Tourism Section */
@@ -672,6 +720,8 @@ export default {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .destination-card:hover {
