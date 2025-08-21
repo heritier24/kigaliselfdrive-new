@@ -9,12 +9,20 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background" style="background-image: url('/images/tourism/gorillas/gorilla-silverback.jpg')">
+      <div
+        class="hero-background"
+        style="
+          background-image: url('/images/tourism/gorillas/gorilla-silverback.jpg');
+        "
+      >
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
         <h1 class="hero-title text-dominant">Rwanda's National Parks</h1>
-        <p class="hero-subtitle text-dominant">Discover Three Unique Ecosystems - From Mountain Gorillas to Big Five Safari</p>
+        <p class="hero-subtitle text-dominant">
+          Discover Three Unique Ecosystems - From Mountain Gorillas to Big Five
+          Safari
+        </p>
       </div>
     </section>
 
@@ -25,19 +33,24 @@
           <div class="intro-text">
             <h2 class="text-secondary">Three Parks, Countless Adventures</h2>
             <p class="text-text-secondary">
-              Rwanda is home to three spectacular national parks, each offering unique wildlife 
-              experiences and breathtaking landscapes. From the misty mountains of Volcanoes 
-              National Park to the vast savannah of Akagera and the ancient rainforest of Nyungwe, 
-              Rwanda's protected areas showcase the country's incredible biodiversity.
+              Rwanda is home to three spectacular national parks, each offering
+              unique wildlife experiences and breathtaking landscapes. From the
+              misty mountains of Volcanoes National Park to the vast savannah of
+              Akagera and the ancient rainforest of Nyungwe, Rwanda's protected
+              areas showcase the country's incredible biodiversity.
             </p>
             <p class="text-text-secondary">
-              Whether you're seeking close encounters with mountain gorillas, traditional Big Five 
-              safari experiences, or immersive rainforest adventures, Rwanda's national parks 
-              provide unforgettable wildlife experiences in some of Africa's most beautiful settings.
+              Whether you're seeking close encounters with mountain gorillas,
+              traditional Big Five safari experiences, or immersive rainforest
+              adventures, Rwanda's national parks provide unforgettable wildlife
+              experiences in some of Africa's most beautiful settings.
             </p>
           </div>
           <div class="intro-image">
-            <img src="/images/tourism/landscapes/rwanda-parks-overview.jpg" alt="Rwanda National Parks">
+            <img
+              src="/images/tourism/landscapes/rwanda-parks-overview.jpg"
+              alt="Rwanda National Parks"
+            />
           </div>
         </div>
       </div>
@@ -48,18 +61,24 @@
       <div class="container">
         <div class="park-content">
           <div class="park-image">
-            <img src="/images/tourism/gorillas/gorilla-family-1.jpg" alt="Volcanoes National Park">
+            <img
+              src="/images/tourism/gorillas/gorilla-family-1.jpg"
+              alt="Volcanoes National Park"
+            />
           </div>
           <div class="park-text">
             <h2 class="text-secondary">Volcanoes National Park</h2>
-            <p class="park-subtitle text-accent">Home of the Mountain Gorillas</p>
-            <p class="text-text-secondary">
-              Volcanoes National Park is Rwanda's most famous protected area, home to the 
-              critically endangered mountain gorillas. Located in the Virunga Mountains, 
-              this park offers visitors the rare opportunity to trek through misty bamboo 
-              forests and observe these magnificent primates in their natural habitat.
+            <p class="park-subtitle text-accent">
+              Home of the Mountain Gorillas
             </p>
-            
+            <p class="text-text-secondary">
+              Volcanoes National Park is Rwanda's most famous protected area,
+              home to the critically endangered mountain gorillas. Located in
+              the Virunga Mountains, this park offers visitors the rare
+              opportunity to trek through misty bamboo forests and observe these
+              magnificent primates in their natural habitat.
+            </p>
+
             <div class="park-highlights">
               <div class="highlight">
                 <span class="highlight-icon">🦍</span>
@@ -82,7 +101,9 @@
             <div class="park-info">
               <div class="info-item">
                 <strong class="text-secondary">Location:</strong>
-                <span class="text-text-secondary">Northern Rwanda, Virunga Mountains</span>
+                <span class="text-text-secondary"
+                  >Northern Rwanda, Virunga Mountains</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Distance from Kigali:</strong>
@@ -90,7 +111,9 @@
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Best Time to Visit:</strong>
-                <span class="text-text-secondary">June-September, December-February</span>
+                <span class="text-text-secondary"
+                  >June-September, December-February</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Gorilla Permit:</strong>
@@ -98,7 +121,9 @@
               </div>
             </div>
 
-            <router-link to="/destinations#volcanoes" class="btn-accent">Learn More About Volcanoes</router-link>
+            <router-link to="/destinations#volcanoes" class="btn-accent"
+              >Learn More About Volcanoes</router-link
+            >
           </div>
         </div>
       </div>
@@ -112,12 +137,13 @@
             <h2 class="text-secondary">Akagera National Park</h2>
             <p class="park-subtitle text-accent">Rwanda's Only Savannah Park</p>
             <p class="text-text-secondary">
-              Akagera National Park is Rwanda's only savannah park, offering traditional 
-              African safari experiences. This beautiful park features rolling hills, 
-              savannah grasslands, and the stunning Lake Ihema, creating the perfect 
-              habitat for the Big Five and hundreds of bird species.
+              Akagera National Park is Rwanda's only savannah park, offering
+              traditional African safari experiences. This beautiful park
+              features rolling hills, savannah grasslands, and the stunning Lake
+              Ihema, creating the perfect habitat for the Big Five and hundreds
+              of bird species.
             </p>
-            
+
             <div class="park-highlights">
               <div class="highlight">
                 <span class="highlight-icon">🦁</span>
@@ -140,7 +166,9 @@
             <div class="park-info">
               <div class="info-item">
                 <strong class="text-secondary">Location:</strong>
-                <span class="text-text-secondary">Eastern Rwanda, bordering Tanzania</span>
+                <span class="text-text-secondary"
+                  >Eastern Rwanda, bordering Tanzania</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Distance from Kigali:</strong>
@@ -148,7 +176,9 @@
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Best Time to Visit:</strong>
-                <span class="text-text-secondary">June-September (dry season)</span>
+                <span class="text-text-secondary"
+                  >June-September (dry season)</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Park Entry:</strong>
@@ -156,10 +186,15 @@
               </div>
             </div>
 
-            <router-link to="/destinations#akagera" class="btn-accent">Learn More About Akagera</router-link>
+            <router-link to="/destinations#akagera" class="btn-accent"
+              >Learn More About Akagera</router-link
+            >
           </div>
           <div class="park-image">
-            <img src="/images/tourism/lions/lion-male-female.jpg" alt="Akagera National Park">
+            <img
+              src="/images/tourism/lions/lion-male-female.jpg"
+              alt="Akagera National Park"
+            />
           </div>
         </div>
       </div>
@@ -170,18 +205,24 @@
       <div class="container">
         <div class="park-content">
           <div class="park-image">
-            <img src="/images/tourism/chimpanzee/chimpanzee-1.jpg" alt="Nyungwe Forest">
+            <img
+              src="/images/tourism/chimpanzee/chimpanzee-1.jpg"
+              alt="Nyungwe Forest"
+            />
           </div>
           <div class="park-text">
             <h2 class="text-secondary">Nyungwe Forest National Park</h2>
-            <p class="park-subtitle text-accent">Ancient Rainforest Adventure</p>
-            <p class="text-text-secondary">
-              Nyungwe Forest is one of Africa's oldest rainforests, dating back to the 
-              last Ice Age. This pristine forest is home to chimpanzees, golden monkeys, 
-              and the famous canopy walkway suspended 60 meters above the forest floor. 
-              With over 1,000 plant species and 300 bird species, Nyungwe is a biodiversity hotspot.
+            <p class="park-subtitle text-accent">
+              Ancient Rainforest Adventure
             </p>
-            
+            <p class="text-text-secondary">
+              Nyungwe Forest is one of Africa's oldest rainforests, dating back
+              to the last Ice Age. This pristine forest is home to chimpanzees,
+              golden monkeys, and the famous canopy walkway suspended 60 meters
+              above the forest floor. With over 1,000 plant species and 300 bird
+              species, Nyungwe is a biodiversity hotspot.
+            </p>
+
             <div class="park-highlights">
               <div class="highlight">
                 <span class="highlight-icon">🐒</span>
@@ -212,7 +253,9 @@
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Best Time to Visit:</strong>
-                <span class="text-text-secondary">June-September, December-February</span>
+                <span class="text-text-secondary"
+                  >June-September, December-February</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Chimp Trek:</strong>
@@ -220,7 +263,9 @@
               </div>
             </div>
 
-            <router-link to="/destinations#nyungwe" class="btn-accent">Learn More About Nyungwe</router-link>
+            <router-link to="/destinations#nyungwe" class="btn-accent"
+              >Learn More About Nyungwe</router-link
+            >
           </div>
         </div>
       </div>
@@ -230,61 +275,75 @@
     <section class="wildlife-section section-dominant">
       <div class="container">
         <h2 class="section-title text-secondary">Wildlife Highlights</h2>
-        <p class="section-subtitle text-text-secondary">Discover the incredible animals that call Rwanda's national parks home</p>
+        <p class="section-subtitle text-text-secondary">
+          Discover the incredible animals that call Rwanda's national parks home
+        </p>
 
         <div class="wildlife-grid">
           <div class="wildlife-card card">
             <div class="wildlife-image">
-              <img src="/images/tourism/gorillas/gorilla-closeup.jpg" alt="Mountain Gorilla">
+              <img
+                src="/images/tourism/gorillas/gorilla-closeup.jpg"
+                alt="Mountain Gorilla"
+              />
             </div>
             <div class="wildlife-content">
               <h3 class="text-secondary">Mountain Gorillas</h3>
               <p class="text-text-secondary">
-                The critically endangered mountain gorillas are Rwanda's most famous residents. 
-                With only about 1,000 individuals remaining in the wild, seeing these gentle 
-                giants in Volcanoes National Park is a truly special experience.
+                The critically endangered mountain gorillas are Rwanda's most
+                famous residents. With only about 1,000 individuals remaining in
+                the wild, seeing these gentle giants in Volcanoes National Park
+                is a truly special experience.
               </p>
             </div>
           </div>
 
           <div class="wildlife-card card">
             <div class="wildlife-image">
-              <img src="/images/tourism/lions/lion-pride.jpg" alt="Lions">
+              <img src="/images/tourism/lions/lion-pride.jpg" alt="Lions" />
             </div>
             <div class="wildlife-content">
               <h3 class="text-secondary">Lions</h3>
               <p class="text-text-secondary">
-                Akagera National Park is home to a growing population of lions, successfully 
-                reintroduced to Rwanda. These magnificent predators can often be seen lounging 
-                in the savannah or hunting during game drives.
+                Akagera National Park is home to a growing population of lions,
+                successfully reintroduced to Rwanda. These magnificent predators
+                can often be seen lounging in the savannah or hunting during
+                game drives.
               </p>
             </div>
           </div>
 
           <div class="wildlife-card card">
             <div class="wildlife-image">
-              <img src="/images/tourism/chimpanzee/chimpanzee-2.jpg" alt="Chimpanzees">
+              <img
+                src="/images/tourism/chimpanzee/chimpanzee-2.jpg"
+                alt="Chimpanzees"
+              />
             </div>
             <div class="wildlife-content">
               <h3 class="text-secondary">Chimpanzees</h3>
               <p class="text-text-secondary">
-                Nyungwe Forest is home to a large population of chimpanzees. Trekking through 
-                the ancient rainforest to observe these intelligent primates in their natural 
-                habitat is an unforgettable adventure.
+                Nyungwe Forest is home to a large population of chimpanzees.
+                Trekking through the ancient rainforest to observe these
+                intelligent primates in their natural habitat is an
+                unforgettable adventure.
               </p>
             </div>
           </div>
 
           <div class="wildlife-card card">
             <div class="wildlife-image">
-              <img src="/images/tourism/elephants/elephant-family.jpg" alt="Elephants">
+              <img
+                src="/images/tourism/elephants/elephant-family.jpg"
+                alt="Elephants"
+              />
             </div>
             <div class="wildlife-content">
               <h3 class="text-secondary">Elephants</h3>
               <p class="text-text-secondary">
-                Akagera's elephant population has been steadily growing, and these gentle 
-                giants can often be seen in family groups, especially around water sources 
-                during the dry season.
+                Akagera's elephant population has been steadily growing, and
+                these gentle giants can often be seen in family groups,
+                especially around water sources during the dry season.
               </p>
             </div>
           </div>
@@ -296,15 +355,18 @@
     <section class="conservation-section bg-dominant-dark">
       <div class="container">
         <h2 class="section-title text-secondary">Conservation Success</h2>
-        <p class="section-subtitle text-text-secondary">Rwanda's commitment to protecting its natural heritage</p>
+        <p class="section-subtitle text-text-secondary">
+          Rwanda's commitment to protecting its natural heritage
+        </p>
 
         <div class="conservation-grid">
           <div class="conservation-card card">
             <div class="conservation-icon">🦍</div>
             <h3 class="text-secondary">Gorilla Conservation</h3>
             <p class="text-text-secondary">
-              Rwanda's mountain gorilla population has increased by 25% in recent years, 
-              thanks to dedicated conservation efforts and sustainable tourism practices.
+              Rwanda's mountain gorilla population has increased by 25% in
+              recent years, thanks to dedicated conservation efforts and
+              sustainable tourism practices.
             </p>
           </div>
 
@@ -312,8 +374,9 @@
             <div class="conservation-icon">🦁</div>
             <h3 class="text-secondary">Lion Reintroduction</h3>
             <p class="text-text-secondary">
-              Lions were successfully reintroduced to Akagera National Park in 2015, 
-              marking a major milestone in Rwanda's wildlife restoration efforts.
+              Lions were successfully reintroduced to Akagera National Park in
+              2015, marking a major milestone in Rwanda's wildlife restoration
+              efforts.
             </p>
           </div>
 
@@ -321,8 +384,8 @@
             <div class="conservation-icon">🌿</div>
             <h3 class="text-secondary">Habitat Protection</h3>
             <p class="text-text-secondary">
-              Rwanda has expanded its protected areas and implemented strict conservation 
-              policies to preserve critical wildlife habitats.
+              Rwanda has expanded its protected areas and implemented strict
+              conservation policies to preserve critical wildlife habitats.
             </p>
           </div>
 
@@ -330,8 +393,8 @@
             <div class="conservation-icon">👥</div>
             <h3 class="text-secondary">Community Involvement</h3>
             <p class="text-text-secondary">
-              Local communities benefit from conservation through tourism revenue sharing, 
-              creating incentives for wildlife protection.
+              Local communities benefit from conservation through tourism
+              revenue sharing, creating incentives for wildlife protection.
             </p>
           </div>
         </div>
@@ -341,39 +404,44 @@
     <!-- Planning Your Visit -->
     <section class="planning-section section-dominant">
       <div class="container">
-        <h2 class="section-title text-secondary">Planning Your National Park Adventure</h2>
+        <h2 class="section-title text-secondary">
+          Planning Your National Park Adventure
+        </h2>
         <div class="planning-content">
           <div class="planning-text">
             <h3 class="text-secondary">Best Time to Visit</h3>
             <p class="text-text-secondary">
-              The dry seasons (June-September and December-February) offer the best wildlife 
-              viewing opportunities. Gorilla trekking is available year-round, but the dry 
-              months provide easier hiking conditions.
+              The dry seasons (June-September and December-February) offer the
+              best wildlife viewing opportunities. Gorilla trekking is available
+              year-round, but the dry months provide easier hiking conditions.
             </p>
 
             <h3 class="text-secondary">Permits & Bookings</h3>
             <p class="text-text-secondary">
-              Gorilla permits should be booked well in advance as they are limited and highly 
-              sought after. Other activities like chimpanzee trekking and safari tours can 
-              be arranged closer to your visit.
+              Gorilla permits should be booked well in advance as they are
+              limited and highly sought after. Other activities like chimpanzee
+              trekking and safari tours can be arranged closer to your visit.
             </p>
 
             <h3 class="text-secondary">Getting There</h3>
             <p class="text-text-secondary">
-              All three parks are accessible by road from Kigali. Kigali SelfDrive offers 
-              comfortable 4x4 vehicles perfect for reaching these remote destinations and 
-              exploring the parks.
+              All three parks are accessible by road from Kigali. Kigali
+              SelfDrive offers comfortable 4x4 vehicles perfect for reaching
+              these remote destinations and exploring the parks.
             </p>
 
             <h3 class="text-secondary">Accommodation</h3>
             <p class="text-text-secondary">
-              Each park offers a range of accommodation options, from luxury lodges to 
-              budget-friendly campsites. We recommend booking accommodation in advance, 
-              especially during peak season.
+              Each park offers a range of accommodation options, from luxury
+              lodges to budget-friendly campsites. We recommend booking
+              accommodation in advance, especially during peak season.
             </p>
           </div>
           <div class="planning-image">
-            <img src="/images/tourism/landscapes/rwanda-safari-vehicle.jpg" alt="Safari Vehicle">
+            <img
+              src="/images/tourism/landscapes/rwanda-safari-vehicle.jpg"
+              alt="Safari Vehicle"
+            />
           </div>
         </div>
       </div>
@@ -383,9 +451,16 @@
     <section class="cta cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2 class="text-dominant">Ready to Explore Rwanda's National Parks?</h2>
-          <p class="text-dominant">Book your 4x4 vehicle with Kigali SelfDrive and embark on an unforgettable wildlife adventure</p>
-          <router-link to="/book" class="cta-btn">Book Your Safari Vehicle</router-link>
+          <h2 class="text-dominant">
+            Ready to Explore Rwanda's National Parks?
+          </h2>
+          <p class="text-dominant">
+            Book your 4x4 vehicle with Kigali SelfDrive and embark on an
+            unforgettable wildlife adventure
+          </p>
+          <router-link to="/book" class="cta-btn"
+            >Book Your Safari Vehicle</router-link
+          >
         </div>
       </div>
     </section>
@@ -404,6 +479,13 @@ export default {
 </script>
 
 <style scoped>
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -697,4 +779,4 @@ export default {
     font-size: 2rem;
   }
 }
-</style> 
+</style>

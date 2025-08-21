@@ -9,12 +9,19 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background" style="background-image: url('/images/tourism/landscapes/rwanda-sunset.jpg')">
+      <div
+        class="hero-background"
+        style="
+          background-image: url('/images/tourism/landscapes/rwanda-sunset.jpg');
+        "
+      >
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
         <h1 class="hero-title text-dominant">Climate & Best Time to Visit</h1>
-        <p class="hero-subtitle text-dominant">Plan Your Perfect Rwanda Adventure with Our Weather Guide</p>
+        <p class="hero-subtitle text-dominant">
+          Plan Your Perfect Rwanda Adventure with Our Weather Guide
+        </p>
       </div>
     </section>
 
@@ -25,20 +32,24 @@
           <div class="intro-text">
             <h2 class="text-secondary">Rwanda's Climate</h2>
             <p class="text-text-secondary">
-              Rwanda enjoys a pleasant tropical highland climate with moderate temperatures 
-              year-round. Thanks to its elevation (1,000-4,500 meters above sea level), 
-              the country experiences comfortable weather that makes it an excellent 
-              destination for travel throughout the year.
+              Rwanda enjoys a pleasant tropical highland climate with moderate
+              temperatures year-round. Thanks to its elevation (1,000-4,500
+              meters above sea level), the country experiences comfortable
+              weather that makes it an excellent destination for travel
+              throughout the year.
             </p>
             <p class="text-text-secondary">
-              The climate is characterized by two rainy seasons and two dry seasons, 
-              each offering unique advantages for different types of activities and 
-              experiences. Understanding these patterns helps you plan the perfect 
-              Rwanda adventure.
+              The climate is characterized by two rainy seasons and two dry
+              seasons, each offering unique advantages for different types of
+              activities and experiences. Understanding these patterns helps you
+              plan the perfect Rwanda adventure.
             </p>
           </div>
           <div class="intro-image">
-            <img src="/images/tourism/landscapes/rwanda-climate-overview.jpg" alt="Rwanda Climate">
+            <img
+              src="/images/tourism/landscapes/rwanda-climate-overview.jpg"
+              alt="Rwanda Climate"
+            />
           </div>
         </div>
       </div>
@@ -54,9 +65,9 @@
             <h3 class="text-secondary">Long Dry Season</h3>
             <p class="season-period text-accent">June - September</p>
             <p class="text-text-secondary">
-              The peak tourist season with sunny days, clear skies, and minimal rainfall. 
-              Perfect for gorilla trekking, hiking, and outdoor activities. Temperatures 
-              range from 15-25°C (59-77°F).
+              The peak tourist season with sunny days, clear skies, and minimal
+              rainfall. Perfect for gorilla trekking, hiking, and outdoor
+              activities. Temperatures range from 15-25°C (59-77°F).
             </p>
             <div class="season-highlights">
               <span class="highlight-tag">Best for Gorilla Trekking</span>
@@ -70,9 +81,9 @@
             <h3 class="text-secondary">Short Rainy Season</h3>
             <p class="season-period text-accent">October - November</p>
             <p class="text-text-secondary">
-              Brief rainy period with afternoon showers and lush green landscapes. 
-              Temperatures remain pleasant at 16-26°C (61-79°F). Great for photography 
-              and experiencing Rwanda's natural beauty.
+              Brief rainy period with afternoon showers and lush green
+              landscapes. Temperatures remain pleasant at 16-26°C (61-79°F).
+              Great for photography and experiencing Rwanda's natural beauty.
             </p>
             <div class="season-highlights">
               <span class="highlight-tag">Lush Landscapes</span>
@@ -86,9 +97,10 @@
             <h3 class="text-secondary">Short Dry Season</h3>
             <p class="season-period text-accent">December - February</p>
             <p class="text-text-secondary">
-              Another excellent period for travel with warm, dry weather. Temperatures 
-              range from 17-27°C (63-81°F). Perfect for all activities including 
-              gorilla trekking, safari, and cultural experiences.
+              Another excellent period for travel with warm, dry weather.
+              Temperatures range from 17-27°C (63-81°F). Perfect for all
+              activities including gorilla trekking, safari, and cultural
+              experiences.
             </p>
             <div class="season-highlights">
               <span class="highlight-tag">Warm Weather</span>
@@ -102,9 +114,9 @@
             <h3 class="text-secondary">Long Rainy Season</h3>
             <p class="season-period text-accent">March - May</p>
             <p class="text-text-secondary">
-              The wettest period with daily rainfall, especially in the afternoon. 
-              Temperatures are mild at 16-25°C (61-77°F). Offers dramatic landscapes 
-              and unique wildlife viewing opportunities.
+              The wettest period with daily rainfall, especially in the
+              afternoon. Temperatures are mild at 16-25°C (61-77°F). Offers
+              dramatic landscapes and unique wildlife viewing opportunities.
             </p>
             <div class="season-highlights">
               <span class="highlight-tag">Dramatic Landscapes</span>
@@ -119,33 +131,41 @@
     <!-- Temperature & Rainfall -->
     <section class="weather-section section-dominant">
       <div class="container">
-        <h2 class="section-title text-secondary">Temperature & Rainfall Patterns</h2>
+        <h2 class="section-title text-secondary">
+          Temperature & Rainfall Patterns
+        </h2>
         <div class="weather-content">
           <div class="weather-text">
             <h3 class="text-secondary">Temperature Variations</h3>
             <p class="text-text-secondary">
-              Rwanda's temperature varies significantly with altitude. The capital 
-              Kigali (1,567m) enjoys average temperatures of 20-25°C (68-77°F), while 
-              higher elevations in the Virunga Mountains can drop to 5-15°C (41-59°F). 
-              The country's equatorial location ensures consistent day length year-round.
+              Rwanda's temperature varies significantly with altitude. The
+              capital Kigali (1,567m) enjoys average temperatures of 20-25°C
+              (68-77°F), while higher elevations in the Virunga Mountains can
+              drop to 5-15°C (41-59°F). The country's equatorial location
+              ensures consistent day length year-round.
             </p>
 
             <h3 class="text-secondary">Rainfall Distribution</h3>
             <p class="text-text-secondary">
-              Annual rainfall ranges from 1,000-1,500mm (39-59 inches), with the 
-              western mountains receiving the most precipitation. Rain typically falls 
-              in afternoon showers during wet seasons, rarely affecting morning activities.
+              Annual rainfall ranges from 1,000-1,500mm (39-59 inches), with the
+              western mountains receiving the most precipitation. Rain typically
+              falls in afternoon showers during wet seasons, rarely affecting
+              morning activities.
             </p>
 
             <h3 class="text-secondary">Altitude Impact</h3>
             <p class="text-text-secondary">
-              Rwanda's varied topography creates microclimates. Lower elevations 
-              around Lake Kivu are warmer, while the Virunga Mountains offer cool, 
-              misty conditions perfect for mountain gorillas and alpine vegetation.
+              Rwanda's varied topography creates microclimates. Lower elevations
+              around Lake Kivu are warmer, while the Virunga Mountains offer
+              cool, misty conditions perfect for mountain gorillas and alpine
+              vegetation.
             </p>
           </div>
           <div class="weather-image">
-            <img src="/images/tourism/landscapes/rwanda-temperature-map.jpg" alt="Rwanda Temperature Map">
+            <img
+              src="/images/tourism/landscapes/rwanda-temperature-map.jpg"
+              alt="Rwanda Temperature Map"
+            />
           </div>
         </div>
       </div>
@@ -154,18 +174,22 @@
     <!-- Best Time for Activities -->
     <section class="activities-section bg-dominant-dark">
       <div class="container">
-        <h2 class="section-title text-secondary">Best Time for Different Activities</h2>
+        <h2 class="section-title text-secondary">
+          Best Time for Different Activities
+        </h2>
         <div class="activities-grid">
           <div class="activity-card card">
             <div class="activity-icon">🦍</div>
             <h3 class="text-secondary">Gorilla Trekking</h3>
             <p class="text-text-secondary">
-              <strong class="text-accent">Best: June-September, December-February</strong><br>
-              Dry conditions make hiking easier and provide clearer views. Gorillas 
-              are more active and easier to spot in dry weather.
+              <strong class="text-accent"
+                >Best: June-September, December-February</strong
+              ><br />
+              Dry conditions make hiking easier and provide clearer views.
+              Gorillas are more active and easier to spot in dry weather.
             </p>
             <p class="text-text-secondary">
-              <strong class="text-accent">Avoid: March-May</strong><br>
+              <strong class="text-accent">Avoid: March-May</strong><br />
               Heavy rains can make trails slippery and reduce visibility.
             </p>
           </div>
@@ -174,13 +198,15 @@
             <div class="activity-icon">🦁</div>
             <h3 class="text-secondary">Safari & Wildlife</h3>
             <p class="text-text-secondary">
-              <strong class="text-accent">Best: June-September</strong><br>
-              Dry season concentrates animals around water sources, making wildlife 
-              easier to spot. Clear skies provide excellent photography conditions.
+              <strong class="text-accent">Best: June-September</strong><br />
+              Dry season concentrates animals around water sources, making
+              wildlife easier to spot. Clear skies provide excellent photography
+              conditions.
             </p>
             <p class="text-text-secondary">
-              <strong class="text-accent">Good: December-February</strong><br>
-              Another excellent period with warm weather and good wildlife viewing.
+              <strong class="text-accent">Good: December-February</strong><br />
+              Another excellent period with warm weather and good wildlife
+              viewing.
             </p>
           </div>
 
@@ -188,12 +214,12 @@
             <div class="activity-icon">🏔️</div>
             <h3 class="text-secondary">Hiking & Trekking</h3>
             <p class="text-text-secondary">
-              <strong class="text-accent">Best: June-September</strong><br>
-              Dry trails, clear mountain views, and comfortable temperatures make 
-              this the ideal time for all hiking activities.
+              <strong class="text-accent">Best: June-September</strong><br />
+              Dry trails, clear mountain views, and comfortable temperatures
+              make this the ideal time for all hiking activities.
             </p>
             <p class="text-text-secondary">
-              <strong class="text-accent">Good: December-February</strong><br>
+              <strong class="text-accent">Good: December-February</strong><br />
               Another excellent period with stable weather conditions.
             </p>
           </div>
@@ -202,13 +228,14 @@
             <div class="activity-icon">📸</div>
             <h3 class="text-secondary">Photography</h3>
             <p class="text-text-secondary">
-              <strong class="text-accent">Best: October-November</strong><br>
-              Lush green landscapes, dramatic clouds, and fewer tourists create 
+              <strong class="text-accent">Best: October-November</strong><br />
+              Lush green landscapes, dramatic clouds, and fewer tourists create
               perfect photography opportunities.
             </p>
             <p class="text-text-secondary">
-              <strong class="text-accent">Good: March-May</strong><br>
-              Dramatic weather and vibrant landscapes offer unique photo opportunities.
+              <strong class="text-accent">Good: March-May</strong><br />
+              Dramatic weather and vibrant landscapes offer unique photo
+              opportunities.
             </p>
           </div>
 
@@ -216,12 +243,12 @@
             <div class="activity-icon">🏖️</div>
             <h3 class="text-secondary">Lake Activities</h3>
             <p class="text-text-secondary">
-              <strong class="text-accent">Best: June-September</strong><br>
-              Warm, dry weather perfect for swimming, kayaking, and beach activities 
-              on Lake Kivu.
+              <strong class="text-accent">Best: June-September</strong><br />
+              Warm, dry weather perfect for swimming, kayaking, and beach
+              activities on Lake Kivu.
             </p>
             <p class="text-text-secondary">
-              <strong class="text-accent">Good: December-February</strong><br>
+              <strong class="text-accent">Good: December-February</strong><br />
               Pleasant temperatures for water sports and lakeside relaxation.
             </p>
           </div>
@@ -230,13 +257,15 @@
             <div class="activity-icon">🎭</div>
             <h3 class="text-secondary">Cultural Experiences</h3>
             <p class="text-text-secondary">
-              <strong class="text-accent">Best: Year-round</strong><br>
-              Cultural activities are excellent throughout the year, with indoor 
+              <strong class="text-accent">Best: Year-round</strong><br />
+              Cultural activities are excellent throughout the year, with indoor
               experiences available during rainy periods.
             </p>
             <p class="text-text-secondary">
-              <strong class="text-accent">Festivals: December-February</strong><br>
-              Many cultural festivals and events occur during the short dry season.
+              <strong class="text-accent">Festivals: December-February</strong
+              ><br />
+              Many cultural festivals and events occur during the short dry
+              season.
             </p>
           </div>
         </div>
@@ -246,18 +275,23 @@
     <!-- Regional Variations -->
     <section class="regions-section section-dominant">
       <div class="container">
-        <h2 class="section-title text-secondary">Regional Climate Variations</h2>
+        <h2 class="section-title text-secondary">
+          Regional Climate Variations
+        </h2>
         <div class="regions-grid">
           <div class="region-card card">
             <div class="region-image">
-              <img src="/images/tourism/landscapes/virunga-mountains.jpg" alt="Virunga Mountains">
+              <img
+                src="/images/tourism/landscapes/virunga-mountains.jpg"
+                alt="Virunga Mountains"
+              />
             </div>
             <div class="region-content">
               <h3 class="text-secondary">Virunga Mountains (North)</h3>
               <p class="text-text-secondary">
-                Cool, misty climate with temperatures 5-15°C (41-59°F). Higher rainfall 
-                and frequent fog create perfect conditions for mountain gorillas and 
-                alpine vegetation.
+                Cool, misty climate with temperatures 5-15°C (41-59°F). Higher
+                rainfall and frequent fog create perfect conditions for mountain
+                gorillas and alpine vegetation.
               </p>
               <div class="region-info">
                 <span class="text-accent">Elevation: 2,500-4,507m</span>
@@ -268,14 +302,17 @@
 
           <div class="region-card card">
             <div class="region-image">
-              <img src="/images/tourism/landscapes/lake-kivu.jpg" alt="Lake Kivu">
+              <img
+                src="/images/tourism/landscapes/lake-kivu.jpg"
+                alt="Lake Kivu"
+              />
             </div>
             <div class="region-content">
               <h3 class="text-secondary">Lake Kivu Region (West)</h3>
               <p class="text-text-secondary">
-                Warmer, more humid climate with temperatures 18-28°C (64-82°F). 
-                Moderate rainfall and lake breezes create pleasant conditions for 
-                beach activities and water sports.
+                Warmer, more humid climate with temperatures 18-28°C (64-82°F).
+                Moderate rainfall and lake breezes create pleasant conditions
+                for beach activities and water sports.
               </p>
               <div class="region-info">
                 <span class="text-accent">Elevation: 1,460m</span>
@@ -286,14 +323,17 @@
 
           <div class="region-card card">
             <div class="region-image">
-              <img src="/images/tourism/landscapes/akagera-savannah.jpg" alt="Akagera Savannah">
+              <img
+                src="/images/tourism/landscapes/akagera-savannah.jpg"
+                alt="Akagera Savannah"
+              />
             </div>
             <div class="region-content">
               <h3 class="text-secondary">Eastern Savannah (Akagera)</h3>
               <p class="text-text-secondary">
-                Hotter, drier climate with temperatures 20-30°C (68-86°F). Lower 
-                rainfall creates savannah conditions perfect for traditional safari 
-                experiences and wildlife viewing.
+                Hotter, drier climate with temperatures 20-30°C (68-86°F). Lower
+                rainfall creates savannah conditions perfect for traditional
+                safari experiences and wildlife viewing.
               </p>
               <div class="region-info">
                 <span class="text-accent">Elevation: 1,000-1,500m</span>
@@ -313,25 +353,45 @@
           <div class="packing-text">
             <h3 class="text-secondary">Essential Clothing</h3>
             <ul class="packing-list">
-              <li class="text-text-secondary">Lightweight, breathable clothing for warm days</li>
-              <li class="text-text-secondary">Warm layers for cool evenings and mountain areas</li>
-              <li class="text-text-secondary">Waterproof jacket for rainy seasons</li>
-              <li class="text-text-secondary">Comfortable hiking boots for trekking</li>
-              <li class="text-text-secondary">Sun protection (hat, sunglasses, sunscreen)</li>
+              <li class="text-text-secondary">
+                Lightweight, breathable clothing for warm days
+              </li>
+              <li class="text-text-secondary">
+                Warm layers for cool evenings and mountain areas
+              </li>
+              <li class="text-text-secondary">
+                Waterproof jacket for rainy seasons
+              </li>
+              <li class="text-text-secondary">
+                Comfortable hiking boots for trekking
+              </li>
+              <li class="text-text-secondary">
+                Sun protection (hat, sunglasses, sunscreen)
+              </li>
             </ul>
 
             <h3 class="text-secondary">Gorilla Trekking Essentials</h3>
             <ul class="packing-list">
-              <li class="text-text-secondary">Long-sleeved shirts and long pants</li>
-              <li class="text-text-secondary">Sturdy hiking boots with good grip</li>
-              <li class="text-text-secondary">Gardening gloves for vegetation handling</li>
-              <li class="text-text-secondary">Rain gear (even in dry season)</li>
+              <li class="text-text-secondary">
+                Long-sleeved shirts and long pants
+              </li>
+              <li class="text-text-secondary">
+                Sturdy hiking boots with good grip
+              </li>
+              <li class="text-text-secondary">
+                Gardening gloves for vegetation handling
+              </li>
+              <li class="text-text-secondary">
+                Rain gear (even in dry season)
+              </li>
               <li class="text-text-secondary">Camera with extra batteries</li>
             </ul>
 
             <h3 class="text-secondary">Health & Safety</h3>
             <ul class="packing-list">
-              <li class="text-text-secondary">Malaria prophylaxis (consult your doctor)</li>
+              <li class="text-text-secondary">
+                Malaria prophylaxis (consult your doctor)
+              </li>
               <li class="text-text-secondary">Insect repellent</li>
               <li class="text-text-secondary">Basic first aid kit</li>
               <li class="text-text-secondary">Prescription medications</li>
@@ -339,7 +399,10 @@
             </ul>
           </div>
           <div class="packing-image">
-            <img src="/images/tourism/landscapes/rwanda-packing-guide.jpg" alt="Packing for Rwanda">
+            <img
+              src="/images/tourism/landscapes/rwanda-packing-guide.jpg"
+              alt="Packing for Rwanda"
+            />
           </div>
         </div>
       </div>
@@ -350,7 +413,11 @@
       <div class="container">
         <h2 class="section-title text-secondary">Monthly Weather Guide</h2>
         <div class="monthly-grid">
-          <div class="month-card card" v-for="month in monthlyWeather" :key="month.name">
+          <div
+            class="month-card card"
+            v-for="month in monthlyWeather"
+            :key="month.name"
+          >
             <h3 class="text-secondary">{{ month.name }}</h3>
             <div class="month-weather">
               <div class="weather-icon">{{ month.icon }}</div>
@@ -361,7 +428,12 @@
             </div>
             <p class="text-text-secondary">{{ month.description }}</p>
             <div class="month-activities">
-              <span class="activity-tag" v-for="activity in month.activities" :key="activity">{{ activity }}</span>
+              <span
+                class="activity-tag"
+                v-for="activity in month.activities"
+                :key="activity"
+                >{{ activity }}</span
+              >
             </div>
           </div>
         </div>
@@ -373,8 +445,13 @@
       <div class="container">
         <div class="cta-content">
           <h2 class="text-dominant">Ready to Plan Your Rwanda Adventure?</h2>
-          <p class="text-dominant">Book your car with Kigali SelfDrive and experience Rwanda's perfect weather year-round</p>
-          <router-link to="/book" class="cta-btn">Book Your Weather-Perfect Trip</router-link>
+          <p class="text-dominant">
+            Book your car with Kigali SelfDrive and experience Rwanda's perfect
+            weather year-round
+          </p>
+          <router-link to="/book" class="cta-btn"
+            >Book Your Weather-Perfect Trip</router-link
+          >
         </div>
       </div>
     </section>
@@ -389,7 +466,7 @@ export default {
   components: {
     SEOHead
   },
-  data() {
+  data () {
     return {
       monthlyWeather: [
         {
@@ -495,6 +572,13 @@ export default {
 </script>
 
 <style scoped>
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -869,4 +953,4 @@ export default {
     font-size: 2rem;
   }
 }
-</style> 
+</style>

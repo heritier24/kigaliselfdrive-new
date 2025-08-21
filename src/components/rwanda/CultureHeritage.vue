@@ -9,12 +9,19 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background" style="background-image: url('/images/tourism/culture/intore-dance.jpg')">
+      <div
+        class="hero-background"
+        style="
+          background-image: url('/images/tourism/culture/intore-dance.jpg');
+        "
+      >
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
         <h1 class="hero-title text-dominant">Culture & Heritage</h1>
-        <p class="hero-subtitle text-dominant">Discover the Rich Traditions and Vibrant Culture of Rwanda</p>
+        <p class="hero-subtitle text-dominant">
+          Discover the Rich Traditions and Vibrant Culture of Rwanda
+        </p>
       </div>
     </section>
 
@@ -25,20 +32,25 @@
           <div class="intro-text">
             <h2 class="text-secondary">A Tapestry of Traditions</h2>
             <p class="text-text-secondary">
-              Rwanda's culture is a beautiful blend of ancient traditions and modern innovation. 
-              From the spectacular Intore dance performances to intricate traditional crafts, 
-              Rwanda's cultural heritage reflects the country's rich history and the resilience 
-              of its people.
+              Rwanda's culture is a beautiful blend of ancient traditions and
+              modern innovation. From the spectacular Intore dance performances
+              to intricate traditional crafts, Rwanda's cultural heritage
+              reflects the country's rich history and the resilience of its
+              people.
             </p>
             <p class="text-text-secondary">
-              The Rwandan people are known for their warm hospitality, strong community bonds, 
-              and deep respect for their cultural traditions. Whether through dance, music, 
-              art, or storytelling, Rwanda's culture continues to thrive and evolve while 
-              preserving its authentic roots.
+              The Rwandan people are known for their warm hospitality, strong
+              community bonds, and deep respect for their cultural traditions.
+              Whether through dance, music, art, or storytelling, Rwanda's
+              culture continues to thrive and evolve while preserving its
+              authentic roots.
             </p>
           </div>
           <div class="intro-image">
-            <img src="/images/tourism/culture/rwanda-traditional-dance.jpg" alt="Traditional Rwandan Culture">
+            <img
+              src="/images/tourism/culture/rwanda-traditional-dance.jpg"
+              alt="Traditional Rwandan Culture"
+            />
           </div>
         </div>
       </div>
@@ -48,35 +60,42 @@
     <section class="dance-section bg-dominant-dark">
       <div class="container">
         <h2 class="section-title text-secondary">Traditional Dance & Music</h2>
-        <p class="section-subtitle text-text-secondary">Experience the rhythm and grace of Rwanda's ancient dance traditions</p>
+        <p class="section-subtitle text-text-secondary">
+          Experience the rhythm and grace of Rwanda's ancient dance traditions
+        </p>
 
         <div class="dance-content">
           <div class="dance-text">
             <h3 class="text-secondary">The Intore Dance</h3>
             <p class="text-text-secondary">
-              The Intore dance is Rwanda's most famous traditional dance, performed by 
-              warriors to celebrate bravery and victory. This spectacular dance features 
-              high jumps, rhythmic drumming, and elaborate costumes, telling stories of 
-              courage and honor from Rwanda's royal past.
+              The Intore dance is Rwanda's most famous traditional dance,
+              performed by warriors to celebrate bravery and victory. This
+              spectacular dance features high jumps, rhythmic drumming, and
+              elaborate costumes, telling stories of courage and honor from
+              Rwanda's royal past.
             </p>
-            
+
             <h3 class="text-secondary">Drumming Traditions</h3>
             <p class="text-text-secondary">
-              Traditional drumming is central to Rwandan culture, with drums serving as 
-              both musical instruments and communication tools. The rhythmic patterns 
-              convey messages, mark important events, and create the heartbeat of 
-              traditional ceremonies.
+              Traditional drumming is central to Rwandan culture, with drums
+              serving as both musical instruments and communication tools. The
+              rhythmic patterns convey messages, mark important events, and
+              create the heartbeat of traditional ceremonies.
             </p>
 
             <h3 class="text-secondary">Modern Cultural Fusion</h3>
             <p class="text-text-secondary">
-              Today, Rwanda's traditional dance and music continue to evolve, blending 
-              ancient traditions with contemporary influences. Young artists are creating 
-              new forms of expression while preserving the essence of their cultural heritage.
+              Today, Rwanda's traditional dance and music continue to evolve,
+              blending ancient traditions with contemporary influences. Young
+              artists are creating new forms of expression while preserving the
+              essence of their cultural heritage.
             </p>
           </div>
           <div class="dance-image">
-            <img src="/images/tourism/culture/rwanda-drummers.jpg" alt="Traditional Rwandan Drummers">
+            <img
+              src="/images/tourism/culture/rwanda-drummers.jpg"
+              alt="Traditional Rwandan Drummers"
+            />
           </div>
         </div>
       </div>
@@ -89,43 +108,54 @@
         <div class="arts-grid">
           <div class="art-card card">
             <div class="art-image">
-              <img src="/images/tourism/culture/rwanda-baskets.jpg" alt="Rwandan Baskets">
+              <img
+                src="/images/tourism/culture/rwanda-baskets.jpg"
+                alt="Rwandan Baskets"
+              />
             </div>
             <div class="art-content">
               <h3 class="text-secondary">Agaseke Baskets</h3>
               <p class="text-text-secondary">
-                The Agaseke (peace basket) is Rwanda's most famous traditional craft. 
-                These intricately woven baskets are made from natural fibers and feature 
-                beautiful geometric patterns. They symbolize peace, unity, and the 
-                strength of Rwandan women.
+                The Agaseke (peace basket) is Rwanda's most famous traditional
+                craft. These intricately woven baskets are made from natural
+                fibers and feature beautiful geometric patterns. They symbolize
+                peace, unity, and the strength of Rwandan women.
               </p>
             </div>
           </div>
 
           <div class="art-card card">
             <div class="art-image">
-              <img src="/images/tourism/culture/rwanda-pottery.jpg" alt="Rwandan Pottery">
+              <img
+                src="/images/tourism/culture/rwanda-pottery.jpg"
+                alt="Rwandan Pottery"
+              />
             </div>
             <div class="art-content">
               <h3 class="text-secondary">Traditional Pottery</h3>
               <p class="text-text-secondary">
-                Rwandan pottery has been practiced for centuries, with artisans creating 
-                functional and decorative pieces using traditional techniques. Each piece 
-                tells a story and reflects the cultural identity of different regions.
+                Rwandan pottery has been practiced for centuries, with artisans
+                creating functional and decorative pieces using traditional
+                techniques. Each piece tells a story and reflects the cultural
+                identity of different regions.
               </p>
             </div>
           </div>
 
           <div class="art-card card">
             <div class="art-image">
-              <img src="/images/tourism/culture/rwanda-woodcarving.jpg" alt="Rwandan Woodcarving">
+              <img
+                src="/images/tourism/culture/rwanda-woodcarving.jpg"
+                alt="Rwandan Woodcarving"
+              />
             </div>
             <div class="art-content">
               <h3 class="text-secondary">Wood Carving</h3>
               <p class="text-text-secondary">
-                Skilled woodcarvers create beautiful sculptures, masks, and household items 
-                from local woods. These carvings often depict animals, traditional symbols, 
-                and scenes from daily life, preserving cultural stories for future generations.
+                Skilled woodcarvers create beautiful sculptures, masks, and
+                household items from local woods. These carvings often depict
+                animals, traditional symbols, and scenes from daily life,
+                preserving cultural stories for future generations.
               </p>
             </div>
           </div>
@@ -141,27 +171,33 @@
           <div class="language-text">
             <h3 class="text-secondary">Kinyarwanda</h3>
             <p class="text-text-secondary">
-              Kinyarwanda is Rwanda's national language, spoken by nearly all Rwandans. 
-              This Bantu language is rich in proverbs, idioms, and cultural expressions 
-              that reflect the wisdom and values of Rwandan society.
+              Kinyarwanda is Rwanda's national language, spoken by nearly all
+              Rwandans. This Bantu language is rich in proverbs, idioms, and
+              cultural expressions that reflect the wisdom and values of Rwandan
+              society.
             </p>
 
             <h3 class="text-secondary">Proverbs & Wisdom</h3>
             <p class="text-text-secondary">
-              Rwandan proverbs (imigani) are an important part of cultural transmission, 
-              teaching moral lessons and social values. These sayings are used in daily 
-              conversation and formal ceremonies, passing wisdom from generation to generation.
+              Rwandan proverbs (imigani) are an important part of cultural
+              transmission, teaching moral lessons and social values. These
+              sayings are used in daily conversation and formal ceremonies,
+              passing wisdom from generation to generation.
             </p>
 
             <h3 class="text-secondary">Storytelling Tradition</h3>
             <p class="text-text-secondary">
-              Oral storytelling remains a vital part of Rwandan culture, with elders 
-              sharing traditional tales, legends, and historical accounts. These stories 
-              preserve cultural memory and teach important life lessons.
+              Oral storytelling remains a vital part of Rwandan culture, with
+              elders sharing traditional tales, legends, and historical
+              accounts. These stories preserve cultural memory and teach
+              important life lessons.
             </p>
           </div>
           <div class="language-image">
-            <img src="/images/tourism/culture/rwanda-storytelling.jpg" alt="Rwandan Storytelling">
+            <img
+              src="/images/tourism/culture/rwanda-storytelling.jpg"
+              alt="Rwandan Storytelling"
+            />
           </div>
         </div>
       </div>
@@ -171,47 +207,58 @@
     <section class="cuisine-section section-dominant">
       <div class="container">
         <h2 class="section-title text-secondary">Traditional Cuisine</h2>
-        <p class="section-subtitle text-text-secondary">Savor the flavors of authentic Rwandan food and hospitality</p>
+        <p class="section-subtitle text-text-secondary">
+          Savor the flavors of authentic Rwandan food and hospitality
+        </p>
 
         <div class="cuisine-grid">
           <div class="cuisine-card card">
             <div class="cuisine-image">
-              <img src="/images/tourism/culture/rwanda-ugali.jpg" alt="Ugali">
+              <img src="/images/tourism/culture/rwanda-ugali.jpg" alt="Ugali" />
             </div>
             <div class="cuisine-content">
               <h3 class="text-secondary">Ugali & Isombe</h3>
               <p class="text-text-secondary">
-                Ugali (cornmeal porridge) is Rwanda's staple food, often served with 
-                isombe (cassava leaves with groundnuts). This nutritious combination 
-                represents the heart of Rwandan home cooking and family meals.
+                Ugali (cornmeal porridge) is Rwanda's staple food, often served
+                with isombe (cassava leaves with groundnuts). This nutritious
+                combination represents the heart of Rwandan home cooking and
+                family meals.
               </p>
             </div>
           </div>
 
           <div class="cuisine-card card">
             <div class="cuisine-image">
-              <img src="/images/tourism/culture/rwanda-brochettes.jpg" alt="Brochettes">
+              <img
+                src="/images/tourism/culture/rwanda-brochettes.jpg"
+                alt="Brochettes"
+              />
             </div>
             <div class="cuisine-content">
               <h3 class="text-secondary">Brochettes</h3>
               <p class="text-text-secondary">
-                Brochettes (grilled meat skewers) are a popular street food and restaurant 
-                favorite. Marinated in local spices and grilled to perfection, they showcase 
-                Rwanda's love for fresh, flavorful meat dishes.
+                Brochettes (grilled meat skewers) are a popular street food and
+                restaurant favorite. Marinated in local spices and grilled to
+                perfection, they showcase Rwanda's love for fresh, flavorful
+                meat dishes.
               </p>
             </div>
           </div>
 
           <div class="cuisine-card card">
             <div class="cuisine-image">
-              <img src="/images/tourism/culture/rwanda-coffee.jpg" alt="Rwandan Coffee">
+              <img
+                src="/images/tourism/culture/rwanda-coffee.jpg"
+                alt="Rwandan Coffee"
+              />
             </div>
             <div class="cuisine-content">
               <h3 class="text-secondary">Coffee & Tea Ceremonies</h3>
               <p class="text-text-secondary">
-                Coffee and tea ceremonies are an important part of Rwandan hospitality. 
-                These ceremonies involve traditional brewing methods and are often 
-                accompanied by meaningful conversations and cultural exchange.
+                Coffee and tea ceremonies are an important part of Rwandan
+                hospitality. These ceremonies involve traditional brewing
+                methods and are often accompanied by meaningful conversations
+                and cultural exchange.
               </p>
             </div>
           </div>
@@ -228,9 +275,10 @@
             <div class="festival-icon">🎭</div>
             <h3 class="text-secondary">Kwita Izina</h3>
             <p class="text-text-secondary">
-              The annual gorilla naming ceremony celebrates new baby gorillas born in 
-              Volcanoes National Park. This event brings together conservationists, 
-              tourists, and local communities to honor Rwanda's wildlife heritage.
+              The annual gorilla naming ceremony celebrates new baby gorillas
+              born in Volcanoes National Park. This event brings together
+              conservationists, tourists, and local communities to honor
+              Rwanda's wildlife heritage.
             </p>
           </div>
 
@@ -238,9 +286,9 @@
             <div class="festival-icon">🎪</div>
             <h3 class="text-secondary">Umuganura</h3>
             <p class="text-text-secondary">
-              The traditional harvest festival celebrates the first fruits of the season. 
-              This ancient ceremony includes traditional dances, feasting, and giving 
-              thanks for the year's bounty.
+              The traditional harvest festival celebrates the first fruits of
+              the season. This ancient ceremony includes traditional dances,
+              feasting, and giving thanks for the year's bounty.
             </p>
           </div>
 
@@ -248,9 +296,9 @@
             <div class="festival-icon">🎨</div>
             <h3 class="text-secondary">Kigali Up!</h3>
             <p class="text-text-secondary">
-              This contemporary arts festival showcases Rwanda's modern cultural scene, 
-              featuring music, dance, visual arts, and performances by local and 
-              international artists.
+              This contemporary arts festival showcases Rwanda's modern cultural
+              scene, featuring music, dance, visual arts, and performances by
+              local and international artists.
             </p>
           </div>
 
@@ -258,9 +306,9 @@
             <div class="festival-icon">🏃</div>
             <h3 class="text-secondary">Kwibuka</h3>
             <p class="text-text-secondary">
-              The annual commemoration period honors the memory of the 1994 Genocide 
-              against the Tutsi. This solemn time includes memorial services, cultural 
-              events, and community healing activities.
+              The annual commemoration period honors the memory of the 1994
+              Genocide against the Tutsi. This solemn time includes memorial
+              services, cultural events, and community healing activities.
             </p>
           </div>
         </div>
@@ -275,29 +323,33 @@
           <div class="modern-text">
             <h3 class="text-secondary">Contemporary Arts</h3>
             <p class="text-text-secondary">
-              Rwanda's contemporary art scene is thriving, with galleries, museums, and 
-              cultural centers showcasing the work of talented local artists. From 
-              traditional techniques to modern expressions, Rwandan art continues to 
-              evolve and inspire.
+              Rwanda's contemporary art scene is thriving, with galleries,
+              museums, and cultural centers showcasing the work of talented
+              local artists. From traditional techniques to modern expressions,
+              Rwandan art continues to evolve and inspire.
             </p>
 
             <h3 class="text-secondary">Music & Entertainment</h3>
             <p class="text-text-secondary">
-              Modern Rwandan music blends traditional rhythms with contemporary styles, 
-              creating unique sounds that reflect the country's cultural diversity. 
-              Kigali's vibrant nightlife scene offers live music, dance clubs, and 
-              cultural performances.
+              Modern Rwandan music blends traditional rhythms with contemporary
+              styles, creating unique sounds that reflect the country's cultural
+              diversity. Kigali's vibrant nightlife scene offers live music,
+              dance clubs, and cultural performances.
             </p>
 
             <h3 class="text-secondary">Fashion & Design</h3>
             <p class="text-text-secondary">
-              Rwandan fashion designers are gaining international recognition, creating 
-              beautiful clothing that combines traditional motifs with modern aesthetics. 
-              The country's textile industry is also experiencing a renaissance.
+              Rwandan fashion designers are gaining international recognition,
+              creating beautiful clothing that combines traditional motifs with
+              modern aesthetics. The country's textile industry is also
+              experiencing a renaissance.
             </p>
           </div>
           <div class="modern-image">
-            <img src="/images/tourism/culture/rwanda-modern-art.jpg" alt="Modern Rwandan Art">
+            <img
+              src="/images/tourism/culture/rwanda-modern-art.jpg"
+              alt="Modern Rwandan Art"
+            />
           </div>
         </div>
       </div>
@@ -306,17 +358,21 @@
     <!-- Cultural Tourism Section -->
     <section class="tourism-section bg-dominant-dark">
       <div class="container">
-        <h2 class="section-title text-secondary">Cultural Tourism Experiences</h2>
-        <p class="section-subtitle text-text-secondary">Immerse yourself in authentic Rwandan culture</p>
+        <h2 class="section-title text-secondary">
+          Cultural Tourism Experiences
+        </h2>
+        <p class="section-subtitle text-text-secondary">
+          Immerse yourself in authentic Rwandan culture
+        </p>
 
         <div class="tourism-grid">
           <div class="tourism-card card">
             <div class="tourism-icon">💃</div>
             <h3 class="text-secondary">Dance Performances</h3>
             <p class="text-text-secondary">
-              Attend traditional dance performances at cultural centers and villages. 
-              Watch the spectacular Intore dance and learn about the stories behind 
-              each movement and costume.
+              Attend traditional dance performances at cultural centers and
+              villages. Watch the spectacular Intore dance and learn about the
+              stories behind each movement and costume.
             </p>
           </div>
 
@@ -324,8 +380,9 @@
             <div class="tourism-icon">🏺</div>
             <h3 class="text-secondary">Craft Workshops</h3>
             <p class="text-text-secondary">
-              Participate in traditional craft workshops where you can learn basket 
-              weaving, pottery making, and other traditional arts from skilled artisans.
+              Participate in traditional craft workshops where you can learn
+              basket weaving, pottery making, and other traditional arts from
+              skilled artisans.
             </p>
           </div>
 
@@ -333,9 +390,9 @@
             <div class="tourism-icon">🍽️</div>
             <h3 class="text-secondary">Cooking Classes</h3>
             <p class="text-text-secondary">
-              Learn to cook traditional Rwandan dishes in hands-on cooking classes. 
-              Discover the secrets of local spices and cooking techniques passed down 
-              through generations.
+              Learn to cook traditional Rwandan dishes in hands-on cooking
+              classes. Discover the secrets of local spices and cooking
+              techniques passed down through generations.
             </p>
           </div>
 
@@ -343,9 +400,9 @@
             <div class="tourism-icon">🏘️</div>
             <h3 class="text-secondary">Village Visits</h3>
             <p class="text-text-secondary">
-              Experience authentic village life through community-based tourism. 
-              Stay with local families, participate in daily activities, and learn 
-              about traditional customs and beliefs.
+              Experience authentic village life through community-based tourism.
+              Stay with local families, participate in daily activities, and
+              learn about traditional customs and beliefs.
             </p>
           </div>
         </div>
@@ -361,9 +418,9 @@
             <div class="value-icon">🤝</div>
             <h3 class="text-secondary">Ubuntu</h3>
             <p class="text-text-secondary">
-              The philosophy of "I am because we are" emphasizes community, compassion, 
-              and interconnectedness. This value guides social interactions and 
-              community development in Rwanda.
+              The philosophy of "I am because we are" emphasizes community,
+              compassion, and interconnectedness. This value guides social
+              interactions and community development in Rwanda.
             </p>
           </div>
 
@@ -371,9 +428,9 @@
             <div class="value-icon">👥</div>
             <h3 class="text-secondary">Umuganda</h3>
             <p class="text-text-secondary">
-              Community work and collective responsibility are central to Rwandan culture. 
-              The monthly Umuganda brings communities together for shared projects and 
-              nation-building activities.
+              Community work and collective responsibility are central to
+              Rwandan culture. The monthly Umuganda brings communities together
+              for shared projects and nation-building activities.
             </p>
           </div>
 
@@ -381,9 +438,9 @@
             <div class="value-icon">🎯</div>
             <h3 class="text-secondary">Excellence</h3>
             <p class="text-text-secondary">
-              Rwandans value excellence in all endeavors, from education and work to 
-              cultural practices. This commitment to quality drives innovation and 
-              progress across all sectors.
+              Rwandans value excellence in all endeavors, from education and
+              work to cultural practices. This commitment to quality drives
+              innovation and progress across all sectors.
             </p>
           </div>
 
@@ -391,9 +448,9 @@
             <div class="value-icon">🕊️</div>
             <h3 class="text-secondary">Reconciliation</h3>
             <p class="text-text-secondary">
-              The spirit of reconciliation and unity is fundamental to modern Rwanda. 
-              This value promotes healing, forgiveness, and building a shared future 
-              for all Rwandans.
+              The spirit of reconciliation and unity is fundamental to modern
+              Rwanda. This value promotes healing, forgiveness, and building a
+              shared future for all Rwandans.
             </p>
           </div>
         </div>
@@ -405,8 +462,13 @@
       <div class="container">
         <div class="cta-content">
           <h2 class="text-dominant">Experience Rwanda's Rich Culture</h2>
-          <p class="text-dominant">Book your car with Kigali SelfDrive and immerse yourself in the authentic culture of Rwanda</p>
-          <router-link to="/book" class="cta-btn">Book Your Cultural Journey</router-link>
+          <p class="text-dominant">
+            Book your car with Kigali SelfDrive and immerse yourself in the
+            authentic culture of Rwanda
+          </p>
+          <router-link to="/book" class="cta-btn"
+            >Book Your Cultural Journey</router-link
+          >
         </div>
       </div>
     </section>
@@ -425,6 +487,13 @@ export default {
 </script>
 
 <style scoped>
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -808,4 +877,4 @@ export default {
     font-size: 2rem;
   }
 }
-</style> 
+</style>

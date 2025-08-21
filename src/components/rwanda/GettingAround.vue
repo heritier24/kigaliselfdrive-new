@@ -9,12 +9,19 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background" style="background-image: url('/images/tourism/landscapes/rwanda-road.jpg')">
+      <div
+        class="hero-background"
+        style="
+          background-image: url('/images/tourism/landscapes/rwanda-road.jpg');
+        "
+      >
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
         <h1 class="hero-title text-dominant">Getting Around Rwanda</h1>
-        <p class="hero-subtitle text-dominant">Your Complete Guide to Transportation in the Land of a Thousand Hills</p>
+        <p class="hero-subtitle text-dominant">
+          Your Complete Guide to Transportation in the Land of a Thousand Hills
+        </p>
       </div>
     </section>
 
@@ -25,19 +32,23 @@
           <div class="intro-text">
             <h2 class="text-secondary">Transportation in Rwanda</h2>
             <p class="text-text-secondary">
-              Rwanda offers a variety of transportation options to suit every traveler's 
-              needs and budget. From modern highways connecting major cities to scenic 
-              mountain roads leading to national parks, getting around Rwanda is both 
-              convenient and enjoyable.
+              Rwanda offers a variety of transportation options to suit every
+              traveler's needs and budget. From modern highways connecting major
+              cities to scenic mountain roads leading to national parks, getting
+              around Rwanda is both convenient and enjoyable.
             </p>
             <p class="text-text-secondary">
-              Whether you prefer the freedom of a rental car, the convenience of public 
-              transport, or the adventure of motorcycle taxis, Rwanda's transportation 
-              network makes it easy to explore this beautiful country safely and efficiently.
+              Whether you prefer the freedom of a rental car, the convenience of
+              public transport, or the adventure of motorcycle taxis, Rwanda's
+              transportation network makes it easy to explore this beautiful
+              country safely and efficiently.
             </p>
           </div>
           <div class="intro-image">
-            <img src="/images/tourism/landscapes/rwanda-transport-overview.jpg" alt="Rwanda Transportation">
+            <img
+              src="/images/tourism/landscapes/rwanda-transport-overview.jpg"
+              alt="Rwanda Transportation"
+            />
           </div>
         </div>
       </div>
@@ -48,18 +59,24 @@
       <div class="container">
         <div class="transport-content">
           <div class="transport-image">
-            <img src="/images/tourism/landscapes/rwanda-car-rental.jpg" alt="Car Rental in Rwanda">
+            <img
+              src="/images/tourism/landscapes/rwanda-car-rental.jpg"
+              alt="Car Rental in Rwanda"
+            />
           </div>
           <div class="transport-text">
             <h2 class="text-secondary">Car Rental - The Best Option</h2>
-            <p class="transport-subtitle text-accent">Freedom to Explore at Your Own Pace</p>
-            <p class="text-text-secondary">
-              Renting a car is the most convenient and flexible way to explore Rwanda. 
-              With well-maintained roads, clear signage, and stunning scenery, driving 
-              in Rwanda is both safe and enjoyable. Kigali SelfDrive offers a wide 
-              range of vehicles to suit every need and budget.
+            <p class="transport-subtitle text-accent">
+              Freedom to Explore at Your Own Pace
             </p>
-            
+            <p class="text-text-secondary">
+              Renting a car is the most convenient and flexible way to explore
+              Rwanda. With well-maintained roads, clear signage, and stunning
+              scenery, driving in Rwanda is both safe and enjoyable. Kigali
+              SelfDrive offers a wide range of vehicles to suit every need and
+              budget.
+            </p>
+
             <div class="transport-highlights">
               <div class="highlight">
                 <span class="highlight-icon">🚗</span>
@@ -90,7 +107,9 @@
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Speed Limits:</strong>
-                <span class="text-text-secondary">50-80 km/h (urban), 80-120 km/h (highway)</span>
+                <span class="text-text-secondary"
+                  >50-80 km/h (urban), 80-120 km/h (highway)</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Fuel:</strong>
@@ -98,7 +117,9 @@
               </div>
             </div>
 
-            <router-link to="/book" class="btn-accent">Book Your Car Now</router-link>
+            <router-link to="/book" class="btn-accent"
+              >Book Your Car Now</router-link
+            >
           </div>
         </div>
       </div>
@@ -110,14 +131,16 @@
         <div class="transport-content reverse">
           <div class="transport-text">
             <h2 class="text-secondary">Public Transportation</h2>
-            <p class="transport-subtitle text-accent">Affordable and Reliable Options</p>
-            <p class="text-text-secondary">
-              Rwanda's public transportation system is modern, efficient, and affordable. 
-              From clean city buses in Kigali to comfortable intercity coaches, public 
-              transport offers a great way to experience local life while traveling 
-              between destinations.
+            <p class="transport-subtitle text-accent">
+              Affordable and Reliable Options
             </p>
-            
+            <p class="text-text-secondary">
+              Rwanda's public transportation system is modern, efficient, and
+              affordable. From clean city buses in Kigali to comfortable
+              intercity coaches, public transport offers a great way to
+              experience local life while traveling between destinations.
+            </p>
+
             <div class="transport-highlights">
               <div class="highlight">
                 <span class="highlight-icon">🚌</span>
@@ -140,7 +163,9 @@
             <div class="transport-info">
               <div class="info-item">
                 <strong class="text-secondary">Kigali Buses:</strong>
-                <span class="text-text-secondary">Clean, modern, air-conditioned</span>
+                <span class="text-text-secondary"
+                  >Clean, modern, air-conditioned</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Intercity Routes:</strong>
@@ -148,26 +173,41 @@
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Fares:</strong>
-                <span class="text-text-secondary">Very affordable (200-2000 RWF)</span>
+                <span class="text-text-secondary"
+                  >Very affordable (200-2000 RWF)</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Frequency:</strong>
-                <span class="text-accent">Regular departures throughout the day</span>
+                <span class="text-accent"
+                  >Regular departures throughout the day</span
+                >
               </div>
             </div>
 
             <div class="transport-tips">
               <h3 class="text-secondary">Public Transport Tips</h3>
               <ul class="tips-list">
-                <li class="text-text-secondary">Purchase a Tap&Go card for Kigali buses</li>
-                <li class="text-text-secondary">Book intercity tickets in advance</li>
-                <li class="text-text-secondary">Arrive early for popular routes</li>
-                <li class="text-text-secondary">Keep small change for bus fares</li>
+                <li class="text-text-secondary">
+                  Purchase a Tap&Go card for Kigali buses
+                </li>
+                <li class="text-text-secondary">
+                  Book intercity tickets in advance
+                </li>
+                <li class="text-text-secondary">
+                  Arrive early for popular routes
+                </li>
+                <li class="text-text-secondary">
+                  Keep small change for bus fares
+                </li>
               </ul>
             </div>
           </div>
           <div class="transport-image">
-            <img src="/images/tourism/landscapes/rwanda-public-transport.jpg" alt="Public Transport in Rwanda">
+            <img
+              src="/images/tourism/landscapes/rwanda-public-transport.jpg"
+              alt="Public Transport in Rwanda"
+            />
           </div>
         </div>
       </div>
@@ -178,18 +218,23 @@
       <div class="container">
         <div class="transport-content">
           <div class="transport-image">
-            <img src="/images/tourism/landscapes/rwanda-motorcycle-taxi.jpg" alt="Motorcycle Taxis">
+            <img
+              src="/images/tourism/landscapes/rwanda-motorcycle-taxi.jpg"
+              alt="Motorcycle Taxis"
+            />
           </div>
           <div class="transport-text">
             <h2 class="text-secondary">Motorcycle Taxis (Moto)</h2>
-            <p class="transport-subtitle text-accent">Fast and Convenient Local Transport</p>
-            <p class="text-text-secondary">
-              Motorcycle taxis, locally known as "motos," are a popular and efficient 
-              way to get around cities and towns in Rwanda. With their distinctive 
-              green jackets and helmets, moto drivers provide quick, affordable 
-              transportation for short distances.
+            <p class="transport-subtitle text-accent">
+              Fast and Convenient Local Transport
             </p>
-            
+            <p class="text-text-secondary">
+              Motorcycle taxis, locally known as "motos," are a popular and
+              efficient way to get around cities and towns in Rwanda. With their
+              distinctive green jackets and helmets, moto drivers provide quick,
+              affordable transportation for short distances.
+            </p>
+
             <div class="transport-highlights">
               <div class="highlight">
                 <span class="highlight-icon">🏍️</span>
@@ -216,25 +261,39 @@
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Safety:</strong>
-                <span class="text-accent">Helmets provided, regulated service</span>
+                <span class="text-accent"
+                  >Helmets provided, regulated service</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Best For:</strong>
-                <span class="text-text-secondary">Short trips within cities</span>
+                <span class="text-text-secondary"
+                  >Short trips within cities</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Negotiation:</strong>
-                <span class="text-accent">Always agree on price before riding</span>
+                <span class="text-accent"
+                  >Always agree on price before riding</span
+                >
               </div>
             </div>
 
             <div class="transport-tips">
               <h3 class="text-secondary">Moto Safety Tips</h3>
               <ul class="tips-list">
-                <li class="text-text-secondary">Always wear the provided helmet</li>
-                <li class="text-text-secondary">Negotiate the fare before getting on</li>
-                <li class="text-text-secondary">Hold on securely during the ride</li>
-                <li class="text-text-secondary">Use licensed moto drivers only</li>
+                <li class="text-text-secondary">
+                  Always wear the provided helmet
+                </li>
+                <li class="text-text-secondary">
+                  Negotiate the fare before getting on
+                </li>
+                <li class="text-text-secondary">
+                  Hold on securely during the ride
+                </li>
+                <li class="text-text-secondary">
+                  Use licensed moto drivers only
+                </li>
               </ul>
             </div>
           </div>
@@ -248,14 +307,16 @@
         <div class="transport-content reverse">
           <div class="transport-text">
             <h2 class="text-secondary">Domestic Flights</h2>
-            <p class="transport-subtitle text-accent">Fast Connections Between Cities</p>
-            <p class="text-text-secondary">
-              While Rwanda is relatively small, domestic flights offer a convenient 
-              option for travelers with limited time or those wanting to avoid long 
-              road journeys. Rwanda's national airline provides regular flights 
-              between major cities.
+            <p class="transport-subtitle text-accent">
+              Fast Connections Between Cities
             </p>
-            
+            <p class="text-text-secondary">
+              While Rwanda is relatively small, domestic flights offer a
+              convenient option for travelers with limited time or those wanting
+              to avoid long road journeys. Rwanda's national airline provides
+              regular flights between major cities.
+            </p>
+
             <div class="transport-highlights">
               <div class="highlight">
                 <span class="highlight-icon">✈️</span>
@@ -278,7 +339,9 @@
             <div class="transport-info">
               <div class="info-item">
                 <strong class="text-secondary">Main Routes:</strong>
-                <span class="text-text-secondary">Kigali to Kamembe (Cyangugu)</span>
+                <span class="text-text-secondary"
+                  >Kigali to Kamembe (Cyangugu)</span
+                >
               </div>
               <div class="info-item">
                 <strong class="text-secondary">Flight Duration:</strong>
@@ -297,15 +360,26 @@
             <div class="transport-tips">
               <h3 class="text-secondary">Flight Tips</h3>
               <ul class="tips-list">
-                <li class="text-text-secondary">Book flights well in advance</li>
-                <li class="text-text-secondary">Arrive at airport 2 hours before departure</li>
-                <li class="text-text-secondary">Check weather conditions for mountain flights</li>
-                <li class="text-text-secondary">Consider luggage weight restrictions</li>
+                <li class="text-text-secondary">
+                  Book flights well in advance
+                </li>
+                <li class="text-text-secondary">
+                  Arrive at airport 2 hours before departure
+                </li>
+                <li class="text-text-secondary">
+                  Check weather conditions for mountain flights
+                </li>
+                <li class="text-text-secondary">
+                  Consider luggage weight restrictions
+                </li>
               </ul>
             </div>
           </div>
           <div class="transport-image">
-            <img src="/images/tourism/landscapes/rwanda-domestic-flight.jpg" alt="Domestic Flights">
+            <img
+              src="/images/tourism/landscapes/rwanda-domestic-flight.jpg"
+              alt="Domestic Flights"
+            />
           </div>
         </div>
       </div>
@@ -320,9 +394,10 @@
             <div class="road-icon">🛣️</div>
             <h3 class="text-secondary">Highways</h3>
             <p class="text-text-secondary">
-              Rwanda's main highways are modern, well-maintained, and connect all 
-              major cities. The road network is constantly being improved and expanded 
-              to support the country's growing economy and tourism sector.
+              Rwanda's main highways are modern, well-maintained, and connect
+              all major cities. The road network is constantly being improved
+              and expanded to support the country's growing economy and tourism
+              sector.
             </p>
             <div class="road-info">
               <span class="text-accent">Excellent condition</span>
@@ -334,8 +409,8 @@
             <div class="road-icon">🏔️</div>
             <h3 class="text-secondary">Mountain Roads</h3>
             <p class="text-text-secondary">
-              Scenic mountain roads wind through the Virunga Mountains, offering 
-              breathtaking views and access to national parks. These roads are 
+              Scenic mountain roads wind through the Virunga Mountains, offering
+              breathtaking views and access to national parks. These roads are
               well-maintained but can be steep and winding.
             </p>
             <div class="road-info">
@@ -348,8 +423,8 @@
             <div class="road-icon">🌿</div>
             <h3 class="text-secondary">Rural Roads</h3>
             <p class="text-text-secondary">
-              Rural roads connect smaller towns and villages, offering authentic 
-              experiences of Rwandan countryside life. Some roads may be unpaved 
+              Rural roads connect smaller towns and villages, offering authentic
+              experiences of Rwandan countryside life. Some roads may be unpaved
               but are generally passable.
             </p>
             <div class="road-info">
@@ -362,8 +437,8 @@
             <div class="road-icon">🏙️</div>
             <h3 class="text-secondary">City Streets</h3>
             <p class="text-text-secondary">
-              Kigali's city streets are well-planned and maintained, with modern 
-              traffic management systems. The city's layout makes navigation 
+              Kigali's city streets are well-planned and maintained, with modern
+              traffic management systems. The city's layout makes navigation
               straightforward for visitors.
             </p>
             <div class="road-info">
@@ -383,32 +458,37 @@
           <div class="tips-text">
             <h3 class="text-secondary">Planning Your Journey</h3>
             <p class="text-text-secondary">
-              Plan your routes in advance, especially for longer journeys. Consider 
-              weather conditions, especially during rainy seasons, and allow extra 
-              time for mountain roads and rural areas.
+              Plan your routes in advance, especially for longer journeys.
+              Consider weather conditions, especially during rainy seasons, and
+              allow extra time for mountain roads and rural areas.
             </p>
 
             <h3 class="text-secondary">Safety Considerations</h3>
             <p class="text-text-secondary">
-              Rwanda is one of Africa's safest countries for travel. Roads are 
-              well-maintained, traffic rules are followed, and emergency services 
-              are readily available throughout the country.
+              Rwanda is one of Africa's safest countries for travel. Roads are
+              well-maintained, traffic rules are followed, and emergency
+              services are readily available throughout the country.
             </p>
 
             <h3 class="text-secondary">Local Customs</h3>
             <p class="text-text-secondary">
-              Be respectful of local customs when using public transport. Greet 
-              drivers and fellow passengers, and be patient during peak travel times.
+              Be respectful of local customs when using public transport. Greet
+              drivers and fellow passengers, and be patient during peak travel
+              times.
             </p>
 
             <h3 class="text-secondary">Emergency Contacts</h3>
             <p class="text-text-secondary">
-              Keep emergency numbers handy: Police (112), Ambulance (912), and 
-              your car rental company's 24/7 support line for roadside assistance.
+              Keep emergency numbers handy: Police (112), Ambulance (912), and
+              your car rental company's 24/7 support line for roadside
+              assistance.
             </p>
           </div>
           <div class="tips-image">
-            <img src="/images/tourism/landscapes/rwanda-travel-tips.jpg" alt="Travel Tips">
+            <img
+              src="/images/tourism/landscapes/rwanda-travel-tips.jpg"
+              alt="Travel Tips"
+            />
           </div>
         </div>
       </div>
@@ -417,7 +497,9 @@
     <!-- Cost Comparison Section -->
     <section class="cost-section bg-dominant-dark">
       <div class="container">
-        <h2 class="section-title text-secondary">Transportation Cost Comparison</h2>
+        <h2 class="section-title text-secondary">
+          Transportation Cost Comparison
+        </h2>
         <div class="cost-grid">
           <div class="cost-card card">
             <h3 class="text-secondary">Car Rental</h3>
@@ -483,8 +565,13 @@
       <div class="container">
         <div class="cta-content">
           <h2 class="text-dominant">Ready to Explore Rwanda?</h2>
-          <p class="text-dominant">Book your car with Kigali SelfDrive and enjoy the freedom to explore Rwanda at your own pace</p>
-          <router-link to="/book" class="cta-btn">Book Your Rental Car</router-link>
+          <p class="text-dominant">
+            Book your car with Kigali SelfDrive and enjoy the freedom to explore
+            Rwanda at your own pace
+          </p>
+          <router-link to="/book" class="cta-btn"
+            >Book Your Rental Car</router-link
+          >
         </div>
       </div>
     </section>
@@ -503,6 +590,13 @@ export default {
 </script>
 
 <style scoped>
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -833,4 +927,4 @@ export default {
     font-size: 2rem;
   }
 }
-</style> 
+</style>
