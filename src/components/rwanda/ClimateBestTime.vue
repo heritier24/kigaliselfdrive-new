@@ -441,20 +441,55 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta cta-section">
+    <section class="cta">
       <div class="container">
         <div class="cta-content">
-          <h2 class="text-dominant">Ready to Plan Your Rwanda Adventure?</h2>
-          <p class="text-dominant">
-            Book your car with Kigali SelfDrive and experience Rwanda's perfect
-            weather year-round
-          </p>
-          <router-link to="/book" class="cta-btn"
-            >Book Your Weather-Perfect Trip</router-link
-          >
+          <h2>Ready to Plan Your Rwanda Adventure?</h2>
+          <p>Book your car today and experience Rwanda's perfect weather year-round</p>
+          <router-link to="/book" class="cta-btn">Book Your Weather-Perfect Trip</router-link>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Kigali SelfDrive</h3>
+            <p>Your trusted partner for exploring Rwanda. Quality cars, competitive prices, and unforgettable experiences.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><router-link to="/">Home</router-link></li>
+              <li><router-link to="/cars">Cars</router-link></li>
+              <li><router-link to="/about">About</router-link></li>
+              <li><router-link to="/contact">Contact</router-link></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>📍 Kigali, Rwanda</li>
+              <li>📞 +250 788 123 456</li>
+              <li>✉️ info@kigaliselfdrive.com</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; {{ new Date().getFullYear() }} Kigali SelfDrive. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -952,5 +987,104 @@ export default {
   .intro-text h2 {
     font-size: 2rem;
   }
+}
+
+/* CTA Section */
+.cta {
+  padding: 4rem 0;
+  background: #002F6C;
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #FF8C42;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #e67e22;
+}
+
+/* Footer */
+.footer {
+  background: #1E3A5F;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: #FF8C42;
+}
+
+.footer-section p {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #FF8C42;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #FF8C42;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 2rem;
+  text-align: center;
+  color: #9ca3af;
 }
 </style>
