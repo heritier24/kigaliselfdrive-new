@@ -162,15 +162,8 @@
               <div class="car-features">
                 <span v-for="feature in car.features" :key="feature" class="feature">{{ feature }}</span>
               </div>
-              <div class="car-pricing">
-                <div class="price-info">
-                  <span class="price">${{ car.price }}/day</span>
-                  <span class="price-note">+ taxes & fees</span>
-                </div>
-                <div class="car-actions">
-                  <button class="car-btn primary" @click="bookCar(car)">Book Now</button>
-                  <button class="car-btn secondary" @click="viewCarDetails(car)">View Details</button>
-                </div>
+              <div class="car-actions">
+                <button class="car-btn primary" @click="bookCar(car)">Book Now</button>
               </div>
             </div>
           </div>
@@ -338,16 +331,16 @@ export default {
       popularCars: [
         {
           id: 1,
-          name: 'Range Rover Sport',
-          category: 'Luxury SUV',
-          image: '/images/cars/luxury/range-rover-sport.jpg',
+          name: 'Toyota RAV4',
+          category: 'SUV',
+          image: '/images/cars/suv/toyota-rav4.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          luggage: 5,
-          price: 220,
-          description: 'Ultimate luxury SUV for the discerning traveler. Perfect for exploring Rwanda in style with unmatched comfort and performance.',
-          features: ['Luxury Interior', 'Terrain Response', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'All-Terrain Capability']
+          luggage: 4,
+          price: 85,
+          description: 'Perfect for family adventures in Rwanda. This versatile SUV combines comfort, safety, and fuel efficiency, making it ideal for exploring Rwanda\'s diverse landscapes.',
+          features: ['Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'All-Wheel Drive', 'Safety Features', 'Spacious Interior']
         },
         {
           id: 2,
@@ -377,16 +370,16 @@ export default {
         },
         {
           id: 4,
-          name: 'Toyota RAV4',
-          category: 'SUV',
-          image: '/images/cars/suv/toyota-rav4.jpg',
+          name: 'Range Rover Sport',
+          category: 'Luxury SUV',
+          image: '/images/cars/luxury/range-rover-sport.jpg',
           transmission: 'Automatic',
           fuel: 'Petrol',
           seats: 5,
-          luggage: 4,
-          price: 85,
-          description: 'Perfect for family adventures in Rwanda. This versatile SUV combines comfort, safety, and fuel efficiency, making it ideal for exploring Rwanda\'s diverse landscapes.',
-          features: ['Air Conditioning', 'GPS Navigation', 'Bluetooth Connectivity', 'All-Wheel Drive', 'Safety Features', 'Spacious Interior']
+          luggage: 5,
+          price: 220,
+          description: 'Ultimate luxury SUV for the discerning traveler. Perfect for exploring Rwanda in style with unmatched comfort and performance.',
+          features: ['Luxury Interior', 'Terrain Response', 'GPS Navigation', 'Premium Sound System', 'Leather Seats', 'All-Terrain Capability']
         },
         {
           id: 5,
@@ -416,6 +409,32 @@ export default {
         },
         {
           id: 7,
+          name: 'Honda CR-V',
+          category: 'SUV',
+          image: '/images/cars/suv/honda-crv.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 4,
+          price: 90,
+          description: 'Reliable and spacious SUV perfect for family trips and exploring Rwanda. Excellent safety features and comfortable ride quality.',
+          features: ['Honda SENSING', 'Spacious Interior', 'GPS Navigation', 'Bluetooth Connectivity', 'Safety Features', 'All-Weather Capable']
+        },
+        {
+          id: 8,
+          name: 'Mazda CX-5',
+          category: 'SUV',
+          image: '/images/cars/suv/mazda-cx5.jpg',
+          transmission: 'Automatic',
+          fuel: 'Petrol',
+          seats: 5,
+          luggage: 4,
+          price: 95,
+          description: 'Stylish and efficient SUV with premium interior and excellent driving dynamics. Perfect for exploring Rwanda with style.',
+          features: ['Premium Interior', 'SKYACTIV Technology', 'GPS Navigation', 'Bose Sound System', 'Safety Features', 'Fuel Efficient']
+        },
+        {
+          id: 9,
           name: 'Toyota Vitz',
           category: 'Economy',
           image: '/images/cars/economy/toyota-vitz.jpg',
@@ -428,7 +447,7 @@ export default {
           features: ['Fuel Efficient', 'Easy Parking', 'GPS Navigation', 'Air Conditioning', 'Compact Size', 'Affordable']
         },
         {
-          id: 8,
+          id: 10,
           name: 'Suzuki Swift',
           category: 'Economy',
           image: '/images/cars/economy/suzuki-swift.jpg',
