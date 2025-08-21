@@ -83,7 +83,32 @@ const router = createRouter({
     {
       path: '/about-rwanda',
       name: 'about-rwanda',
-      component: () => import('../views/AboutRwandaView.vue')
+      component: () => import('../components/rwanda/AboutRwanda.vue')
+    },
+    {
+      path: '/about-rwanda/national-parks',
+      name: 'national-parks',
+      component: () => import('../components/rwanda/NationalParks.vue')
+    },
+    {
+      path: '/about-rwanda/culture-heritage',
+      name: 'culture-heritage',
+      component: () => import('../components/rwanda/CultureHeritage.vue')
+    },
+    {
+      path: '/about-rwanda/cities-towns',
+      name: 'cities-towns',
+      component: () => import('../components/rwanda/CitiesTowns.vue')
+    },
+    {
+      path: '/about-rwanda/climate-best-time',
+      name: 'climate-best-time',
+      component: () => import('../components/rwanda/ClimateBestTime.vue')
+    },
+    {
+      path: '/about-rwanda/getting-around',
+      name: 'getting-around',
+      component: () => import('../components/rwanda/GettingAround.vue')
     },
     {
       path: '/:pathMatch(.*)*',

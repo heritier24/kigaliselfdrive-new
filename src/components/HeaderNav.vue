@@ -1,7 +1,7 @@
 <template>
-  <header class="header-nav">
+  <header class="header-nav navbar">
     <!-- Promotional Banner -->
-    <div class="promo-banner" v-if="showPromoBanner">
+    <div class="promo-banner bg-accent" v-if="showPromoBanner">
       <div class="promo-slider">
         <div class="promo-slide" :class="{ 'active': currentPromoIndex === 0, 'prev': currentPromoIndex === 4 }">
           <i class="fas fa-map-marker-alt"></i>
@@ -31,14 +31,14 @@
 
     <div class="nav-container">
       <div class="logo">
-        <router-link to="/">
-          <h2>Kigali Self Drive</h2>
+        <router-link to="/" class="navbar-brand">
+          <h2 class="text-secondary">Kigali Self Drive</h2>
         </router-link>
       </div>
 
       <nav class="nav-menu" :class="{ 'active': isMenuOpen }">
-        <router-link to="/" @click="closeMenu">Home</router-link>
-        <router-link to="/about" @click="closeMenu">About</router-link>
+        <router-link to="/" @click="closeMenu" class="nav-link">Home</router-link>
+        <router-link to="/about" @click="closeMenu" class="nav-link">About</router-link>
 
         <!-- Fleet Dropdown -->
         <div class="nav-dropdown" @mouseenter="showFleetDropdown = true" @mouseleave="showFleetDropdown = false">
@@ -83,18 +83,18 @@
           <a href="#" class="dropdown-toggle">Visit Rwanda <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu" :class="{ 'show': showRwandaDropdown }">
             <router-link to="/about-rwanda" @click="closeMenu">About Rwanda</router-link>
-            <router-link to="/about-rwanda#national-parks" @click="closeMenu">National Parks</router-link>
-            <router-link to="/about-rwanda#culture" @click="closeMenu">Culture & Heritage</router-link>
-            <router-link to="/about-rwanda#cities" @click="closeMenu">Cities & Towns</router-link>
-            <router-link to="/about-rwanda#climate" @click="closeMenu">Climate & Best Time</router-link>
-            <router-link to="/about-rwanda#transport" @click="closeMenu">Getting Around</router-link>
+            <router-link to="/about-rwanda/national-parks" @click="closeMenu">National Parks</router-link>
+            <router-link to="/about-rwanda/culture-heritage" @click="closeMenu">Culture & Heritage</router-link>
+            <router-link to="/about-rwanda/cities-towns" @click="closeMenu">Cities & Towns</router-link>
+            <router-link to="/about-rwanda/climate-best-time" @click="closeMenu">Climate & Best Time</router-link>
+            <router-link to="/about-rwanda/getting-around" @click="closeMenu">Getting Around</router-link>
           </div>
         </div>
 
-        <router-link to="/blog" @click="closeMenu">Blog</router-link>
-        <router-link to="/faq" @click="closeMenu">FAQ</router-link>
-        <router-link to="/contact" @click="closeMenu">Contact</router-link>
-        <router-link to="/book" class="cta-button" @click="closeMenu">Book Now</router-link>
+        <router-link to="/blog" @click="closeMenu" class="nav-link">Blog</router-link>
+        <router-link to="/faq" @click="closeMenu" class="nav-link">FAQ</router-link>
+        <router-link to="/contact" @click="closeMenu" class="nav-link">Contact</router-link>
+        <router-link to="/book" class="cta-button btn-accent" @click="closeMenu">Book Now</router-link>
       </nav>
 
       <div class="hamburger" @click="toggleMenu">
