@@ -36,6 +36,31 @@ const router = createRouter({
       component: () => import('../views/ServicesView.vue')
     },
     {
+      path: '/services/self-drive',
+      name: 'self-drive',
+      component: () => import('../components/service/SelfDriveService.vue')
+    },
+    {
+      path: '/services/driver-service',
+      name: 'driver-service',
+      component: () => import('../components/service/DriverService.vue')
+    },
+    {
+      path: '/services/long-term',
+      name: 'long-term',
+      component: () => import('../components/service/LongTermRental.vue')
+    },
+    {
+      path: '/services/airport-transfer',
+      name: 'airport-transfer',
+      component: () => import('../components/service/AirportTransfer.vue')
+    },
+    {
+      path: '/services/safari-car',
+      name: 'safari-car',
+      component: () => import('../components/service/SafariCarRental.vue')
+    },
+    {
       path: '/destinations',
       name: 'destinations',
       component: () => import('../views/DestinationsView.vue')
