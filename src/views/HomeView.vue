@@ -36,18 +36,6 @@
             Experience Rwanda's beauty with our handpicked fleet of luxury and adventure vehicles.
           </p>
           <div class="hero-features">
-            <div class="hero-feature">
-              <span class="feature-icon">🚗</span>
-              <span>Premium Fleet</span>
-            </div>
-            <div class="hero-feature">
-              <span class="feature-icon">🛡️</span>
-              <span>Full Insurance</span>
-            </div>
-            <div class="hero-feature">
-              <span class="feature-icon">📱</span>
-              <span>24/7 Support</span>
-            </div>
           </div>
           <div class="hero-cta-buttons">
             <button @click="scrollToCarsSection" class="hero-btn primary">Explore Fleet</button>
