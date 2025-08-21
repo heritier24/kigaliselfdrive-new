@@ -37,7 +37,7 @@
                 <span class="distance"><i class="fas fa-map-marker-alt"></i> {{ destination.distance }}</span>
                 <span class="duration"><i class="fas fa-clock"></i> {{ destination.duration }}</span>
               </div>
-              <button class="view-details-btn">View Details</button>
+              <router-link :to="destination.link" class="view-details-btn">View Details</router-link>
             </div>
           </div>
         </div>
@@ -80,6 +80,7 @@
                   <span>{{ park.drivingTime }}</span>
                 </div>
               </div>
+              <router-link :to="park.detailLink" class="view-details-btn">View Details</router-link>
               <router-link :to="park.bookingLink" class="book-safari-btn">Book Safari</router-link>
             </div>
           </div>
@@ -121,7 +122,8 @@ export default {
           shortDescription: 'Home to the majestic mountain gorillas and golden monkeys.',
           image: '/images/tourism/gorillas/gorilla-silverback.jpg',
           distance: '2 hours from Kigali',
-          duration: 'Full day'
+          duration: 'Full day',
+          link: '/destinations/volcanoes-national-park'
         },
         {
           id: 2,
@@ -130,7 +132,8 @@ export default {
           shortDescription: 'Rwanda\'s only savannah park with the Big Five.',
           image: '/images/tourism/lions/lion-male-female.jpg',
           distance: '2.5 hours from Kigali',
-          duration: '2-3 days'
+          duration: '2-3 days',
+          link: '/destinations/akagera-national-park'
         },
         {
           id: 3,
@@ -161,6 +164,7 @@ export default {
           bestTime: 'June-September',
           drivingTime: '2 hours from Kigali',
           highlights: ['Gorilla trekking', 'Golden monkeys', 'Hiking trails'],
+          detailLink: '/destinations/volcanoes-national-park',
           bookingLink: '/book'
         },
         {
@@ -172,6 +176,7 @@ export default {
           bestTime: 'June-September',
           drivingTime: '2.5 hours from Kigali',
           highlights: ['Big Five', 'Bird watching', 'Boat safaris'],
+          detailLink: '/destinations/akagera-national-park',
           bookingLink: '/book'
         },
         {

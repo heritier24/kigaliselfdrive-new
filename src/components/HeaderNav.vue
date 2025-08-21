@@ -70,8 +70,8 @@
           <a href="#" class="dropdown-toggle">Destinations <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu" :class="{ 'show': showDestinationsDropdown }">
             <router-link to="/destinations" @click="closeMenu">All Destinations</router-link>
-            <router-link to="/destinations#volcanoes" @click="closeMenu">Volcanoes National Park</router-link>
-            <router-link to="/destinations#akagera" @click="closeMenu">Akagera National Park</router-link>
+            <router-link to="/destinations/volcanoes-national-park" @click="closeMenu">Volcanoes National Park</router-link>
+            <router-link to="/destinations/akagera-national-park" @click="closeMenu">Akagera National Park</router-link>
             <router-link to="/destinations#nyungwe" @click="closeMenu">Nyungwe Forest</router-link>
             <router-link to="/destinations#lake-kivu" @click="closeMenu">Lake Kivu</router-link>
             <router-link to="/destinations#kigali" @click="closeMenu">Kigali City</router-link>

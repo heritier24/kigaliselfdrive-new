@@ -66,6 +66,16 @@ const router = createRouter({
       component: () => import('../views/DestinationsView.vue')
     },
     {
+      path: '/destinations/volcanoes-national-park',
+      name: 'volcanoes-national-park',
+      component: () => import('../components/destinations/VolcanoesNationalPark.vue')
+    },
+    {
+      path: '/destinations/akagera-national-park',
+      name: 'akagera-national-park',
+      component: () => import('../components/destinations/AkageraNationalPark.vue')
+    },
+    {
       path: '/fleet',
       name: 'fleet',
       component: () => import('../views/FleetView.vue')

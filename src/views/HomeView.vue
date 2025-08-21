@@ -249,7 +249,6 @@
       <div class="container">
         <h2 class="section-title">Frequently Asked Questions</h2>
         <p class="section-subtitle">Everything you need to know about car rental in Rwanda</p>
-        
         <div class="faq-grid">
           <div class="faq-item" v-for="(faq, index) in faqs" :key="index">
             <div class="faq-question" @click="toggleFaq(index)">
