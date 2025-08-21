@@ -57,11 +57,11 @@
           <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu" :class="{ 'show': showServicesDropdown }">
             <router-link to="/services" @click="closeMenu">All Services</router-link>
-            <router-link to="/services#self-drive" @click="closeMenu">Self Drive</router-link>
-            <router-link to="/services#driver-service" @click="closeMenu">Car with Driver</router-link>
-            <router-link to="/services#long-term" @click="closeMenu">Long Term Rental</router-link>
-            <router-link to="/services#airport-transfer" @click="closeMenu">Airport Transfer</router-link>
-            <router-link to="/services#safari-car" @click="closeMenu">Safari Car Rental</router-link>
+            <router-link to="/services/self-drive" @click="closeMenu">Self Drive</router-link>
+            <router-link to="/services/driver-service" @click="closeMenu">Car with Driver</router-link>
+            <router-link to="/services/long-term" @click="closeMenu">Long Term Rental</router-link>
+            <router-link to="/services/airport-transfer" @click="closeMenu">Airport Transfer</router-link>
+            <router-link to="/services/safari-car" @click="closeMenu">Safari Car Rental</router-link>
           </div>
         </div>
 
@@ -422,34 +422,14 @@ export default {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
   }
 
-  .nav-menu-open {
+  .nav-menu.active {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
-  }
-
-  .nav-link {
-    font-size: 1.1rem;
-    padding: 1rem 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .dropdown-toggle {
-    font-size: 1.1rem;
-    padding: 1rem 0;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .cta-button {
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-    margin-left: 0;
   }
 
   .hamburger {
@@ -479,6 +459,21 @@ export default {
 
   .logo h2 {
     font-size: 1.3rem;
+  }
+
+  .nav-menu {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
+    padding: 0.75rem 0;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -577,11 +572,33 @@ export default {
     background: rgba(0, 47, 108, 0.05);
     margin-top: 0.5rem;
     border-radius: 5px;
+    max-height: none;
+    overflow: visible;
   }
 
   .dropdown-menu a {
     text-align: center;
     padding: 0.5rem 1rem;
+  }
+
+  .nav-menu a {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 47, 108, 0.1);
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 0;
+    padding: 1rem 2rem;
   }
 }
 </style>
