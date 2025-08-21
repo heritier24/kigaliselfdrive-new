@@ -70,11 +70,7 @@ const router = createRouter({
       name: 'fleet',
       component: () => import('../views/FleetView.vue')
     },
-    {
-      path: '/faq',
-      name: 'faq',
-      component: () => import('../views/FAQView.vue')
-    },
+
     {
       path: '/blog',
       name: 'blog',

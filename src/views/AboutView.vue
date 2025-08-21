@@ -150,18 +150,18 @@
             <div class="member-image">
               <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Team Member">
             </div>
-            <h3 class="text-secondary">Jean Pierre</h3>
+            <h3 class="text-secondary">Daniel Munyaneza</h3>
             <p class="position text-accent">Founder & CEO</p>
-            <p class="bio text-text-secondary">Born and raised in Kigali, Jean Pierre's passion for showcasing Rwanda's beauty led to the creation of Kigali SelfDrive.</p>
+            <p class="bio text-text-secondary">Born and raised in Kigali, Daniel's passion for showcasing Rwanda's beauty led to the creation of Kigali Car Rental Self Drive.</p>
           </div>
 
           <div class="team-member card">
             <div class="member-image">
               <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face" alt="Team Member">
             </div>
-            <h3 class="text-secondary">Marie Claire</h3>
+            <h3 class="text-secondary">Ishimwe Gisubizo (YoungMill)</h3>
             <p class="position text-accent">Operations Manager</p>
-            <p class="bio text-text-secondary">With 10+ years in tourism, Marie Claire ensures every customer has a seamless and memorable experience.</p>
+            <p class="bio text-text-secondary">With 10+ years in tourism, Ishimwe ensures every customer has a seamless and memorable experience.</p>
           </div>
 
           <div class="team-member card">

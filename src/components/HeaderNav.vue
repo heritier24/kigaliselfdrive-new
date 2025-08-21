@@ -32,7 +32,7 @@
     <div class="nav-container">
       <div class="logo">
         <router-link to="/" class="navbar-brand">
-          <h2 class="text-secondary">Kigali Self Drive</h2>
+          <h2 class="text-secondary">Kigali Car Rental Self Drive</h2>
         </router-link>
       </div>
 
@@ -92,7 +92,6 @@
         </div>
 
         <router-link to="/blog" @click="closeMenu" class="nav-link">Blog</router-link>
-        <router-link to="/faq" @click="closeMenu" class="nav-link">FAQ</router-link>
         <router-link to="/contact" @click="closeMenu" class="nav-link">Contact</router-link>
         <router-link to="/book" class="cta-button btn-accent" @click="closeMenu">Book Now</router-link>
       </nav>

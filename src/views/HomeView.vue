@@ -244,6 +244,26 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about car rental in Rwanda</p>
+        
+        <div class="faq-grid">
+          <div class="faq-item" v-for="(faq, index) in faqs" :key="index">
+            <div class="faq-question" @click="toggleFaq(index)">
+              <h3>{{ faq.question }}</h3>
+              <i class="fas fa-chevron-down" :class="{ 'rotated': faq.isOpen }"></i>
+            </div>
+            <div class="faq-answer" :class="{ 'open': faq.isOpen }">
+              <p>{{ faq.answer }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta">
       <div class="container">
@@ -260,7 +280,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>Kigali SelfDrive</h3>
+            <h3>Kigali Car Rental Self Drive</h3>
             <p>Your trusted partner for car rentals in Kigali. Quality service, competitive prices, and unforgettable experiences.</p>
           </div>
           <div class="footer-section">
@@ -290,7 +310,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; {{ new Date().getFullYear() }} Kigali SelfDrive. All rights reserved.</p>
+          <p>&copy; {{ new Date().getFullYear() }} Kigali Car Rental Self Drive. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -536,6 +556,38 @@ export default {
           text: 'Highly recommended! Affordable prices and reliable service. Will definitely use again.',
           avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
         }
+      ],
+      faqs: [
+        {
+          question: 'What documents do I need to rent a car in Rwanda?',
+          answer: 'You need a valid driver\'s license (international or from your home country), passport, and credit card. The minimum age is 21 years old.',
+          isOpen: false
+        },
+        {
+          question: 'Do you offer insurance with your car rentals?',
+          answer: 'Yes, all our rentals include comprehensive insurance coverage. Additional insurance options are available for extra peace of mind.',
+          isOpen: false
+        },
+        {
+          question: 'Can I pick up and drop off the car at different locations?',
+          answer: 'Yes, we offer flexible pickup and drop-off locations including Kigali International Airport and various locations in Kigali city.',
+          isOpen: false
+        },
+        {
+          question: 'What happens if the car breaks down during my rental?',
+          answer: 'We provide 24/7 roadside assistance. If the car breaks down due to mechanical issues, we\'ll provide a replacement vehicle at no extra cost.',
+          isOpen: false
+        },
+        {
+          question: 'Do you offer long-term car rentals?',
+          answer: 'Yes, we offer weekly, monthly, and long-term rental options with discounted rates for extended periods.',
+          isOpen: false
+        },
+        {
+          question: 'Can I drive the rental car to other countries?',
+          answer: 'Yes, with prior approval. We can arrange cross-border permits for travel to neighboring countries like Uganda, Tanzania, and Kenya.',
+          isOpen: false
+        }
       ]
     }
   },
@@ -584,6 +636,9 @@ export default {
         currentSlide = (currentSlide + 1) % slides.length
         slides[currentSlide].classList.add('active')
       }, 5000) // Increased to 5 seconds for better viewing
+    },
+    toggleFaq (index) {
+      this.faqs[index].isOpen = !this.faqs[index].isOpen
     }
   },
   mounted () {
@@ -1592,6 +1647,88 @@ export default {
   padding-top: 2rem;
   text-align: center;
   color: #9ca3af;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.faq-section .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #002F6C;
+}
+
+.faq-section .section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #f8f9fa;
+}
+
+.faq-question h3 {
+  font-size: 1.1rem;
+  color: #002F6C;
+  margin: 0;
+  font-weight: 600;
+}
+
+.faq-question i {
+  color: #FF8C42;
+  transition: transform 0.3s;
+}
+
+.faq-question i.rotated {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.open {
+  max-height: 200px;
+}
+
+.faq-answer p {
+  padding: 0 1.5rem 1.5rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Responsive Design */
