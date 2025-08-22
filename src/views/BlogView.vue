@@ -250,7 +250,14 @@ export default {
       const blogRoutes = {
         1: '/blog/gorilla-trekking-guide',
         2: '/blog/best-time-visit-rwanda',
-        4: '/blog/akagera-national-park-guide'
+        3: '/blog/car-rental-tips',
+        4: '/blog/akagera-national-park-guide',
+        5: '/blog/kigali-city-guide',
+        6: '/blog/road-trip-planning',
+        7: '/blog/car-rental-insurance',
+        8: '/blog/lake-kivu-guide',
+        9: '/blog/budget-travel-rwanda',
+        10: '/blog/cultural-heritage-rwanda'
       }
       // Return the mapped route if it exists, otherwise return a fallback
       return blogRoutes[article.id] || '/blog'

@@ -102,6 +102,41 @@ const router = createRouter({
       component: () => import('../components/blog/AkageraNationalParkGuide.vue')
     },
     {
+      path: '/blog/car-rental-tips',
+      name: 'car-rental-tips',
+      component: () => import('../components/blog/CarRentalTips.vue')
+    },
+    {
+      path: '/blog/kigali-city-guide',
+      name: 'kigali-city-guide',
+      component: () => import('../components/blog/KigaliCityGuide.vue')
+    },
+    {
+      path: '/blog/road-trip-planning',
+      name: 'road-trip-planning',
+      component: () => import('../components/blog/RoadTripPlanning.vue')
+    },
+    {
+      path: '/blog/car-rental-insurance',
+      name: 'car-rental-insurance',
+      component: () => import('../components/blog/CarRentalInsurance.vue')
+    },
+    {
+      path: '/blog/lake-kivu-guide',
+      name: 'lake-kivu-guide',
+      component: () => import('../components/blog/LakeKivuGuide.vue')
+    },
+    {
+      path: '/blog/budget-travel-rwanda',
+      name: 'budget-travel-rwanda',
+      component: () => import('../components/blog/BudgetTravelRwanda.vue')
+    },
+    {
+      path: '/blog/cultural-heritage-rwanda',
+      name: 'cultural-heritage-rwanda',
+      component: () => import('../components/blog/CulturalHeritageRwanda.vue')
+    },
+    {
       path: '/about-rwanda',
       name: 'about-rwanda',
       component: () => import('../components/rwanda/AboutRwanda.vue')
