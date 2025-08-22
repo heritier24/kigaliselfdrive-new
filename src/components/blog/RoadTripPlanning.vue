@@ -6,10 +6,15 @@
       keywords="road trip rwanda, scenic routes rwanda, driving routes rwanda, rwanda road trip planning, scenic drives rwanda, rwanda driving guide"
       url="https://kigaliselfdrive.com/blog/road-trip-planning"
     />
-    
+
     <!-- Hero Section -->
     <section class="hero-section">
-      <div class="hero-background" style="background-image: url('/images/tourism/activities/hot-air-balloon.jpg')">
+      <div
+        class="hero-background"
+        style="
+          background-image: url('/images/tourism/activities/hot-air-balloon.jpg');
+        "
+      >
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -20,7 +25,10 @@
             <span class="read-time">8 min read</span>
           </div>
           <h1 class="hero-title">Road Trip Planning: Rwanda's Scenic Routes</h1>
-          <p class="hero-subtitle">Plan the perfect road trip through Rwanda's stunning landscapes, from rolling hills to pristine lakes and volcanic mountains</p>
+          <p class="hero-subtitle">
+            Plan the perfect road trip through Rwanda's stunning landscapes,
+            from rolling hills to pristine lakes and volcanic mountains
+          </p>
         </div>
       </div>
     </section>
@@ -33,108 +41,158 @@
           <div class="main-content">
             <div class="article-intro">
               <p class="lead-text">
-                Rwanda's compact size and excellent road network make it perfect for road trips. With its rolling hills, pristine lakes, volcanic mountains, and diverse landscapes, every drive in Rwanda offers breathtaking views and unforgettable experiences.
+                Rwanda's compact size and excellent road network make it perfect
+                for road trips. With its rolling hills, pristine lakes, volcanic
+                mountains, and diverse landscapes, every drive in Rwanda offers
+                breathtaking views and unforgettable experiences.
               </p>
             </div>
 
             <div class="content-section">
               <h2>Why Road Trip in Rwanda?</h2>
-              <p>Rwanda's unique geography and well-maintained roads create the perfect conditions for an unforgettable road trip experience.</p>
-              
+              <p>
+                Rwanda's unique geography and well-maintained roads create the
+                perfect conditions for an unforgettable road trip experience.
+              </p>
+
               <div class="benefits-grid">
                 <div class="benefit-card">
                   <h4>🗺️ Compact Size</h4>
-                  <p>Rwanda's small size means you can see diverse landscapes in a single day, from mountains to savannah.</p>
+                  <p>
+                    Rwanda's small size means you can see diverse landscapes in
+                    a single day, from mountains to savannah.
+                  </p>
                 </div>
                 <div class="benefit-card">
                   <h4>🛣️ Excellent Roads</h4>
-                  <p>Well-maintained highways and scenic backroads make driving enjoyable and safe.</p>
+                  <p>
+                    Well-maintained highways and scenic backroads make driving
+                    enjoyable and safe.
+                  </p>
                 </div>
                 <div class="benefit-card">
                   <h4>🌄 Diverse Landscapes</h4>
-                  <p>From rolling hills to volcanic mountains, every turn offers a new breathtaking view.</p>
+                  <p>
+                    From rolling hills to volcanic mountains, every turn offers
+                    a new breathtaking view.
+                  </p>
                 </div>
                 <div class="benefit-card">
                   <h4>🦁 Wildlife Encounters</h4>
-                  <p>Drive through national parks and encounter wildlife in their natural habitat.</p>
+                  <p>
+                    Drive through national parks and encounter wildlife in their
+                    natural habitat.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="content-section">
               <h2>Top Scenic Routes</h2>
-              <p>Discover Rwanda's most beautiful driving routes that showcase the country's natural beauty.</p>
-              
+              <p>
+                Discover Rwanda's most beautiful driving routes that showcase
+                the country's natural beauty.
+              </p>
+
               <div class="routes-grid">
                 <div class="route-card">
                   <h4>🏔️ Kigali to Volcanoes National Park</h4>
-                  <p><strong>Distance:</strong> 2-3 hours<br>
-                  <strong>Highlights:</strong> Rolling hills, tea plantations, mountain views<br>
-                  <strong>Best Time:</strong> Early morning for clear views<br>
-                  <strong>Stops:</strong> Tea estates, local markets</p>
+                  <p>
+                    <strong>Distance:</strong> 2-3 hours<br />
+                    <strong>Highlights:</strong> Rolling hills, tea plantations,
+                    mountain views<br />
+                    <strong>Best Time:</strong> Early morning for clear views<br />
+                    <strong>Stops:</strong> Tea estates, local markets
+                  </p>
                 </div>
                 <div class="route-card">
                   <h4>🌊 Kigali to Lake Kivu</h4>
-                  <p><strong>Distance:</strong> 3-4 hours<br>
-                  <strong>Highlights:</strong> Lake views, fishing villages, beaches<br>
-                  <strong>Best Time:</strong> Afternoon for sunset views<br>
-                  <strong>Stops:</strong> Beach resorts, fishing villages</p>
+                  <p>
+                    <strong>Distance:</strong> 3-4 hours<br />
+                    <strong>Highlights:</strong> Lake views, fishing villages,
+                    beaches<br />
+                    <strong>Best Time:</strong> Afternoon for sunset views<br />
+                    <strong>Stops:</strong> Beach resorts, fishing villages
+                  </p>
                 </div>
                 <div class="route-card">
                   <h4>🦁 Kigali to Akagera National Park</h4>
-                  <p><strong>Distance:</strong> 2-3 hours<br>
-                  <strong>Highlights:</strong> Savannah landscapes, wildlife viewing<br>
-                  <strong>Best Time:</strong> Early morning for wildlife<br>
-                  <strong>Stops:</strong> Wildlife viewing points</p>
+                  <p>
+                    <strong>Distance:</strong> 2-3 hours<br />
+                    <strong>Highlights:</strong> Savannah landscapes, wildlife
+                    viewing<br />
+                    <strong>Best Time:</strong> Early morning for wildlife<br />
+                    <strong>Stops:</strong> Wildlife viewing points
+                  </p>
                 </div>
                 <div class="route-card">
                   <h4>🌿 Southern Circuit</h4>
-                  <p><strong>Distance:</strong> 4-5 hours<br>
-                  <strong>Highlights:</strong> Nyungwe Forest, tea plantations<br>
-                  <strong>Best Time:</strong> Dry season<br>
-                  <strong>Stops:</strong> Forest walks, tea estates</p>
+                  <p>
+                    <strong>Distance:</strong> 4-5 hours<br />
+                    <strong>Highlights:</strong> Nyungwe Forest, tea
+                    plantations<br />
+                    <strong>Best Time:</strong> Dry season<br />
+                    <strong>Stops:</strong> Forest walks, tea estates
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="content-section">
               <h2>Planning Your Road Trip</h2>
-              <p>Follow these steps to plan the perfect Rwandan road trip adventure.</p>
-              
+              <p>
+                Follow these steps to plan the perfect Rwandan road trip
+                adventure.
+              </p>
+
               <div class="planning-steps">
                 <div class="step-card">
                   <div class="step-number">1</div>
                   <div class="step-content">
                     <h4>Choose Your Route</h4>
-                    <p>Select routes based on your interests: wildlife, culture, nature, or adventure.</p>
+                    <p>
+                      Select routes based on your interests: wildlife, culture,
+                      nature, or adventure.
+                    </p>
                   </div>
                 </div>
                 <div class="step-card">
                   <div class="step-number">2</div>
                   <div class="step-content">
                     <h4>Plan Your Stops</h4>
-                    <p>Research attractions, viewpoints, and accommodation along your route.</p>
+                    <p>
+                      Research attractions, viewpoints, and accommodation along
+                      your route.
+                    </p>
                   </div>
                 </div>
                 <div class="step-card">
                   <div class="step-number">3</div>
                   <div class="step-content">
                     <h4>Check Road Conditions</h4>
-                    <p>Verify road conditions, especially during rainy season.</p>
+                    <p>
+                      Verify road conditions, especially during rainy season.
+                    </p>
                   </div>
                 </div>
                 <div class="step-card">
                   <div class="step-number">4</div>
                   <div class="step-content">
                     <h4>Book Accommodation</h4>
-                    <p>Reserve hotels or campsites in advance, especially in popular areas.</p>
+                    <p>
+                      Reserve hotels or campsites in advance, especially in
+                      popular areas.
+                    </p>
                   </div>
                 </div>
                 <div class="step-card">
                   <div class="step-number">5</div>
                   <div class="step-content">
                     <h4>Prepare Your Vehicle</h4>
-                    <p>Ensure your vehicle is well-maintained and suitable for your route.</p>
+                    <p>
+                      Ensure your vehicle is well-maintained and suitable for
+                      your route.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -142,8 +200,11 @@
 
             <div class="content-section">
               <h2>Essential Packing List</h2>
-              <p>Pack these essentials for a comfortable and safe road trip in Rwanda.</p>
-              
+              <p>
+                Pack these essentials for a comfortable and safe road trip in
+                Rwanda.
+              </p>
+
               <div class="packing-categories">
                 <div class="packing-category">
                   <h4>🗺️ Navigation</h4>
@@ -186,8 +247,11 @@
 
             <div class="content-section">
               <h2>Safety Tips</h2>
-              <p>Follow these safety guidelines to ensure a secure and enjoyable road trip.</p>
-              
+              <p>
+                Follow these safety guidelines to ensure a secure and enjoyable
+                road trip.
+              </p>
+
               <div class="safety-tips">
                 <div class="safety-card">
                   <h4>🚗 Vehicle Safety</h4>
@@ -221,8 +285,11 @@
 
             <div class="content-section">
               <h2>Best Time for Road Trips</h2>
-              <p>Timing your road trip can significantly impact your experience and the views you'll encounter.</p>
-              
+              <p>
+                Timing your road trip can significantly impact your experience
+                and the views you'll encounter.
+              </p>
+
               <div class="seasonal-guide">
                 <div class="season-card dry">
                   <h3>🌞 Dry Season (June-September, Dec-Feb)</h3>
@@ -236,7 +303,7 @@
                     </ul>
                   </div>
                 </div>
-                
+
                 <div class="season-card wet">
                   <h3>🌧️ Wet Season (March-May, Oct-Nov)</h3>
                   <div class="season-info">
@@ -254,8 +321,11 @@
 
             <div class="content-section">
               <h2>Photography Tips</h2>
-              <p>Capture the stunning landscapes and memorable moments of your Rwandan road trip.</p>
-              
+              <p>
+                Capture the stunning landscapes and memorable moments of your
+                Rwandan road trip.
+              </p>
+
               <div class="photo-tips">
                 <div class="photo-tip">
                   <h4>📸 Equipment</h4>
@@ -289,9 +359,18 @@
 
             <div class="content-section">
               <h2>Conclusion</h2>
-              <p>Road tripping through Rwanda offers an unparalleled opportunity to experience the country's natural beauty, diverse landscapes, and warm hospitality. With proper planning and preparation, your Rwandan road trip will be an adventure you'll never forget.</p>
-              
-              <p>Ready to start your Rwandan road trip adventure? Contact us to arrange your vehicle rental and get personalized route recommendations for your journey.</p>
+              <p>
+                Road tripping through Rwanda offers an unparalleled opportunity
+                to experience the country's natural beauty, diverse landscapes,
+                and warm hospitality. With proper planning and preparation, your
+                Rwandan road trip will be an adventure you'll never forget.
+              </p>
+
+              <p>
+                Ready to start your Rwandan road trip adventure? Contact us to
+                arrange your vehicle rental and get personalized route
+                recommendations for your journey.
+              </p>
             </div>
           </div>
 
@@ -327,14 +406,23 @@
               <h3>Related Articles</h3>
               <div class="related-articles">
                 <router-link to="/blog/car-rental-tips" class="related-article">
-                  <img src="/images/cars/suv/toyota-rav4.jpg" alt="Car Rental Tips">
+                  <img
+                    src="/images/cars/suv/toyota-rav4.jpg"
+                    alt="Car Rental Tips"
+                  />
                   <div class="related-content">
                     <h4>Essential Car Rental Tips for Rwanda</h4>
                     <span class="date">December 8, 2024</span>
                   </div>
                 </router-link>
-                <router-link to="/blog/best-time-visit-rwanda" class="related-article">
-                  <img src="/images/tourism/activities/hot-air-balloon.jpg" alt="Best Time to Visit Rwanda">
+                <router-link
+                  to="/blog/best-time-visit-rwanda"
+                  class="related-article"
+                >
+                  <img
+                    src="/images/tourism/activities/hot-air-balloon.jpg"
+                    alt="Best Time to Visit Rwanda"
+                  />
                   <div class="related-content">
                     <h4>Best Time to Visit Rwanda</h4>
                     <span class="date">December 10, 2024</span>
@@ -345,8 +433,13 @@
 
             <div class="sidebar-widget">
               <h3>Plan Your Road Trip</h3>
-              <p>Ready to explore Rwanda by road? We can help you plan the perfect route and arrange your vehicle.</p>
-              <router-link to="/contact" class="cta-button">Contact Us</router-link>
+              <p>
+                Ready to explore Rwanda by road? We can help you plan the
+                perfect route and arrange your vehicle.
+              </p>
+              <router-link to="/contact" class="cta-button"
+                >Contact Us</router-link
+              >
             </div>
           </div>
         </div>
@@ -821,4 +914,4 @@ export default {
     position: static;
   }
 }
-</style> 
+</style>

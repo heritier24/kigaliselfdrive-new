@@ -76,6 +76,21 @@ const router = createRouter({
       component: () => import('../components/destinations/AkageraNationalPark.vue')
     },
     {
+      path: '/destinations/nyungwe-forest',
+      name: 'nyungwe-forest',
+      component: () => import('../components/destinations/NyungweForest.vue')
+    },
+    {
+      path: '/destinations/lake-kivu',
+      name: 'lake-kivu',
+      component: () => import('../components/destinations/LakeKivu.vue')
+    },
+    {
+      path: '/destinations/kigali-city',
+      name: 'kigali-city',
+      component: () => import('../components/destinations/KigaliCity.vue')
+    },
+    {
       path: '/fleet',
       name: 'fleet',
       component: () => import('../views/FleetView.vue')

@@ -6,10 +6,15 @@
       keywords="kigali city guide, things to do kigali, kigali attractions, kigali tourism, kigali culture, kigali restaurants, kigali hotels, visit kigali rwanda"
       url="https://kigaliselfdrive.com/blog/kigali-city-guide"
     />
-    
+
     <!-- Hero Section -->
     <section class="hero-section">
-      <div class="hero-background" style="background-image: url('/images/tourism/activities/hot-air-balloon.jpg')">
+      <div
+        class="hero-background"
+        style="
+          background-image: url('/images/tourism/activities/hot-air-balloon.jpg');
+        "
+      >
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -20,7 +25,10 @@
             <span class="read-time">5 min read</span>
           </div>
           <h1 class="hero-title">Kigali City Guide: What to See and Do</h1>
-          <p class="hero-subtitle">Discover the vibrant capital city of Rwanda, from its rich history and culture to modern attractions and dining experiences</p>
+          <p class="hero-subtitle">
+            Discover the vibrant capital city of Rwanda, from its rich history
+            and culture to modern attractions and dining experiences
+          </p>
         </div>
       </div>
     </section>
@@ -33,14 +41,23 @@
           <div class="main-content">
             <div class="article-intro">
               <p class="lead-text">
-                Kigali, the heart of Rwanda, is a city that seamlessly blends tradition with modernity. Known for its cleanliness, safety, and warm hospitality, Kigali offers visitors a unique African urban experience with world-class attractions, vibrant culture, and stunning hilltop views.
+                Kigali, the heart of Rwanda, is a city that seamlessly blends
+                tradition with modernity. Known for its cleanliness, safety, and
+                warm hospitality, Kigali offers visitors a unique African urban
+                experience with world-class attractions, vibrant culture, and
+                stunning hilltop views.
               </p>
             </div>
 
             <div class="content-section">
               <h2>About Kigali</h2>
-              <p>Kigali, Rwanda's capital and largest city, is built across several hills and valleys, creating a beautiful landscape that's both modern and naturally stunning. The city is known for its cleanliness, safety, and progressive urban planning.</p>
-              
+              <p>
+                Kigali, Rwanda's capital and largest city, is built across
+                several hills and valleys, creating a beautiful landscape that's
+                both modern and naturally stunning. The city is known for its
+                cleanliness, safety, and progressive urban planning.
+              </p>
+
               <div class="city-overview">
                 <div class="overview-card">
                   <h4>📍 Location</h4>
@@ -63,158 +80,239 @@
 
             <div class="content-section">
               <h2>Must-Visit Attractions</h2>
-              <p>Kigali offers a diverse range of attractions that showcase both its history and modern development.</p>
-              
+              <p>
+                Kigali offers a diverse range of attractions that showcase both
+                its history and modern development.
+              </p>
+
               <div class="attractions-grid">
                 <div class="attraction-card">
                   <h4>🏛️ Kigali Genocide Memorial</h4>
-                  <p><strong>Location:</strong> Gisozi<br>
-                  <strong>Highlights:</strong> Educational exhibits, memorial gardens, mass graves<br>
-                  <strong>Duration:</strong> 2-3 hours<br>
-                  <strong>Note:</strong> Emotional but important historical site</p>
+                  <p>
+                    <strong>Location:</strong> Gisozi<br />
+                    <strong>Highlights:</strong> Educational exhibits, memorial
+                    gardens, mass graves<br />
+                    <strong>Duration:</strong> 2-3 hours<br />
+                    <strong>Note:</strong> Emotional but important historical
+                    site
+                  </p>
                 </div>
                 <div class="attraction-card">
                   <h4>🛍️ Kimironko Market</h4>
-                  <p><strong>Location:</strong> Kimironko district<br>
-                  <strong>Highlights:</strong> Local crafts, fresh produce, traditional fabrics<br>
-                  <strong>Duration:</strong> 1-2 hours<br>
-                  <strong>Tip:</strong> Great for souvenirs and local experience</p>
+                  <p>
+                    <strong>Location:</strong> Kimironko district<br />
+                    <strong>Highlights:</strong> Local crafts, fresh produce,
+                    traditional fabrics<br />
+                    <strong>Duration:</strong> 1-2 hours<br />
+                    <strong>Tip:</strong> Great for souvenirs and local
+                    experience
+                  </p>
                 </div>
                 <div class="attraction-card">
                   <h4>🌿 Nyamirambo Women's Center</h4>
-                  <p><strong>Location:</strong> Nyamirambo district<br>
-                  <strong>Highlights:</strong> Cultural tours, cooking classes, craft workshops<br>
-                  <strong>Duration:</strong> 3-4 hours<br>
-                  <strong>Experience:</strong> Authentic local culture</p>
+                  <p>
+                    <strong>Location:</strong> Nyamirambo district<br />
+                    <strong>Highlights:</strong> Cultural tours, cooking
+                    classes, craft workshops<br />
+                    <strong>Duration:</strong> 3-4 hours<br />
+                    <strong>Experience:</strong> Authentic local culture
+                  </p>
                 </div>
                 <div class="attraction-card">
                   <h4>🏛️ Presidential Palace Museum</h4>
-                  <p><strong>Location:</strong> Kanombe<br>
-                  <strong>Highlights:</strong> Presidential history, beautiful gardens<br>
-                  <strong>Duration:</strong> 1-2 hours<br>
-                  <strong>Note:</strong> Advance booking required</p>
+                  <p>
+                    <strong>Location:</strong> Kanombe<br />
+                    <strong>Highlights:</strong> Presidential history, beautiful
+                    gardens<br />
+                    <strong>Duration:</strong> 1-2 hours<br />
+                    <strong>Note:</strong> Advance booking required
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="content-section">
               <h2>Cultural Experiences</h2>
-              <p>Immerse yourself in Rwanda's rich culture through these authentic experiences in Kigali.</p>
-              
+              <p>
+                Immerse yourself in Rwanda's rich culture through these
+                authentic experiences in Kigali.
+              </p>
+
               <div class="cultural-experiences">
                 <div class="experience-card">
                   <h4>🎭 Traditional Dance Performances</h4>
-                  <p>Watch traditional Intore dancers perform at various venues around the city, including the Rwanda Cultural Heritage Academy.</p>
+                  <p>
+                    Watch traditional Intore dancers perform at various venues
+                    around the city, including the Rwanda Cultural Heritage
+                    Academy.
+                  </p>
                 </div>
                 <div class="experience-card">
                   <h4>☕ Coffee Tours</h4>
-                  <p>Visit coffee cooperatives and learn about Rwanda's famous coffee production, from bean to cup.</p>
+                  <p>
+                    Visit coffee cooperatives and learn about Rwanda's famous
+                    coffee production, from bean to cup.
+                  </p>
                 </div>
                 <div class="experience-card">
                   <h4>🎨 Art Galleries</h4>
-                  <p>Explore contemporary Rwandan art at galleries like Inema Arts Center and Ivuka Arts.</p>
+                  <p>
+                    Explore contemporary Rwandan art at galleries like Inema
+                    Arts Center and Ivuka Arts.
+                  </p>
                 </div>
                 <div class="experience-card">
                   <h4>🏺 Pottery Workshops</h4>
-                  <p>Learn traditional pottery techniques at local workshops and create your own souvenir.</p>
+                  <p>
+                    Learn traditional pottery techniques at local workshops and
+                    create your own souvenir.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="content-section">
               <h2>Dining and Nightlife</h2>
-              <p>Kigali's culinary scene reflects its cosmopolitan nature, offering everything from traditional Rwandan dishes to international cuisine.</p>
-              
+              <p>
+                Kigali's culinary scene reflects its cosmopolitan nature,
+                offering everything from traditional Rwandan dishes to
+                international cuisine.
+              </p>
+
               <div class="dining-options">
                 <div class="dining-card">
                   <h4>🍽️ Traditional Rwandan Cuisine</h4>
-                  <p><strong>Must-try dishes:</strong> Ugali, Isombe, Brochettes<br>
-                  <strong>Best restaurants:</strong> Repub Lounge, Heaven Restaurant<br>
-                  <strong>Experience:</strong> Authentic local flavors</p>
+                  <p>
+                    <strong>Must-try dishes:</strong> Ugali, Isombe,
+                    Brochettes<br />
+                    <strong>Best restaurants:</strong> Repub Lounge, Heaven
+                    Restaurant<br />
+                    <strong>Experience:</strong> Authentic local flavors
+                  </p>
                 </div>
                 <div class="dining-card">
                   <h4>🌍 International Cuisine</h4>
-                  <p><strong>Options:</strong> Italian, Indian, Chinese, French<br>
-                  <strong>Popular spots:</strong> Sole Luna, Khana Khazana<br>
-                  <strong>Atmosphere:</strong> Modern and sophisticated</p>
+                  <p>
+                    <strong>Options:</strong> Italian, Indian, Chinese,
+                    French<br />
+                    <strong>Popular spots:</strong> Sole Luna, Khana Khazana<br />
+                    <strong>Atmosphere:</strong> Modern and sophisticated
+                  </p>
                 </div>
                 <div class="dining-card">
                   <h4>☕ Coffee Culture</h4>
-                  <p><strong>Best cafes:</strong> Question Coffee, Bourbon Coffee<br>
-                  <strong>Specialty:</strong> Rwandan single-origin coffee<br>
-                  <strong>Experience:</strong> Relaxed, social atmosphere</p>
+                  <p>
+                    <strong>Best cafes:</strong> Question Coffee, Bourbon
+                    Coffee<br />
+                    <strong>Specialty:</strong> Rwandan single-origin coffee<br />
+                    <strong>Experience:</strong> Relaxed, social atmosphere
+                  </p>
                 </div>
                 <div class="dining-card">
                   <h4>🍺 Nightlife</h4>
-                  <p><strong>Popular areas:</strong> Kiyovu, Remera<br>
-                  <strong>Venues:</strong> Sky Hotel, Kigali Serena Hotel<br>
-                  <strong>Music:</strong> Live music, DJs, traditional performances</p>
+                  <p>
+                    <strong>Popular areas:</strong> Kiyovu, Remera<br />
+                    <strong>Venues:</strong> Sky Hotel, Kigali Serena Hotel<br />
+                    <strong>Music:</strong> Live music, DJs, traditional
+                    performances
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="content-section">
               <h2>Getting Around Kigali</h2>
-              <p>Kigali is a well-planned city with various transportation options for visitors.</p>
-              
+              <p>
+                Kigali is a well-planned city with various transportation
+                options for visitors.
+              </p>
+
               <div class="transportation-options">
                 <div class="transport-card">
                   <h4>🚗 Car Rental</h4>
-                  <p><strong>Best for:</strong> Flexibility, day trips outside the city<br>
-                  <strong>Companies:</strong> Multiple rental agencies available<br>
-                  <strong>Parking:</strong> Generally available and safe</p>
+                  <p>
+                    <strong>Best for:</strong> Flexibility, day trips outside
+                    the city<br />
+                    <strong>Companies:</strong> Multiple rental agencies
+                    available<br />
+                    <strong>Parking:</strong> Generally available and safe
+                  </p>
                 </div>
                 <div class="transport-card">
                   <h4>🏍️ Moto-taxis</h4>
-                  <p><strong>Best for:</strong> Quick trips, avoiding traffic<br>
-                  <strong>Safety:</strong> Always wear a helmet<br>
-                  <strong>Negotiation:</strong> Agree on price before riding</p>
+                  <p>
+                    <strong>Best for:</strong> Quick trips, avoiding traffic<br />
+                    <strong>Safety:</strong> Always wear a helmet<br />
+                    <strong>Negotiation:</strong> Agree on price before riding
+                  </p>
                 </div>
                 <div class="transport-card">
                   <h4>🚌 Public Buses</h4>
-                  <p><strong>Best for:</strong> Budget travel, main routes<br>
-                  <strong>Routes:</strong> Well-connected network<br>
-                  <strong>Payment:</strong> Cash or mobile money</p>
+                  <p>
+                    <strong>Best for:</strong> Budget travel, main routes<br />
+                    <strong>Routes:</strong> Well-connected network<br />
+                    <strong>Payment:</strong> Cash or mobile money
+                  </p>
                 </div>
                 <div class="transport-card">
                   <h4>🚶 Walking</h4>
-                  <p><strong>Best for:</strong> Short distances, exploring neighborhoods<br>
-                  <strong>Safety:</strong> Very safe, especially during the day<br>
-                  <strong>Views:</strong> Great way to see the city</p>
+                  <p>
+                    <strong>Best for:</strong> Short distances, exploring
+                    neighborhoods<br />
+                    <strong>Safety:</strong> Very safe, especially during the
+                    day<br />
+                    <strong>Views:</strong> Great way to see the city
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="content-section">
               <h2>Where to Stay</h2>
-              <p>Kigali offers accommodation options for every budget and preference.</p>
-              
+              <p>
+                Kigali offers accommodation options for every budget and
+                preference.
+              </p>
+
               <div class="accommodation-options">
                 <div class="accommodation-card luxury">
                   <h4>🏨 Luxury Hotels</h4>
-                  <p><strong>Examples:</strong> Kigali Serena Hotel, Radisson Blu<br>
-                  <strong>Features:</strong> 5-star amenities, central location<br>
-                  <strong>Price Range:</strong> $200-400 per night</p>
+                  <p>
+                    <strong>Examples:</strong> Kigali Serena Hotel, Radisson
+                    Blu<br />
+                    <strong>Features:</strong> 5-star amenities, central
+                    location<br />
+                    <strong>Price Range:</strong> $200-400 per night
+                  </p>
                 </div>
                 <div class="accommodation-card mid">
                   <h4>🏨 Mid-Range Hotels</h4>
-                  <p><strong>Examples:</strong> Hotel des Mille Collines, Kigali Marriott<br>
-                  <strong>Features:</strong> Comfortable, good location<br>
-                  <strong>Price Range:</strong> $80-150 per night</p>
+                  <p>
+                    <strong>Examples:</strong> Hotel des Mille Collines, Kigali
+                    Marriott<br />
+                    <strong>Features:</strong> Comfortable, good location<br />
+                    <strong>Price Range:</strong> $80-150 per night
+                  </p>
                 </div>
                 <div class="accommodation-card budget">
                   <h4>🏠 Budget Options</h4>
-                  <p><strong>Examples:</strong> Guesthouses, hostels<br>
-                  <strong>Features:</strong> Basic but clean, local experience<br>
-                  <strong>Price Range:</strong> $20-60 per night</p>
+                  <p>
+                    <strong>Examples:</strong> Guesthouses, hostels<br />
+                    <strong>Features:</strong> Basic but clean, local
+                    experience<br />
+                    <strong>Price Range:</strong> $20-60 per night
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="content-section">
               <h2>Shopping and Souvenirs</h2>
-              <p>Take home a piece of Rwanda with these unique shopping experiences.</p>
-              
+              <p>
+                Take home a piece of Rwanda with these unique shopping
+                experiences.
+              </p>
+
               <div class="shopping-options">
                 <div class="shopping-card">
                   <h4>🛍️ Traditional Crafts</h4>
@@ -248,8 +346,10 @@
 
             <div class="content-section">
               <h2>Practical Tips</h2>
-              <p>Make the most of your Kigali experience with these helpful tips.</p>
-              
+              <p>
+                Make the most of your Kigali experience with these helpful tips.
+              </p>
+
               <div class="practical-tips">
                 <div class="tip-card">
                   <h4>💰 Currency and Payments</h4>
@@ -283,9 +383,18 @@
 
             <div class="content-section">
               <h2>Conclusion</h2>
-              <p>Kigali is a city that will surprise and delight visitors with its cleanliness, safety, and warm hospitality. Whether you're interested in history, culture, food, or simply experiencing a modern African city, Kigali has something to offer everyone.</p>
-              
-              <p>Ready to explore Kigali? Contact us to arrange your transportation and get personalized recommendations for your city adventure.</p>
+              <p>
+                Kigali is a city that will surprise and delight visitors with
+                its cleanliness, safety, and warm hospitality. Whether you're
+                interested in history, culture, food, or simply experiencing a
+                modern African city, Kigali has something to offer everyone.
+              </p>
+
+              <p>
+                Ready to explore Kigali? Contact us to arrange your
+                transportation and get personalized recommendations for your
+                city adventure.
+              </p>
             </div>
           </div>
 
@@ -320,15 +429,27 @@
             <div class="sidebar-widget">
               <h3>Related Articles</h3>
               <div class="related-articles">
-                <router-link to="/blog/best-time-visit-rwanda" class="related-article">
-                  <img src="/images/tourism/activities/hot-air-balloon.jpg" alt="Best Time to Visit Rwanda">
+                <router-link
+                  to="/blog/best-time-visit-rwanda"
+                  class="related-article"
+                >
+                  <img
+                    src="/images/tourism/activities/hot-air-balloon.jpg"
+                    alt="Best Time to Visit Rwanda"
+                  />
                   <div class="related-content">
                     <h4>Best Time to Visit Rwanda</h4>
                     <span class="date">December 10, 2024</span>
                   </div>
                 </router-link>
-                <router-link to="/blog/road-trip-planning" class="related-article">
-                  <img src="/images/tourism/activities/hot-air-balloon.jpg" alt="Road Trip Planning">
+                <router-link
+                  to="/blog/road-trip-planning"
+                  class="related-article"
+                >
+                  <img
+                    src="/images/tourism/activities/hot-air-balloon.jpg"
+                    alt="Road Trip Planning"
+                  />
                   <div class="related-content">
                     <h4>Road Trip Planning: Rwanda's Scenic Routes</h4>
                     <span class="date">November 30, 2024</span>
@@ -339,8 +460,13 @@
 
             <div class="sidebar-widget">
               <h3>Explore Kigali</h3>
-              <p>Ready to discover Kigali? We can help you arrange transportation and guided tours.</p>
-              <router-link to="/contact" class="cta-button">Contact Us</router-link>
+              <p>
+                Ready to discover Kigali? We can help you arrange transportation
+                and guided tours.
+              </p>
+              <router-link to="/contact" class="cta-button"
+                >Contact Us</router-link
+              >
             </div>
           </div>
         </div>
@@ -824,4 +950,4 @@ export default {
     position: static;
   }
 }
-</style> 
+</style>

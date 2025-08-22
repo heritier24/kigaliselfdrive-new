@@ -142,7 +142,8 @@ export default {
           shortDescription: 'Beautiful lake perfect for relaxation and water activities.',
           image: '/images/tourism/activities/hot-air-balloon.jpg',
           distance: '3 hours from Kigali',
-          duration: '2-3 days'
+          duration: '2-3 days',
+          link: '/destinations/lake-kivu'
         },
         {
           id: 4,
@@ -151,7 +152,18 @@ export default {
           shortDescription: 'Ancient rainforest with chimpanzees and diverse wildlife.',
           image: '/images/tourism/chimpanzee/chimpanzee-1.jpg',
           distance: '5 hours from Kigali',
-          duration: '2-3 days'
+          duration: '2-3 days',
+          link: '/destinations/nyungwe-forest'
+        },
+        {
+          id: 5,
+          name: 'Kigali City',
+          category: 'City',
+          shortDescription: 'Vibrant capital city with rich culture and modern amenities.',
+          image: '/images/tourism/landscapes/landscape-1.jpg',
+          distance: 'City center',
+          duration: '1-3 days',
+          link: '/destinations/kigali-city'
         }
       ],
       nationalParks: [
@@ -188,6 +200,31 @@ export default {
           bestTime: 'June-September',
           drivingTime: '5 hours from Kigali',
           highlights: ['Chimpanzees', 'Canopy walk', 'Bird watching'],
+          detailLink: '/destinations/nyungwe-forest',
+          bookingLink: '/book'
+        },
+        {
+          id: 4,
+          name: 'Lake Kivu',
+          description: 'Beautiful lake perfect for relaxation and water activities.',
+          image: '/images/tourism/landscapes/landscape-1.jpg',
+          location: 'Western Rwanda',
+          bestTime: 'Year-round',
+          drivingTime: '3 hours from Kigali',
+          highlights: ['Water activities', 'Beach relaxation', 'Fishing'],
+          detailLink: '/destinations/lake-kivu',
+          bookingLink: '/book'
+        },
+        {
+          id: 5,
+          name: 'Kigali City',
+          description: 'Vibrant capital city with rich culture and modern amenities.',
+          image: '/images/tourism/landscapes/landscape-2.jpg',
+          location: 'Central Rwanda',
+          bestTime: 'Year-round',
+          drivingTime: 'City center',
+          highlights: ['Cultural experiences', 'Shopping', 'Dining'],
+          detailLink: '/destinations/kigali-city',
           bookingLink: '/book'
         }
       ]
