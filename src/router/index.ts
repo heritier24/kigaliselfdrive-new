@@ -87,6 +87,21 @@ const router = createRouter({
       component: () => import('../views/BlogView.vue')
     },
     {
+      path: '/blog/gorilla-trekking-guide',
+      name: 'gorilla-trekking-guide',
+      component: () => import('../components/blog/GorillaTrekkingGuide.vue')
+    },
+    {
+      path: '/blog/best-time-visit-rwanda',
+      name: 'best-time-visit-rwanda',
+      component: () => import('../components/blog/BestTimeVisitRwanda.vue')
+    },
+    {
+      path: '/blog/akagera-national-park-guide',
+      name: 'akagera-national-park-guide',
+      component: () => import('../components/blog/AkageraNationalParkGuide.vue')
+    },
+    {
       path: '/about-rwanda',
       name: 'about-rwanda',
       component: () => import('../components/rwanda/AboutRwanda.vue')

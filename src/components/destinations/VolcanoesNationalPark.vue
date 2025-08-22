@@ -344,6 +344,10 @@ export default {
   name: 'VolcanoesNationalPark',
   components: {
     SEOHead
+  },
+  mounted () {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0)
   }
 }
 </script>

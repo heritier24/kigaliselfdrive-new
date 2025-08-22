@@ -660,6 +660,8 @@ export default {
     }
   },
   mounted () {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0)
     // Start car background slideshow
     this.startSlideshow()
   }

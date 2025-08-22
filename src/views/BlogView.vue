@@ -23,7 +23,7 @@
             </div>
             <h2>{{ featuredArticle.title }}</h2>
             <p>{{ featuredArticle.excerpt }}</p>
-            <router-link :to="`/blog/${featuredArticle.id}`" class="read-more-btn">Read Full Article</router-link>
+            <router-link :to="getBlogLink(featuredArticle)" class="read-more-btn">Read Full Article</router-link>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
               <div class="article-tags">
                 <span v-for="tag in article.tags" :key="tag" class="tag">{{ tag }}</span>
               </div>
-              <router-link :to="`/blog/${article.id}`" class="read-more-link">Read More →</router-link>
+              <router-link :to="getBlogLink(article)" class="read-more-link">Read More →</router-link>
             </div>
           </article>
         </div>
@@ -244,6 +244,16 @@ export default {
       // Handle newsletter subscription
       alert('Thank you for subscribing to our newsletter!')
       this.newsletterEmail = ''
+    },
+    getBlogLink (article) {
+      // Map article IDs to actual blog detail routes
+      const blogRoutes = {
+        1: '/blog/gorilla-trekking-guide',
+        2: '/blog/best-time-visit-rwanda',
+        4: '/blog/akagera-national-park-guide'
+      }
+      // Return the mapped route if it exists, otherwise return a fallback
+      return blogRoutes[article.id] || '/blog'
     }
   }
 }
